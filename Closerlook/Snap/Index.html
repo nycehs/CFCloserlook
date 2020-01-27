@@ -12,7 +12,7 @@
     <!-- Corrects IE Compatibility Mode -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Food safety and hot weather</title>
+    <title>Data Story Template: EH Data Portal</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://nycehs.github.io/CFCloserlook/fontawesome/css/all.min.css">
@@ -22,8 +22,17 @@
 
     <!-- Custom Theme CSS -->
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="stylesheet" href="./css/datastories.css">
     <link rel="stylesheet" href="https://nycehs.github.io/CFCloserlook/Closerlook/css/datastories.css">
+
+<style>
+.container-fluid {
+  scroll-snap-type: x mandatory;
+}
+
+.storyanchor {
+  scroll-snap-align: start;
+}
+</style>
 
 </head>
 
@@ -156,14 +165,91 @@
 
             <div class="container-fluid my-auto">
                 <div class="medium my-3 text-left">
-                    <h1 class="display-4 titleheader">What hot weather means for food safety</h1>
+                    <h1 class="display-4 titleheader">Data story template, with writeup of styles and functions</h1>
                 </div>
             </div>
             <!-- .container -->
 
-
+            <!-- Toggle #main-nav on mobile. Comment this out if there are no chapters -->
+            <div class="container-fluid d-xl-none d-lg-none">
+                <div class="narrow">
+                    <div class="btn-toggle narrow">
+                        <button class="btn btn-block btn-lg btn-primary shadow" data-toggle="collapse"
+                            data-target="#main-nav" aria-expanded="false" aria-controls="sidebar-nav">
+                            <span class="title">Contents</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
         </div>
+
+        <!--#main-nav - comment this out if there are no chapters-->
+
+
+            <div class="sticky-top container-fluid collapse d-lg-block px-0 border-lg-top border-lg-bottom" id="main-nav" style="background-color:white;">
+
+                <h2 class="sr-only">
+                    Primary Navigation
+                </h2>
+        
+                <div class="wide">
+        
+                    <nav class="nav nav-pills" role="navigation" id="myScrollspy">
+        
+                         <!-- .nav-item -->
+        
+                        <div class="nav-item mx-auto">
+        
+                            <a class="nav-link active" href="#section1" id="nav-item-01" role="button">
+                                Intro and header
+                            </a>
+    
+        
+                        </div>
+                        <!-- .nav-item -->
+    
+                        <div class="nav-item mx-auto">
+        
+                            <a class="nav-link" href="#section2" id="nav-item-02" role="button">
+                                Storyanchors
+                            </a>
+    
+        
+                        </div>
+                        <!-- .nav-item -->
+    
+                        <div class="nav-item mx-auto">
+        
+                            <a class="nav-link" href="#section3" id="nav-item-03" role="button">Widths
+                            </a>    
+                        </div>
+                        <!-- .nav-item -->
+        
+                        <div class="nav-item mx-auto">
+        
+                            <a class="nav-link" href="#section4" id="nav-item-04" role="button">Righthand column
+                            </a>    
+                        </div>
+                        <!-- .nav-item -->
+    
+                        <div class="nav-item mx-auto">
+        
+                            <a class="nav-link" href="#section5" id="nav-item-05" role="button">Footer
+                            </a>    
+                        </div>
+                        <!-- .nav-item -->
+        
+                    </nav>
+        
+                </div>
+                <!-- .wide -->
+        
+            </div>
+            <!--end all navigation-->
+
+
+
 
 
 
@@ -185,68 +271,204 @@
 
                         <div class="narrow my-2">
 
-                            <h2>A billion times a year</h2>
-                            <p>New Yorkers eat out more than a billion times a year. To help keep diners safe, the Health Department educates restaurant operators about food safety practices and inspects all 27,000 city restaurants at least once a year. Over 90 percent of NYC restaurants have "A" grades in the window, showing excellent compliance with food safety requirements.</p>
-                            <p>However, warmer weather creates special challenges keeping food safe. We dug into the data to find out how hot weather affects food safety.	</p>
-                            <h2>Some background on foodborne illnesses</h2>
-                            <p>Though most foodborne illnesses are relatively minor, the Centers for Disease Control and Prevention estimates that there are 128,000 hospitalizations and 3,000 deaths per year from foodborne illnesses in the USA.</p>
+                            <h2 id="section1" class="storyanchor">Intro and header</h2>
+                            <p>For this data story template we wanted a simplified page. Accordingly we removed elements of the header, preserving only the main black header bar, the link back to data stories, and the translation function. These are responsive but with less transformation across screen sizes.</p>
+                            <p>The title itself uses class titleheader to get that transparent overlay that ensures readability on a wide variety of title image slides.</p>
 
-                  
+                           
+
+                           
+
+                            <p> Moving on, I'll include some lorem ipsum text to take up space between sections. Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi
+                                mi
+                                dictumst porttitor est volutpat.
+                            </p>
+                            <p>
+                                    Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                    pretium et
+                                    dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                    sapien
+                                    potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                    facilisi
+                                    mi
+                                    dictumst porttitor est volutpat.
+                                </p>
+    
+                                <p>
+                                    Below we see a figure with a caption. The figure is wider than the text. It can be an image or a data visualization embed.
+                                </p>
+                            
                         </div>
-                            <div class="medium my-4 pt-2 border-top border-bottom">
+                            <div class="medium my-4">
 
-                                <iframe title="In NYC, there are thousands of cases per year" aria-label="Bar Chart" id="datawrapper-chart-TWYcr" src="https://datawrapper.dwcdn.net/TWYcr/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="532"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                <figure class="figure">
+                                    <img class="figure-img" src="https://via.placeholder.com/1000x500" alt="Placeholder">
+                                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                                </figure>
     
                             </div>
                          <div class="narrow my-4">
 
-                            <p>Many of these are viruses and bacteria that spread through unsafe food handling practices. For example, if bacteria from raw meat or eggs contaminate other ready-to-eat food, it can make people sick.</p>
-                            <h2>Food safety inspectors work to keep you safe</h2>
-                            <p>When you eat at a restaurant, you're placing your trust in both the restaurant and in our food safety inspectors. The Health Department employs about 100 of them, and they visit each of nearly 27,000 NYC restaurants at least once per year, to make sure restaurants meet Health Code requirements. Restaurants receive an inspection score, which gets converted into the letter grade you see posted in the window.</p>
-                            <span style="text-align: center; display: block;">
-                            <img src="foodletter.jpg" style="width: 40%;" alt="A Sanitary Inspection A Grade"></span><hr>
-                            <P>As part of the inspection process, food safety inspectors educate restaurant operators about food safety practices, and collect data on violations they observe. Then, our team at the Health Department analyzes the inspection data to identify common violations and understand patterns in the violations. We use this data to figure out what food safety practices need improvement - helping to reduce risks to customers like you.</p>
-                    
-                            <h2>Hot weather and food safety</h2>
-                            <p>Certain foodborne illnesses increase in the summertime, possibly because bacteria are more likely to multiply in warmer temperatures.	</p>	
-                            <p>Potentially hazardous cold food needs to be stored at or below 41° F, to minimize the growth of microorganisms that can make you sick. Cold holding violations - not storing food at or below 41° F - are one of the most common violations that our food safety inspectors find. When potentially hazardous foods - like meat, poultry, fish, and cut melons - aren't kept cold enough, bacteria can multiply rapidly.</p>
-                            <p>We investigated how outdoor temperature affects restaurant food safety patterns. To do this, we analyzed data from 64,661 inspections that took place over five summers. Of these inspections, 45 percent found cold holding violations.</p>
-                            
-                            <hr>
-                            <span style="text-align:center; display:block;"><b>Nearly half of inspections found cold holding violations</b>
-                            <img src="food2.png" alt="A waffle chart showing nearly 65,000 inspections, of which 45 percent had cold holding violations."></span>
-                            <hr>
-                            
-                            <p>We looked at inspections conducted on higher and lower maximum temperature days, and we found a  20 percent increase in cold food holding violations on the hottest days (93° or higher) compared with average summer days (temperatures around 82°). </p>
+                            <h3 id="section2" class="storyanchor">Story anchors</h3>
+                            <p>
+                                    Right now we have the headers IDed as the sections. Datastories.css includes storyanchor class to help align things below the sticky header. For header anchors, use class storyanchor. <strong>This chapter anchor functionality can be easily commented out for simple data stories</strong>. They also collapse into a Contents expander on mobile.</p>
+                                    <p>This is set so that on page load, the "Intro" nav button is active - highlighted. This plus scrolling should give the user a clear understanding of what that sticky anchor-nav does.</p>
+                                    <p>For complicated chaptered stories we can also set different background colors to differentiate where we are in the story. Currently, the image hover expansion is commented out of datastories.css to make development easier.</p>
+                            <p>
+                               As with previous data stories, the title image is set by title1.jpg in the story's folder. 
+                            </p>
 
-                          
+                            <p>
+                              Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi
+                                mi
+                                dictumst porttitor est volutpat.
+                            </p>
 
 
                                 </div>
-                                <div class="medium my-4 pt-2 border-top border-bottom">
+                                <div class="medium my-4">
     
-                                    <iframe title="Hot weather means more cold food holding violations" aria-label="Bar Chart" id="https:datawrapper-chart-PpaPF" src="//datawrapper.dwcdn.net/PpaPF/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="210"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                    <figure class="figure">
+                                        <img class="figure-img" src="https://via.placeholder.com/1000x500" alt="Placeholder">
+                                        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                                    </figure>
         
                                 </div>
                              <div class="narrow my-4">
         
-                                <h2>We talked over our findings with restaurant staff</h2>
-                                <p>After reviewing these data, we convened restaurant operators to talk about common challenges to keeping food  cool. </p>
-                                <p>For example, they told us that in the hot weather, refrigerators can break down, or stop working due to short-term power outages. If these outages happen while the restaurant is closed, it can be hard to know how long the fridge was out and how long the food was warming up.</p>
-                                <p>These conversations helped us learn more about the challenges that extreme temperatures, power outages, and other emergencies pose for food safety.</p>
-                        
-                                <h2>Working to keep you safe</h2>
-                                <p>To help keep you safe from foodborne illnesses, a supervisor trained in all aspects of food safety must be present at all times while a restaurant is open for business. Supervisors must have a food protection certificate from the NYC Health Academy - the Health Department's training facility - and food safety inspectors look for this certificate during inspections.</p>
-                                <p>Inspectors discuss problems they find during inspections with restaurant staff and discuss how to correct them. The Health Department also monitors data from electric utilities, and emails restaurants if they've lost power for 90 minutes or more - so that restaurants can take action to safeguard food and protect their customers.</p>
-                                <p>These measures go a long way to keeping people safe. But by analyzing data from inspections, we continue to identify ways to improve our work and that of the restaurants we regulate.</p>
-                                <p>If you want to make sure that your favorite restaurant is taking the right steps to keep you safe, you can <a href="http://a816-restaurantinspection.nyc.gov/RestaurantInspection/SearchBrowse.do">look up restaurant inspection results</a>. Meanwhile, we'll keep looking for ways to support restaurateurs so that they can keep your food safe - no matter the weather.</p>
-        
+                                    <p>
+                                        Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                        pretium et
+                                        dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                        sapien
+                                        potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                        facilisi
+                                        mi
+                                        dictumst porttitor est volutpat.
+                                    </p>
 
-
+                            <h3 id="section3" class="storyanchor">Widths</h3>
+                            <p>
+                                    This uses a div class .narrow  for the main sections. This sets its width. In order to have wider sections (for images and data visualization) or full-width sections (for superwide data vis), you'll close the narrow div and open a new medium or wide one using class .medium or .wide. You can see a medium one below. These classes come from the <a href="https://www1.nyc.gov/assets/doitt/html/nyc-core-framework/additional-widths.html">Core Framework Documentation</a>.
+                                 </p>
 
                         </div>
+                        <div class="medium my-4">
 
+                            <figure class="figure">
+                                <img class="figure-img" src="https://via.placeholder.com/1000x500" alt="Placeholder">
+                                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                            </figure>
 
+                        </div>
+                     <div class="narrow my-4">
+                            <p>
+                                    Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                    pretium et
+                                    dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                    sapien
+                                    potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                    facilisi
+                                    mi
+                                    dictumst porttitor est volutpat.
+                                </p>
+                                <p>
+                                        Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                        pretium et
+                                        dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                        sapien
+                                        potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                        facilisi
+                                        mi
+                                        dictumst porttitor est volutpat.
+                                    </p>
+        
+                                    <p>
+                                        Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                        pretium et
+                                        dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                        sapien
+                                        potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                        facilisi
+                                        mi
+                                        dictumst porttitor est volutpat.
+                                    </p>
+
+                            <h3 id="section4" class="storyanchor">Righthand column</h3>
+                            <p>Currently, this column can store links to indicators. It's sticky. While we have used bullets in the past, the thin space of this column means that we should use text separated by horizontal rules for the text. We can also consider buttons, but this is fine for now.
+                            </p>
+
+                            <p>
+                                Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                pretium et
+                                dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                sapien
+                                potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                facilisi
+                                mi
+                                dictumst porttitor est volutpat.
+                            </p>
+
+                            <p>
+                                    Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                    pretium et
+                                    dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                    sapien
+                                    potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                    facilisi
+                                    mi
+                                    dictumst porttitor est volutpat.
+                                </p>
+    
+                                <p>
+                                    Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                    pretium et
+                                    dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                    sapien
+                                    potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                    facilisi
+                                    mi
+                                    dictumst porttitor est volutpat.
+                                </p>
+
+                                <h3 id="section5" class="storyanchor">Footer</h3>
+
+                                <p>This closes with an email contact and appeal for contact. Below that we have standard Core Framework footers.
+                                </p>
+    
+                                <p>
+                                        Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                        pretium et
+                                        dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                        sapien
+                                        potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                        facilisi
+                                        mi
+                                        dictumst porttitor est volutpat.
+                                    </p>
+        
+                                    <p>
+                                        Malesuada dapibus ac condimentum habitasse a praesent commodo penatibus parturient duis
+                                        pretium et
+                                        dolor parturient cum. Est vehicula facilisis ad proin condimentum pretium augue accumsan
+                                        sapien
+                                        potenti non vestibulum aptent non cum ullamcorper fusce tincidunt class scelerisque
+                                        facilisi
+                                        mi
+                                        dictumst porttitor est volutpat.
+                                    </p>
+
+                        </div>
                         <!-- .narrow -->
 
                         <footer class="narrow my-4" id="article-footer">
@@ -282,7 +504,9 @@
                         <br><br>
                         <p>Explore the data:
                             <hr>
-                        <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2065,719b87,98,Summarize">Restaurants with A grades</a>
+                        <a href="">Data link one</a>
+                        <hr>
+                        <a href="">Data link two</a>
                         <hr>
                     </p>
                     </div>

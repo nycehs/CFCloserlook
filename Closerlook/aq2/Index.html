@@ -12,18 +12,17 @@
     <!-- Corrects IE Compatibility Mode -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>What NYCCAS tells us about NYC's air</title>
+    <title>What NYCCAS tells us about NYC's air - and its neighborhoods</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://nycehs.github.io/CFCloserlook/fontawesome/css/all.min.css">
 
     <!-- NYC Theme CSS -->
     <link rel="stylesheet" href="https://cityofnewyork.github.io/nyc-core-framework/css/theme.css">
 
     <!-- Custom Theme CSS -->
-    <link rel="stylesheet" href="./css/custom.css">
-    <link rel="stylesheet" href="../css/datastories.css">
-
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="https://nycehs.github.io/CFCloserlook/Closerlook/css/datastories.css">
 
 </head>
 
@@ -58,7 +57,7 @@
                         <ul class="extensible-list horizontal fs-md">
                             <li>
                                 <a href="https://www1.nyc.gov/" title="Go to nyc.gov">
-                                    <img class="d-block" src="/images/nyc-bubble-logo.svg" width="45" alt="NYC Logo">
+                                    <img class="d-block" src="https://nycehs.github.io/Portal-Core-Framework/images/nyc-bubble-logo.svg" width="45" alt="NYC Logo">
                                 </a>
                             </li>
                         </ul>
@@ -81,68 +80,32 @@
 
                 <div class="row align-items-center">
 
-                    <div class="col-lg py-2">
-                        <div class="d-flex justify-content-center justify-content-lg-start">
-                            <a class="align-self-center" href="#" title="Home">
-
-                                <!-- Placeholder logo, replace the following <svg> tag with your own image version -->
-                                    <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Infographic.aspx">
-                                        <i class="fas fa-arrow-circle-left"></i>&nbsp;back to data stories 
-                                    </a>
-
-                            </a>
-                        </div>
-                    </div>
+                    
                     <!-- .col -->
 
-                    <div class="col-lg-auto border-top border-lg-0">
+                    <div class="col border-top">
 
-                        <div class="d-lg-flex align-items-center">
+                        <div class="align-items-center justify-content-between">
 
                             <!-- Mobile Toggle Buttons -->
 
-                            <ul class="extensible-list horizontal justify-content-between my-2 d-lg-none">
+                            <ul class="extensible-list horizontal justify-content-between my-2">
+                                <li><a href="../../DataStories.html">
+                                    <button class="no-btn-style mr-auto" type="button">
+                                            <i class="fas fa-arrow-circle-left"></i>&nbsp;back to data stories
+                                    </button></a>
+                                </li>
+
                                 <li>
-                                    <button class="no-btn-style" type="button" data-toggle="collapse"
+                                        <button class="no-btn-style float-right" type="button" data-toggle="collapse"
                                         data-target="#global-language" aria-controls="global-language"
                                         aria-expanded="false">
                                         <span class="fas fa-language fa-lg" ></span>
                                     </button>
                                 </li>
-
-                                <li>
-                                    <button class="no-btn-style" type="button" data-toggle="collapse"
-                                        data-target="#global-search" aria-controls="global-search"
-                                        aria-expanded="false">
-                                        <span class="fas fa-search fa-lg" ></span>
-                                    </button>
-                                </li>
                             </ul>
 
-                            <div class="collapse d-lg-block mx-n2 mx-lg-2" id="nav-primary">
-
-                            </div>
-
-                            <!-- Desktop Toggle Buttons -->
-
-                            <ul class="extensible-list horizontal d-none d-lg-flex">
-                                <li>
-                                    <button class="no-btn-style" type="button" title="Language" data-toggle="collapse"
-                                        data-target="#global-language" aria-controls="global-language"
-                                        aria-expanded="false">
-                                        <span class="sr-only">Language</span>
-                                        <span class="fas fa-language fa-lg" ></span>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button class="no-btn-style" type="button" title="Search" data-toggle="collapse"
-                                        data-target="#global-search" aria-controls="global-search"
-                                        aria-expanded="false">
-                                        <span class="sr-only">Search</span>
-                                        <span class="fas fa-search fa-lg" ></span>
-                                    </button>
-                                </li>
-                            </ul>
+                            
 
                         </div>
                         <!-- .d-flex -->
@@ -187,93 +150,20 @@
     <body class="scrollspy-container" data-spy="scroll" data-target="#myScrollspy" data-offset="20" >
     <main role="main">
 
-        <!-- Add your custom image class below -->
+        <!-- Add your custom image class below (replace 'oculus' with your own custom class) -->
         <div class="bg-primary d-flex flex-column titleslide" style="height: 500px; background-image: URL(title1.jpg)">
 
             <div class="container-fluid my-auto">
-                <div class="medium my-3">
-                    <h1 class="display-4 titleheader">What our air quality monitors tell us about NYC's neighborhoods</h1>
+                <div class="medium my-3 text-left">
+                    <h1 class="display-4 titleheader">What our air quality monitors tell us about NYC's neighborhoods
+                    </h1>
                 </div>
             </div>
             <!-- .container -->
 
-            <!-- Toggle #main-nav on mobile. 
 
-            <div class="container-fluid d-xl-none d-lg-none">
-                <div class="narrow">
-                    <div class="btn-toggle narrow">
-                        <button class="btn btn-block btn-lg btn-primary shadow" data-toggle="collapse"
-                            data-target="#main-nav" aria-expanded="false" aria-controls="sidebar-nav">
-                            <span class="title">Contents</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-                Comment this out if there are no chapters -->
-
-            
 
         </div>
-
-        <!--#main-nav - 
-
-        
-            <div class="sticky-top container-fluid collapse d-lg-block px-0 border-lg-top border-lg-bottom" id="main-nav" style="background-color:white;">
-
-                <h2 class="sr-only">
-                    Primary Navigation
-                </h2>
-        
-                <div class="">
-        
-                    <nav class="nav nav-pills" role="navigation" id="myScrollspy">
-        
-                        
-        
-                        <div class="nav-item mx-auto">
-        
-                            <a class="nav-link" href="#section1" id="nav-item-01" role="button">
-                                NYCCAS network
-                            </a>
-    
-        
-                        </div>
-                        
-    
-                        <div class="nav-item mx-auto">
-        
-                            <a class="nav-link" href="#section2" id="nav-item-02" role="button">
-                                Making Times Square car-free
-                            </a>
-    
-        
-                        </div>
-                        
-    
-                        <div class="nav-item mx-auto">
-        
-                            <a class="nav-link" href="#section3" id="nav-item-03" role="button">The effect on air pollution
-                            </a>    
-                        </div>
-                        
-        
-                        <div class="nav-item mx-auto">
-        
-                            <a class="nav-link" href="#section4" id="nav-item-04" role="button">The bottom line
-                            </a>    
-                        </div>
-                                            
-        
-                    </nav>
-        
-                </div>
-               
-        
-            </div>
-            remove this out if there are no chapters-->
-      
-
-
 
 
 
@@ -291,84 +181,76 @@
                 <!--start main content section-->
                 <div class="col-xl-8 overflow-hidden" id="primary-content">
 
-                    <div class="my-5">
+                    <div class="my-4">
 
-                        <div class="narrow my-4">
+                        <div class="narrow my-2">
 
-                                <p>In <a href="../aqts/index.html">Part 1</a>, we looked at data from the New York City Community Air Survey (NYCCAS) - a network of about 100 air quality monitors - to see if air quality improves in areas that go car-free. And the answer is yes.</p>
 
-                                <p>NYCCAS tells us that more traffic means more air pollution nearby. So, even if we don't have a nearby monitor, we can predict that an area that goes car-free (like Park Drive in Prospect Park, for example) sees an improvement in air quality.</p>
-                                <h2>NYCCAS detects neighborhood differences</h2>
-                                <p>We combine NYCCAS data with other data to make reliable estimates about air quality all across the city. This lets us compare neighborhoods based on their characteristics, and track trends over time.</p>
-                                <p>For example, when we group neighborhoods based on traffic (high, medium, or low traffic density), we can see that high-traffic neighborhoods have more PM2.5 than low-traffic neighborhoods. </p>
-                                <p>How about medium-traffic neighborhoods? Extend the green line to guess the PM2.5 concentrations of medium-traffic neighborhoods on the chart below. </p>
+                            <p>In <a href="../aqts/index.html">Part 1</a>, we looked at data from the New York City Community Air Survey (NYCCAS) - a network of about 100 air quality monitors - to see if air quality improves in areas that go car-free. And the answer is yes.</p>
 
+                            <p>NYCCAS tells us that more traffic means more air pollution nearby. So, even if we don't have a nearby monitor, we can predict that an area that goes car-free (like Park Drive in Prospect Park, for example) sees an improvement in air quality.</p>
+                            <h2>NYCCAS detects neighborhood differences</h2>
+                            <p>We combine NYCCAS data with other data to make reliable estimates about air quality all across the city. This lets us compare neighborhoods based on their characteristics, and track trends over time.</p>
+                            <p>For example, when we group neighborhoods based on traffic (high, medium, or low traffic density), we can see that high-traffic neighborhoods have more PM2.5 than low-traffic neighborhoods. </p>
+                            <p>How about medium-traffic neighborhoods? Extend the orange line to guess the PM2.5 concentrations of medium-traffic neighborhoods on the chart below. </p>
+
+                  
                         </div>
+                            <div class="medium my-4 pt-2 border-top border-bottom">
+                                <iframe src="https://theydrawit.mucollective.co/vis/YZ5BMgQ65ebyYh0vkPh7II7lO2C3/-Lk008qCfrQXm9e5N6HY"
+                                width="700"
+                                height="500" frameborder="0">
+                                </iframe>
 
-                        <div class="medium storyanchor" id="section1">
-                            <hr>
-                            <iframe src="https://theydrawit.mucollective.co/vis/YZ5BMgQ65ebyYh0vkPh7II7lO2C3/-Lk008qCfrQXm9e5N6HY"
-                            width="700"
-                            height="500" frameborder="0">
-                            </iframe>
-                            <br>
-                            <p style="font-size: 9pt; text-align: right;">This chart works best in Chrome.</p>
-                            <hr>
-                        </div>
+                                <p style="font-size: 9pt; text-align: right;">This chart works best in Chrome.</p>
+    
+                            </div>
+                         <div class="narrow my-4">
 
-                        <div class="narrow my-4">
+                            <p>Interestingly, medium-traffic neighborhoods and low-traffic neighborhoods see similar levels of PM2.5 pollution. Only with high traffic density do we see higher pollution levels. You can also see that PM2.5 is a little higher in the winter and summer for all neighborhoods (regardless of traffic density). Pollution levels vary by season due changes in energy use (heating and cooling), and weather patterns.</p>
+                            <h2>Air quality has been improving</h2>
+                            <p>NYC's air quality has been improving. Over the last ten years, NYCCAS has shown an improvement each of the pollutants we monitor.</p>
+                            <p>Because the level of PM2.5 varies by season, it can be helpful to look at one season at a time. The chart below shows the average summertime levels of PM2.5. You can see that in medium-traffic and low-traffic neighborhoods, the PM2.5 has decreased. </p>
+                            <p>What do you think happened in high-traffic neighborhoods?</p>
 
-                                <p>Interestingly, medium-traffic neighborhoods and low-traffic neighborhoods see similar levels of PM2.5 pollution. Only with high traffic density do we see higher pollution levels. You can also see that PM2.5 is a little higher in the winter and summer for all neighborhoods (regardless of traffic density). Pollution levels vary by season due changes in energy use (heating and cooling), and weather patterns.</p>
-                                <h2>Air quality has been improving</h2>
-                                <p>NYC's air quality has been improving. Over the last ten years, NYCCAS has shown an improvement each of the pollutants we monitor.</p>
-                                <p>Because the level of PM2.5 varies by season, it can be helpful to look at one season at a time. The chart below shows the average summertime levels of PM2.5. You can see that in medium-traffic and low-traffic neighborhoods, the PM2.5 has decreased. </p>
-                                <p>What do you think happened in high-traffic neighborhoods?</p>
-                        </div>
+                          
 
-                        <div class="medium">
-                            <hr>
-                            <iframe src="https://theydrawit.mucollective.co/vis/YZ5BMgQ65ebyYh0vkPh7II7lO2C3/-Lk05dR-IvKDyw_-LS79"
-                            width="700"
-                            height="500"
-                            frameborder="0">
-                            </iframe>
-                            <br>
-                            <p style="font-size: 9pt; text-align: right;">This chart works best in Chrome.</p>
-                            <hr>
-                        </div>
-                        <div class="narrow">
+
+                                </div>
+                                <div class="medium my-4 pt-2 border-top border-bottom">
+    
+                                    <iframe src="https://theydrawit.mucollective.co/vis/YZ5BMgQ65ebyYh0vkPh7II7lO2C3/-Lk05dR-IvKDyw_-LS79"
+                                    width="700"
+                                    height="500"
+                                    frameborder="0">
+                                    </iframe>
+                                    <p style="font-size: 9pt; text-align: right;">This chart works best in Chrome.</p>
+        
+                                </div>
+                             <div class="narrow my-4">
+        
                                 <p>PM2.5 has gone down in high-traffic neighborhoods, too. That means that the air quality has gotten better across all neighborhoods, regardless of traffic density. </p>
-                                <p>NYCCAS was designed to record trends like this, and to measure big, broad changes. If we want to make big air quality changes, we’ll need big interventions: create large car-free zones, reduce traffic volume, and place greater restrictions on harmful emissions. </p>
-                                <h2>Bad air is bad for you</h2>
-                                <p>In NYC, we estimate that each year, more than 2000 people die prematurely and more than 6000 people go to the emergency room because of health conditions made worse by breathing PM2.5. That's one out of every 20 deaths in New York City - and that's just from one pollutant.</p>
-                                <p>So those big changes? From the benefits we would get, they may be well worth the cost. And NYCCAS is leading the way to identify ways to continue improving the air, and the health of all those who breathe it.</p>
+		<p>NYCCAS was designed to record trends like this, and to measure big, broad changes. If we want to make big air quality changes, we’ll need big interventions: create large car-free zones, reduce traffic volume, and place greater restrictions on harmful emissions. </p>
+		<h2>Bad air is bad for you</h2>
+		<p>In NYC, we estimate that each year, more than 2000 people die prematurely and more than 6000 people go to the emergency room because of health conditions made worse by breathing PM2.5. That's one out of every 20 deaths in New York City - and that's just from one pollutant.</p>
+		<p>So those big changes? From the benefits we would get, they may be well worth the cost. And NYCCAS is leading the way to identify ways to continue improving the air, and the health of all those who breathe it.</p>
 
                         </div>
-
                         <!-- .narrow -->
+
+
+
 
                         <footer class="narrow my-4" id="article-footer">
 
                             <div class="border-top border-dark">
 
-                                <ul class="extensible-list horizontal text-muted mt-3" id="share-buttons">
-                                    <li class="text-muted">
-                                        <span class="fas fa-share" title="Share this page" ></span>
-                                    </li>
+                                <ul class="extensible-list horizontal text-muted mt-3">
+            
                                     <li>
-                                        <a class="text-muted" href="#" title="Share on Facebook">
-                                            <span class="fab fa-facebook-f"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-muted" href="#" title="Share on Twitter">
-                                            <span class="fab fa-twitter"></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-muted" href="#" title="Share through email">
-                                            <span class="fa fa-envelope"></span>
-                                        </a>
+                                        <a class="text-muted" href="mailto:trackingportal@health.nyc.gov" title="Share through email">
+                                            <span class="fa fa-envelope"></span> Questions about this data story? Ideas for another one? Email us.</a>
+                                        
                                     </li>
                                 </ul>
 
@@ -388,18 +270,15 @@
                 <!--right-hand column for extra resources and links-->
                 <div class="col-xl-2 border-xl-left">
 
-                    <div class="narrow py-3 mt-n3 mt-xl-0 sticky-top" style="z-index: 0;">
+                    <div class="narrow py-3 mt-n3 mt-xl-0 sticky-top" style="z-index: 0">
                         <br><br>
-                        <p>Explore the full data:</p>
-                        <ul>
-                            <li><a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/PublicTracking.aspx?theme_code=1,4&subtopic_id=122">Air Quality</a>
-                            <li><a href="https://nyc-ehs.net/besp-report/web/nyccas">The 2008-2017 NYCCAS Report</a>
-                            </ul>
+                        <p>Explore the data:
+                            <hr>
+                        <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/PublicTracking.aspx?theme_code=1,4&subtopic_id=122">Air quality</a>
                         <hr>
-                                <ul>
-                                <li><a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Infographic.aspx">More data stories</a>
-                                <li><a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/">Return to the Environment and Health Data Portal</a>
-                                </ul>
+                        <a href="https://nyc-ehs.net/besp-report/web/nyccas">NYCCAS Report</a>
+                        <hr>
+                    </p>
                     </div>
                     <!-- .my-3 -->
 
@@ -413,6 +292,198 @@
         <!-- #primary-content -->
 
     </main>
+
+    <footer class="bg-black" id="global-footer" role="contentinfo">
+
+            <h2 class="sr-only">
+                Page Footer
+            </h2>
+     
+            <div class="bg-opacity-black-25 text-white" id="nyc-footer">
+     
+                <div class="container py-3 d-none" id="languages">
+     
+                    <div class="row fs-md">
+     
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                            </ul>
+                        </div>
+                    </div>
+     
+                </div>
+                <!-- #languages -->
+     
+                <div class="container py-3" id="languages">
+     
+                    <ul class="fs-md" role="list">
+                        <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                    </ul>
+     
+                </div>
+                <!-- #languages -->
+     
+                <hr class="opacity-10" aria-hidden="true">
+     
+                <div class="container py-3">
+     
+                    <div class="row">
+     
+                        <div class="col-md-6 col-lg-8 mb-3 mb-lg-0">
+     
+                            <nav class="row fs-md" role="navigation">
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/nyc-resources/agencies.page">
+                                                <strong>City Agencies</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a858-nycnotify.nyc.gov/notifynyc/">
+                                                <strong>Notify NYC</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="http://www1.nyc.gov/connect/mobile-applications.page">
+                                                <strong>NYC Mobile Apps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- .col -->
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/home/contact-us.page">
+                                                <strong>Contact NYC Government</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a856-citystore.nyc.gov/">
+                                                <strong>CityStore</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="http://maps.nyc.gov/doitt/nycitymap/">
+                                                <strong>Maps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+     
+                                </div>
+                                <!-- .col -->
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://a127-ess.nyc.gov/psp/prdess/?cmd=login&languageCd=ENG&">
+                                                <strong>City Employees</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/connect/social-media.page">
+                                                <strong>Stay Connected</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="http://www1.nyc.gov/nyc-resources/resident-toolkit.page">
+                                                <strong>Resident Toolkit</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+     
+                                </div>
+                                <!-- .col -->
+     
+                            </nav>
+     
+                        </div>
+                        <!-- .col -->
+     
+                        <div class="col-md-6 col-lg-4">
+     
+                            <a class="mb-2" href="https://www1.nyc.gov" title="Go to nyc.gov" target="_blank">
+                                <img class="mb-2" src="https://nycehs.github.io/Portal-Core-Framework/images/nyc-bubble-logo.svg" width="90" alt="NYC Logo">
+                            </a>
+                            <p class="fs-sm">City of New York - 2019 All Rights Reserved. NYC is a trademark and service
+                                mark of the City of New York.</p>
+     
+                            <ul class="extensible-list horizontal fs-sm">
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/home/privacy-policy.page">Privacy
+                                        Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/home/terms-of-use.page">Terms
+                                        of Use</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/site/mopd/index.page"
+                                        title="Mayor's Office for People with Disabilities">
+                                        <span class="sr-only">Mayor's Office for People with Disabilities</span>
+                                        <span class="fab fa-lg fa-accessible-icon"></span>
+                                    </a>
+                                </li>
+                            </ul>
+     
+                        </div>
+                        <!-- .col -->
+     
+                    </div>
+                    <!-- .row -->
+     
+                </div>
+                <!-- .container -->
+     
+            </div>
+            <!-- #nyc-bottom-footer -->
+     
+        </footer>
+
 </body>
     <!-- #content -->
 
