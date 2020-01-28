@@ -1,5 +1,10 @@
 /* Custom CSS for data stories*/
 
+.offset-sticky {
+    top: 0px;
+}
+
+
 html {scroll-behavior: smooth;}  
 
 /* Start CSS for AQ Vignette dashboard - some of this from standard Bootstrap Dashboard template, but storycolumn and storyback are custom - can customize further within*/
