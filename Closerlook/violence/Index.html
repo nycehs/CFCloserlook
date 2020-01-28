@@ -283,11 +283,12 @@
                         <!--end narrow-->
 
 
-                            <div class="medium my-4">
-
-                                <div class="border" style="width: 100%; height: 250px;">
-                                The homicide rate has plummeted in NYC.
-                                    chart 1 - vital stats</div>
+                            <div class="medium my-4 pt-2 border-top border-bottom">
+                                    <iframe title="Volence in NYC has plummeted since the 1980s" aria-label="Column Chart" id="datawrapper-chart-7vrPv" src="https://datawrapper.dwcdn.net/7vrPv/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="390"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                
+                                    <button type="button" class="btn btn-light float-right" data-toggle="modal" data-target="#exampleModalCenter">
+                                            Get the data
+                                          </button>
     
                             </div>
                          <div class="narrow my-4">
@@ -305,11 +306,34 @@
                             <!--end narrow-->
     
     
-                                <div class="medium my-4">
+                                <div class="medium my-4 pt-2 border-top border-bottom">
     
-                                    <div class="border" style="width: 100%; height: 250px;">
-                                    NFAHs, Shootings, Homicides
-                                        chart 2 - Map/chart toggler</div>
+                                        <div class="row">
+                                                <div class="col-3">
+                                                  <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
+                                                    <a class="nav-link active" id="nfah-tab" data-toggle="pill" href="#nfah" role="tab" aria-controls="nfah" aria-selected="true">Non-fatal assault hospitalizations</a>
+                                                    <a class="nav-link" id="shootings-tab" data-toggle="pill" href="#shootings" role="tab" aria-controls="shootings" aria-selected="false">Shootings</a>
+                                                    <a class="nav-link" id="homicides-tab" data-toggle="pill" href="#homicides" role="tab" aria-controls="homicides" aria-selected="false">Homicides</a>
+
+                                                  </div>
+                                                </div>
+                                                <div class="col-9">
+                                                  <div class="tab-content" id="tabContent">
+                                                    <div class="tab-pane fade show active" id="nfah" role="tabpanel" aria-labelledby="nfah-tab">
+                                                        <div style="height: 350px; background-color: #d3d3d3;">NFAH map/chart
+                                                        </div>
+                                                        </div>
+                                                    <div class="tab-pane fade" id="shootings" role="tabpanel" aria-labelledby="shootings-tab">               <div style="height: 350px; background-color: #d3d3d3;">Shootings map/chart
+                                                        </div></div>
+                                                    <div class="tab-pane fade" id="homicides" role="tabpanel" aria-labelledby="homicides-tab">               <div style="height: 350px; background-color: #d3d3d3;">Homicides map/chart
+                                                        </div></div>
+
+                                                  </div>
+                                                </div>
+                                              </div>
+
+
+                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
         
                                 </div>
                              <div class="narrow my-4">
@@ -318,7 +342,7 @@
 
                             <h3 id="section2" class="storyanchor">How do we prevent violence in these neighborhoods?</h3>
                             <p>To prevent violence, we need to explore what leads to it.</p>
-                            <p>Violence is related to historical disinvestment. Decades of disinvestment in New York City has led to high poverty rates in some neighborhoods.</p>
+                            <p>Violence is related to historical <span class="badge badge-pill badge-warning">disinvestment</span>. Decades of disinvestment in New York City has led to high poverty rates in some neighborhoods.</p>
                             <p>Neighborhoods with higher poverty rates also experience higher rates of violence.</p>
                             
 
@@ -330,6 +354,7 @@
                                         <div class="border" style="width: 100%; height: 250px;">
                                                 Poverty and violence are related
                                                     chart 3 - scatterplot</div>
+                                                    <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
         
                                 </div>
                              <div class="narrow my-4">
@@ -344,6 +369,7 @@
                                                 Factors/Outcomes
                                                 Chart 4: Protective vs Risk
                                                 </div>
+                                                <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
         
                                 </div>
                              <div class="narrow my-4">
@@ -361,6 +387,7 @@
                                         Poverty bar
                                         Chart 5: Highlight 1
                                         </div>
+                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
 
                         </div>
                      <div class="narrow my-4">
@@ -373,6 +400,7 @@
                                         Violence bar
                                         Chart 6: Highlight 2
                                         </div>
+                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
 
                         </div>
 
@@ -385,7 +413,9 @@
                                 <div class="border" style="width: 100%; height: 250px;">
                                         Pov and violence
                                         Chart 7: Highlight 3, slopegraph
+                                        
                                         </div>
+                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
 
                         </div>
                         
@@ -400,6 +430,7 @@
                                         Big parallel coordinates chart, 
                                         Chart 8: Highlight 4, slopegraph, focus on Fordham
                                         </div>
+                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
 
                         </div>
                         
@@ -415,6 +446,7 @@
                                         Big parallel coordinates chart, 
                                         Chart 9: Slopegraph, focus on high poverty or high violence neighborhoods
                                         </div>
+                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
 
                         </div>
                         
@@ -430,6 +462,7 @@
                                         Big parallel coordinates chart, 
                                         Chart 10: Slopegraph, focus on low poverty or low violence neighborhoods
                                         </div>
+                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
 
                         </div>
                         
@@ -465,8 +498,21 @@
                         
                      <div class="narrow my-4">
                          <p>How deep do these systems go?</p>
-                         <p>This redlining map was created 90 years ago as part of racist housing policies that set off generations of disinvestment.</p>
+                         <p>This <span class="badge badge-pill badge-warning">redlining</span> map was created 90 years ago as part of racist housing policies that set off generations of disinvestment.</p>
                          <p>A map of recent shootings lines up with the heavily redlined area of the Bronx, Harlem, and northern and eastern Brooklyn.</p>
+                        </div>
+
+                        <div class="medium my-4">
+    
+                                <div class="border" style="width: 100%; height: 250px;">
+                                        Swipe side to side map of redlining and shootings
+                                        </div>
+    
+                        </div>
+                        
+                     <div class="narrow my-4">
+
+
                          <p>Redlining created intergenerational, racialized poverty – the backbone for the health patterns we see today.</p>
                          <p>This reinforces the fact that poverty isn’t an individual’s lack of success. </p>
                          <p>It results from a systematic disinvestment in neighborhoods; it’s a set of related systems that conspire to deprive certain people and certain areas of opportunity and resources.</p>
@@ -538,6 +584,31 @@
         <!-- #primary-content -->
 
     </main>
+
+<!--MODAL CONTENT HERE-->
+
+
+<!-- Demo Modal 1 -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Homicides in NYC</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    Data on homicides in NYC are from [DATA SOURCE]. Data definition or other metadata to come. For more information about this data <a href="">click here</a>.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary float-right" data-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     <footer class="bg-black" id="global-footer" role="contentinfo">
 
