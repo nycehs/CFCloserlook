@@ -22,7 +22,7 @@
 
     <!-- Custom Theme CSS -->
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="stylesheet" href="./css/datastories.css">
+    <link rel="stylesheet" href="../css/datastories.css">
     <link rel="stylesheet" href="https://nycehs.github.io/CFCloserlook/Closerlook/css/datastories.css">
 
 <style>
@@ -246,10 +246,9 @@
 
 
 <div class="container-fluid" id="skip-header-target">
+<!--start singlecolumn row-->
 <div class="row">
-    <div class="col-md-1">[empty]</div>
-    <div class="col-lg-9 ml-auto" id="primary-content">
-        <div class="row">
+    <div class="col-lg-8 mx-auto" id="primary-content">
             <div class="narrow mt-4">
                     <h2 id="section1" class="storyanchor">A public health approach to preventing violence in NYC</h2>
                     <p>Violence – an assault, a shooting – affects people in many ways. Of course, it causes physical harm. It also causes emotional harm, inflicting psychological trauma and fear.</p>
@@ -263,261 +262,210 @@
                     <p>When we view violence as a health outcome, we start to think about how to stop it before it starts. Focusing on perpetrators and punitive approaches doesn’t help. </p>
                     <h3>So how can we use data to understand and reduce violence in NYC?</h3>
                     <p>We need to explore factors that explain or predict violence – so that we can address those factors and reduce violence. This is called taking a public health approach to violence: viewing violence as a health concern, analyzing evidence about it, and taking action based on the evidence.</p>
-
-                   
+                    <p>Let's start with some background:</p>
+                    
+      
             </div>
-        </div>
 
-        <div class="row mt-2">
-            <div class="col-md-4">
+            <div class="medium my-4 pt-2 border-top border-bottom">
+                    <iframe title="Volence in NYC has plummeted since the 1980s" aria-label="Column Chart" id="datawrapper-chart-7vrPv" src="https://datawrapper.dwcdn.net/7vrPv/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="390"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                
+                    <button type="button" class="btn btn-light float-right" data-toggle="modal" data-target="#exampleModalCenter">
+                            Get the data
+                          </button>
+            </div>
+
+            <div class="narrow mt-4">
                     <p>From 2007 to 2017, there were an average of 75% fewer homicides each year compared to the average from 1970 to 1990, now averaging around xxx each year. But despite these improvements, violence persists in some areas.</p>
+                    <hr>
                     <p>There are many kinds of violence, and many data sources that we use to analyze it. We can understand neighborhood violence levels by looking at three indicators:
-                        <ul>
-                            <li>Non-fatal assault hospitalizations</li>
-                            <li>Shootings</li>
-                            <li>Homicides</li>
-                        </ul>
-                        The neighborhoods with the highest rates of non-fatal assault hospitalizations have rates that are nearly 10 times higher than the city’s lowest rates – and 3 times higher than the citywide rate. </p>
-                    <p>And if we look at shootings or homicides, we see the same pattern.</p>
-            </div>
-            <div class="col-md-5 mr-auto">
-                <div class="sticky-top offset-sticky mt-4">
-                        <iframe title="Volence in NYC has plummeted since the 1980s" aria-label="Column Chart" id="datawrapper-chart-7vrPv" src="https://datawrapper.dwcdn.net/7vrPv/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="390"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                
-                        <button type="button" class="btn btn-light float-right" data-toggle="modal" data-target="#exampleModalCenter">
-                                Get the data
-                              </button>
+                            <ul>
+                                <li>Non-fatal assault hospitalizations</li>
+                                <li>Shootings</li>
+                                <li>Homicides</li>
+                            </ul>
+                            The neighborhoods with the highest rates of non-fatal assault hospitalizations have rates that are nearly 10 times higher than the city’s lowest rates – and 3 times higher than the citywide rate. </p>
+                        <p>And if we look at shootings or homicides, we see the same pattern.</p>
+                    </div>
 
-                </div>
-                
-            </div>
+                    <div class="medium my-4 pt-2 border-top border-bottom">
+                            <div class="row">
+                                    <div class="col-3">
+                                      <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
+                                        <a class="nav-link active" id="nfah-tab" data-toggle="pill" href="#nfah" role="tab" aria-controls="nfah" aria-selected="true">Non-fatal assault hospitalizations</a>
+                                        <a class="nav-link" id="shootings-tab" data-toggle="pill" href="#shootings" role="tab" aria-controls="shootings" aria-selected="false">Shootings</a>
+                                        <a class="nav-link" id="homicides-tab" data-toggle="pill" href="#homicides" role="tab" aria-controls="homicides" aria-selected="false">Homicides</a>
 
-        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-9">
+                                      <div class="tab-content" id="tabContent">
+                                        <div class="tab-pane fade show active" id="nfah" role="tabpanel" aria-labelledby="nfah-tab">
+                                            <div style="height: 450px; background-color: #d3d3d3;">NFAH map/chart
+                                            </div>
+                                            </div>
+                                        <div class="tab-pane fade" id="shootings" role="tabpanel" aria-labelledby="shootings-tab">               <div style="height: 450px; background-color: #d3d3d3;">Shootings map/chart
+                                            </div></div>
+                                        <div class="tab-pane fade" id="homicides" role="tabpanel" aria-labelledby="homicides-tab">               <div style="height: 450px; background-color: #d3d3d3;">Homicides map/chart
+                                            </div></div>
 
-    </div>
-
-    <div class="col-lg-2">
-            <div class="narrow py-3 mt-n3 mt-xl-0 sticky-top" style="z-index: 0">
-                    <br><br>
-                    <p>Are you or someone you know affected by violence? <a href="">Get support here</a>.
-
-                </p>
-                </div>
-                <!--end sticky-->
-    </div>
-    <!--end initial right column-->
-
-</div>
-<!--end row-->
-
-
-
-</div>
-<!--end container-fluid-->
-
-
-        <article class="container-fluid" id="skip-header-target">
-
-            <div class="row">
-
-
-
-
-                <!--start main content section-->
-                <div class="col-xl-8 ml-auto overflow-hidden" id="primary-content">
-
-                    <div class="my-4">
-
-                        <div class="narrow my-2">
-
-
-
-                            
-                            
-                        </div>
-
-
-
-                            <div class="medium my-4 pt-2 border-top border-bottom">
-                                    
-    
-                            </div>
-                         <div class="narrow my-4">
-                                
-
-                            </div>
-                            <!--end narrow-->
-    
-    
-                                <div class="medium my-4 pt-2 border-top border-bottom">
-    
-                                        <div class="row">
-                                                <div class="col-3">
-                                                  <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-                                                    <a class="nav-link active" id="nfah-tab" data-toggle="pill" href="#nfah" role="tab" aria-controls="nfah" aria-selected="true">Non-fatal assault hospitalizations</a>
-                                                    <a class="nav-link" id="shootings-tab" data-toggle="pill" href="#shootings" role="tab" aria-controls="shootings" aria-selected="false">Shootings</a>
-                                                    <a class="nav-link" id="homicides-tab" data-toggle="pill" href="#homicides" role="tab" aria-controls="homicides" aria-selected="false">Homicides</a>
-
-                                                  </div>
-                                                </div>
-                                                <div class="col-9">
-                                                  <div class="tab-content" id="tabContent">
-                                                    <div class="tab-pane fade show active" id="nfah" role="tabpanel" aria-labelledby="nfah-tab">
-                                                        <div style="height: 350px; background-color: #d3d3d3;">NFAH map/chart
-                                                        </div>
-                                                        </div>
-                                                    <div class="tab-pane fade" id="shootings" role="tabpanel" aria-labelledby="shootings-tab">               <div style="height: 350px; background-color: #d3d3d3;">Shootings map/chart
-                                                        </div></div>
-                                                    <div class="tab-pane fade" id="homicides" role="tabpanel" aria-labelledby="homicides-tab">               <div style="height: 350px; background-color: #d3d3d3;">Homicides map/chart
-                                                        </div></div>
-
-                                                  </div>
-                                                </div>
-                                              </div>
-
-
-                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                        
+                            <button type="button" class="btn btn-light float-right" data-toggle="modal" data-target="#exampleModalCenter">
+                                    Get the data
+                                  </button>
+                    </div>
         
-                                </div>
-                             <div class="narrow my-4">
-
-
-
+                    <div class="narrow mt-4">
                             <h3 id="section2" class="storyanchor">How do we prevent violence in these neighborhoods?</h3>
                             <p>To prevent violence, we need to explore what leads to it.</p>
                             <p>Violence is related to historical <span class="badge badge-pill badge-warning">disinvestment</span>. Decades of disinvestment in New York City has led to high poverty rates in some neighborhoods.</p>
                             <p>Neighborhoods with higher poverty rates also experience higher rates of violence.</p>
-                            
-
-
-
-                                </div>
-                                <div class="medium my-4">
-    
-                                        <div class="border" style="width: 100%; height: 250px;">
-                                                Poverty and violence are related
-                                                    chart 3 - scatterplot</div>
-                                                    <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
-        
-                                </div>
-                             <div class="narrow my-4">
-                                 <p>Disinvestment creates health-threatening environments.</p>
-                                 <p>Disinvestment promotes segregation, limits people’s access to basic resources, and creates environments that threaten people’s health. In terms of public health, we say that it creates environmental factors that make certain health outcomes more likely.</p>
-                                 <p>Whether or not a neighborhood experiences more violence can be explained by looking at whether its environment has protective factors, which help prevent violence before it starts, or risk factors, which make violence a more likely outcome.</p>
-
-                                </div>
-                                <div class="medium my-4">
-    
-                                        <div class="border" style="width: 100%; height: 250px;">
-                                                Factors/Outcomes
-                                                Chart 4: Protective vs Risk
-                                                </div>
-                                                <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
-        
-                                </div>
-                             <div class="narrow my-4">
-
-
-                            <h3 id="section3" class="storyanchor">What does this mean for NYC's neighborhoods?</h3>
-                            <p>Due to this legacy of disinvestment, New York City neighborhoods experience these protective and risk factors very differently. </p>
-                            <p>Some neighborhoods have a lot less of the protective factors – and a lot more of the risk factors.</p>
-                            <p>Let's take a look.</p>
-
                         </div>
                         <div class="medium my-4">
 
-                                <div class="border" style="width: 100%; height: 250px;">
-                                        Poverty bar
-                                        Chart 5: Highlight 1
-                                        </div>
-                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+                                <div class="border" style="width: 100%; height: 400px;">
+                                        Poverty and violence are related
+                                            chart 3 - scatterplot</div>
+                                            <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
 
                         </div>
                      <div class="narrow my-4">
+                            <p>Disinvestment creates health-threatening environments.</p>
+                            <p>Disinvestment promotes segregation, limits people’s access to basic resources, and creates environments that threaten people’s health. In terms of public health, we say that it creates environmental factors that make certain health outcomes more likely.</p>
+                            <p>Whether or not a neighborhood experiences more violence can be explained by looking at whether its environment has protective factors, which help prevent violence before it starts, or risk factors, which make violence a more likely outcome.</p>
+
+                           </div>
+                           <div class="medium my-4">
+
+                                   <div class="border" style="width: 100%; height: 250px;">
+                                           Factors/Outcomes
+                                           4: Protective vs Risk Image
+                                           </div>
+                                           <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+   
+                           </div>
+                       
+                       
+                       <hr>
+                           <div class="narrow my-4">
+                        <h3 id="section3" class="storyanchor">What does this mean for NYC's neighborhoods?</h3>
+                       <p>Due to this legacy of disinvestment, New York City neighborhoods experience these protective and risk factors very differently. </p>
+                       <p>Some neighborhoods have a lot less of the protective factors – and a lot more of the risk factors.</p>
+                       <p>Let's take a look.</p>
+                    </div>
+    </div>
+    </div>
+    <!--end row with singlecolumn-->
+
+    <!--start row with sticky twocolumn-->
+        <div class="row mt-2">
+            <div class="col-md-4 ml-auto">
+                    <div class="sticky-top offset-sticky">
                             <p>Fordham/University Heights, in the Bronx, has one of the highest poverty rates in the city. </p>
+                            <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-k0fRx" src="https://datawrapper.dwcdn.net/k0fRx/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1350"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+    
+                    </div>
 
-                        </div>
-                        <div class="medium my-4">
 
-                                <div class="border" style="width: 100%; height: 250px;">
-                                        Violence bar
-                                        Chart 6: Highlight 2
-                                        </div>
-                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+            </div>
+            <div class="col-md-4 mr-auto">
+                <div class="d-sm-none d-md-block">
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br>
+                </div>
 
-                        </div>
+                    <p>It also has a high rate of non-fatal assault hospitalizations – one of the highest in the city:</p>
+                    <div class="sticky-top offset-sticky">
+                            <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-k0fRx" src="https://datawrapper.dwcdn.net/k0fRx/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1350"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                            <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+                    </div>
+                
+            </div>
 
-                     <div class="narrow my-4">
-                         <p>It also has a high rate of non-fatal assault hospitalizations – one of the highest in the city.</p>
-                        </div>
+        </div>
+        <!--end sticky twocolumn row-->
 
-                        <div class="medium my-4">
+<!--start singlecolumn row-->
+<div class="row">
+        <div class="col-lg-8 mx-auto" id="primary-content">
+                <div class="narrow mt-4">
+                        <p>When we look at how the neighborhood ranks compared to all neighborhoods, we can see that it ranks highly in both poverty and assaults.</p>
+                </div>
+                <div class="medium my-4">
 
-                                <div class="border" style="width: 100%; height: 250px;">
-                                        Pov and violence
-                                        Chart 7: Highlight 3, slopegraph
-                                        
-                                        </div>
-                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+                        <div class="border" style="width: 100%; height: 450px;">
+                                Pov and violence
+                                Chart 7: Highlight 3, slopegraph
+                                
+                                </div>
+                                <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
 
-                        </div>
+                </div>
+                
+             <div class="narrow my-4">
+                        <p>And when we add in other risk factors, an even more significant pattern emerges: Fordham/University Heights ranks highly for numerous factors that predict violence: poverty, child poverty, child homelessness, high school incompletion, disconnected youth, unemployment, evictions, foreclosures – and assault hospitalizations, shootings, and homicides.</p>
+          
+                </div>
+            
+                <div class="medium my-4">
+
+                        <iframe title="Top ten pov neighborhoods" aria-label="Interactive line chart" id="datawrapper-chart-d8Kfj" src="//datawrapper.dwcdn.net/d8Kfj/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="704"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+
+                </div>
+
+                <div class="narrow my-4">
+                        <p>A pattern is clear: neighborhoods with more violence have more risk factors that affect residents throughout their lives…</p>
+                        <p>And neighborhoods with less violence? They experience far less risk – instead, experiencing protective factors that prevent violence:</p>
+                </div>
+
+                <div class="medium my-4">
+                        <iframe title="Bottom ten pov neighbs" aria-label="Interactive line chart" id="datawrapper-chart-N0SXH" src="//datawrapper.dwcdn.net/N0SXH/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="704"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
                         
-                     <div class="narrow my-4">
-                         <p>When we look at how the neighborhood ranks compared to all neighborhoods, we can see that it ranks highly in both poverty and assaults.</p>
-                         <p>And when we add in other risk factors, an even more significant pattern emerges: Fordham/University Heights ranks highly for numerous factors that predict violence: poverty, child poverty, child homelessness, high school incompletion, disconnected youth, unemployment, evictions, foreclosures – and assault hospitalizations, shootings, and homicides.</p>
-                        </div>
+                                <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
 
-                        <div class="medium my-4">
+                </div>
 
-                                <div class="border" style="width: 100%; height: 250px;">
-                                        Big parallel coordinates chart, 
-                                        Chart 8: Highlight 4, slopegraph, focus on Fordham
-                                        </div>
-                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
-
-                        </div>
-                        
-                     <div class="narrow my-4">
-
-                         <p>These predictive factors describe a network of environmental threats that start with poverty and place residents at risk throughout their lives – and culminate in higher rates of violence.</p>
-                         <p>A pattern is clear: neighborhoods with more violence have more risk factors that affect residents throughout their lives</p>
-                        </div>
-
-                        <div class="medium my-4">
-
-                                <div class="border" style="width: 100%; height: 250px;">
-                                        Big parallel coordinates chart, 
-                                        Chart 9: Slopegraph, focus on high poverty or high violence neighborhoods
-                                        </div>
-                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
-
-                        </div>
-                        
-                     <div class="narrow my-4">
-
-                            <p>And neighborhoods with less violence? They experience far less risk – instead, experiencing protective factors that prevent violence. </p>
-
-                        </div>
-
-                        <div class="medium my-4">
-
-                                <div class="border" style="width: 100%; height: 250px;">
-                                        Big parallel coordinates chart, 
-                                        Chart 10: Slopegraph, focus on low poverty or low violence neighborhoods
-                                        </div>
-                                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
-
-                        </div>
-                        
-                     <div class="narrow my-4">
+                <div class="narrow my-4">
                         <p>In environments where risk factors far outweigh protective factors, the scale tips – and higher rates of neighborhood violence emerge.</p>
+                </div>
+
+                <div class="medium my-4">
+
+                        <div class="border" style="width: 100%; height: 250px;">
+                                "Balance" image" showing protective/risk factors
+                                </div>
+
+                </div>
+
+                <hr>
+
+                <div class="narrow my-4">
+                        <h3 id="section4" class="storyanchor">Why does this happen?</h3>
+                        <b>A cycle of violence</b>: violence is a byproduct of these major, systemic factors. And when it happens, it contributes to the persistence of those factors.
 
                     </div>
 
                     <div class="medium my-4">
-
                             <div class="border" style="width: 100%; height: 250px;">
-                                    "Balance" image" showing protective/risk factors
+                                    "Cycle" image" showing protective, risk, and violence
+                                    </div>
+                    </div>
+                    
+                 <div class="narrow my-4">
+                     <p>How deep do these systems go?</p>
+                     <p>This <span class="badge badge-pill badge-warning">redlining</span> map was created 90 years ago as part of racist housing policies that set off generations of disinvestment.</p>
+                     <p>A map of recent shootings lines up with the heavily redlined area of the Bronx, Harlem, and northern and eastern Brooklyn.</p>
+                    </div>
+
+                    <div class="medium my-4">
+
+                            <div class="border" style="width: 100%; height: 450px;">
+                                    Swipe side to side map of redlining and shootings
                                     </div>
 
                     </div>
@@ -525,108 +473,51 @@
                  <div class="narrow my-4">
 
 
+                     <p>Redlining created intergenerational, racialized poverty – the backbone for the health patterns we see today.</p>
+                     <p>This reinforces the fact that poverty isn’t an individual’s lack of success. </p>
+                     <p>It results from a systematic disinvestment in neighborhoods; it’s a set of related systems that conspire to deprive certain people and certain areas of opportunity and resources.</p>
 
-                            <h3 id="section4" class="storyanchor">Why does this happen?</h3>
-                            <b>A cycle of violence</b>: violence is a byproduct of these major, systemic factors. And when it happens, it contributes to the persistence of those factors.
+                    <h3 id="section5" class="storyanchor">But we can break the cycle</h3>
+                    <p>The City and the Health Department are taking a public health approach to this problem, working across systems and communities to reinvest in neighborhoods most affected by violence.
+                    <ul>
+                        <li>We're doing and sharing research on the most effective policies to reduce violence</li>
+                        <li>Through the Crisis Management System, several city orgnizations support community-led efforts to de-escalate violence, providing support to at-risk youth with employment, legal, therapeutic, and educational opportunities</li>
+                        <li>We're strengthening Neighborhood Health Action Centers, community hubs for programs and resources that decrease risk and increase protective factors.</li>
+                        <li>We're working with hospitals to help them respond to the many needs - physical, social, and emotional - of people injured by violence.</li>
+                        <li>We're partnering with communities to respond to neighborhood-level mental health crises and traumatic events through Rapid Assessment and Response.</li>
+                    </ul>    
+                    With this work, we’re re-investing in neighborhoods that have experienced disinvestment – and we can build on their existing strengths and provide a greater opportunity for health. </p>
+                    <b>We can break the cycle - and reduce rates of violence.</b>
+                    <hr>
+                    <p>A public health approach to gun violence means that we explore the data and identify environmental risk factors that are associated with violence – like poverty, substandard housing, lack of educational and economic opportunities, and aggressive policing. </p>
+                    <p>A public health approach to violence presents an opportunity to find sustainable solutions to create healthy spaces for New Yorkers to live and thrive. </p>
+                    <p>It means that we can prevent violence “upstream” – working to prevent violence by eliminating poverty, providing jobs, healthy housing, and education: a society based on justice and opportunity.</p>
 
-                        </div>
-
-                        <div class="medium my-4">
-    
-                                <div class="border" style="width: 100%; height: 250px;">
-                                        "Cycle" image" showing protective, risk, and violence
-                                        </div>
-    
-                        </div>
-                        
-                     <div class="narrow my-4">
-                         <p>How deep do these systems go?</p>
-                         <p>This <span class="badge badge-pill badge-warning">redlining</span> map was created 90 years ago as part of racist housing policies that set off generations of disinvestment.</p>
-                         <p>A map of recent shootings lines up with the heavily redlined area of the Bronx, Harlem, and northern and eastern Brooklyn.</p>
-                        </div>
-
-                        <div class="medium my-4">
-    
-                                <div class="border" style="width: 100%; height: 250px;">
-                                        Swipe side to side map of redlining and shootings
-                                        </div>
-    
-                        </div>
-                        
-                     <div class="narrow my-4">
-
-
-                         <p>Redlining created intergenerational, racialized poverty – the backbone for the health patterns we see today.</p>
-                         <p>This reinforces the fact that poverty isn’t an individual’s lack of success. </p>
-                         <p>It results from a systematic disinvestment in neighborhoods; it’s a set of related systems that conspire to deprive certain people and certain areas of opportunity and resources.</p>
-
-                        <h3 id="section5" class="storyanchor">But we can break the cycle</h3>
-                        <p>The City and the Health Department are taking a public health approach to this problem, working across systems and communities to reinvest in neighborhoods most affected by violence.
-                        <ul>
-                            <li>We're doing and sharing research on the most effective policies to reduce violence</li>
-                            <li>Through the Crisis Management System, several city orgnizations support community-led efforts to de-escalate violence, providing support to at-risk youth with employment, legal, therapeutic, and educational opportunities</li>
-                            <li>We're strengthening Neighborhood Health Action Centers, community hubs for programs and resources that decrease risk and increase protective factors.</li>
-                            <li>We're working with hospitals to help them respond to the many needs - physical, social, and emotional - of people injured by violence.</li>
-                            <li>We're partnering with communities to respond to neighborhood-level mental health crises and traumatic events through Rapid Assessment and Response.</li>
-                        </ul>    
-                        With this work, we’re re-investing in neighborhoods that have experienced disinvestment – and we can build on their existing strengths and provide a greater opportunity for health. </p>
-                        <b>We can break the cycle - and reduce rates of violence.</b>
-                        <hr>
-                        <p>A public health approach to gun violence means that we explore the data and identify environmental risk factors that are associated with violence – like poverty, substandard housing, lack of educational and economic opportunities, and aggressive policing. </p>
-                        <p>A public health approach to violence presents an opportunity to find sustainable solutions to create healthy spaces for New Yorkers to live and thrive. </p>
-                        <p>It means that we can prevent violence “upstream” – working to prevent violence by eliminating poverty, providing jobs, healthy housing, and education: a society based on justice and opportunity.</p>
-
-
-                        </div>
-                        <!-- .narrow -->
-
-                        <footer class="narrow my-4" id="article-footer">
-
-                            <div class="border-top border-dark">
-
-                                <ul class="extensible-list horizontal text-muted mt-3">
-            
-                                    <li>
-                                        <a class="text-muted" href="mailto:trackingportal@health.nyc.gov" title="Share through email">
-                                            <span class="fa fa-envelope"></span> Questions about this data story? Ideas for another one? Email us.</a>
-                                        
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <!-- .narrow -->
-
-                        </footer>
-                        <!-- #article-footer -->
 
                     </div>
-                    <!-- .my-5 -->
-
-                </div>
-                <!-- .col -->
+                    <!-- .narrow -->
 
 
-                <!--right-hand column for extra resources and links-->
-                <div class="col-xl-2 border-xl-left">
 
-                    <div class="narrow py-3 mt-n3 mt-xl-0 sticky-top" style="z-index: 0">
-                        <br><br>
-                        <p>Are you or someone you know affected by violence? <a href="">Get support here</a>.
-
-                    </p>
-                    </div>
-                    <!-- .my-3 -->
-
-                </div>
-                <!-- .col -->
 
             </div>
-            <!-- .row -->
+        </div>
+        <!--end row with singlecolumn-->
 
-        </article>
-        <!-- #primary-content -->
 
-    </main>
+
+
+
+
+
+
+</div>
+<!--end container-fluid-->
+
+
+
+
+</main>
 
 <!--MODAL CONTENT HERE-->
 

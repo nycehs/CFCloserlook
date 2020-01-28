@@ -1,7 +1,8 @@
 /* Custom CSS for data stories*/
 
 .offset-sticky {
-    top: 0px;
+	top: 60px;
+	z-index: -1;
 }
 
 
