@@ -1,5 +1,23 @@
 /* Custom CSS for data stories*/
 
+.panel-grid {
+	background-color: #fafafa;
+	padding: 10px!important;
+}
+
+.crossing-header {
+	background-color: #4c4c4c;
+	padding: 10px;	
+}
+
+.crossing-header h2 {
+	color: #cdf195;
+}
+
+.crossing-header h3 {
+	color: #cdf195;
+}
+
 .offset-sticky {
 	top: 60px;
 	z-index: -1;
