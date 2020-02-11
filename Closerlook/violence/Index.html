@@ -28,7 +28,7 @@
 
 
     <!--Custom data story CSS-->
-    <link rel="stylesheet" href="../css/datastories.css">
+    <link rel="stylesheet" href="https://nycehs.github.io/CFCloserlook/Closerlook/css/datastories.css">
 
 <style>
 
@@ -413,10 +413,37 @@
                                     <p>It also has a high rate of non-fatal assault hospitalizations – one of the highest in the city:</p>
                                    
                                     <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-abluM" src="//datawrapper.dwcdn.net/abluM/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="388"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                                            <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-med btn-light" data-toggle="modal" data-target="#allNeighborhoods">See all neighborhoods</button>
+                                        <button type="button" class="btn btn-med btn-light">Get the data</button>
+                                    </div>
+                                            
                                     
                      </div>
                 </div>
+
+                <!--all neighborhoods modal-->
+                <div class="modal fade" id="allNeighborhoods" tabindex="-1" role="dialog" aria-labelledby="allNeighborhoodsTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document" style="width: 600px!important;">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Non-fatal assault hospitalizations</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                    <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-QGxNR" src="https://datawrapper.dwcdn.net/QGxNR/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1477"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                                    </script>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
 <div class="row mt-4">
     <div class="col-lg-8 mx-auto">
@@ -433,24 +460,42 @@
                 <p>And when we add in other risk factors, an even more significant pattern emerges: Fordham/University Heights ranks highly for numerous factors that predict violence: poverty, child poverty, child homelessness, high school incompletion, disconnected youth, unemployment, evictions, foreclosures – and assault hospitalizations, shootings, and homicides.</p>
 
         </div>
-        <div class="medium my-4">
+    </div>
+</div>
 
-                <iframe title="Top ten pov neighborhoods" aria-label="Interactive line chart" id="datawrapper-chart-d8Kfj" src="//datawrapper.dwcdn.net/d8Kfj/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="704"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+</div>
+<div class="container-fluid">
+
+
+        <div class="wide my-4">
+
+                <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-JxV7f" src="https://datawrapper.dwcdn.net/JxV7f/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="652"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                </script>
                         <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
 
         </div>
 
+        <div class="row mt-4">
+                <div class="col-lg-8 mx-auto">
         <div class="narrow my-4">
                 <p>A pattern is clear: neighborhoods with more violence have more risk factors that affect residents throughout their lives…</p>
                 <p>And neighborhoods with less violence? They experience far less risk – instead, experiencing protective factors that prevent violence:</p>
+            </div>
         </div>
-
-        <div class="medium my-4">
-                <iframe title="Bottom ten pov neighbs" aria-label="Interactive line chart" id="datawrapper-chart-N0SXH" src="//datawrapper.dwcdn.net/N0SXH/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="704"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-                
-                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
-
-        </div>
+    </div>
+    
+    </div>
+    <div class="container-fluid">
+    
+    
+            <div class="wide my-4">
+    
+                    <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-YjRNM" src="HTTPS://datawrapper.dwcdn.net/YjRNM/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="652"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                    </script>
+                            <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+    
+            </div>
+    
 
         <div class="narrow my-4">
             <br><br>
