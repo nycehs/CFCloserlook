@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Corrects IE Compatibility Mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Air quality snapshots: EH Data Portal</title>
+
+    <!--
+    CSS is all hosted by the Core-Repo. Links will need to be updated for each project once merged or deployed.
+    This is also the case for main.js further below.
+    -->
+
+    <!--Fontawesome Icons-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/fontawesome/css/all.min.css">
+    <!--NYC Core Framework Theme-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/theme.css">
+    <!--Custom additions for Portal items-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/custom.css">
+
+
+    <!--Custom data story CSS-->
+    <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/datastories.css">
+
+</head>
+
+
+
+<body>
+
+    <!-- For keyboard users -->
+    <a class="sr-only sr-only-focusable skip-menu" href="#sidebar">Skip Header</a>
+
+    <header id="global-header" role="banner">
+
+        <div class="bg-black text-white" id="nyc-top-header">
+
+            <div class="container-fluid wide">
+
+                <div class="row py-1 align-items-center justify-content-between">
+
+                    <div class="col-auto">
+                        <p class="d-none d-md-flex fs-md">
+                            <a class="text-reset" href="https://www1.nyc.gov/">
+                                <strong>nyc.gov</strong>
+                            </a>
+                        </p>
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-auto">
+
+                        <ul class="extensible-list horizontal fs-md">
+                            <li>
+                                <a class="text-reset" href="https://www1.nyc.gov/site/doh/index.page">
+                                    <strong>Department of Health</strong>
+                                </a>
+                            </li>
+
+
+
+                            <li>
+                                <a href="https://www1.nyc.gov/" title="Go to nyc.gov">
+                                    <img class="d-block" src="https://nycehs.github.io/Portal-Core-Repo/images/nyc-bubble-logo.svg" width="45" alt="NYC Logo">
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                    <!-- .col -->
+
+                </div>
+                <!-- .row -->
+
+            </div>
+            <!-- .container-fluid -->
+
+        </div>
+        <!-- #nyc-top-header -->
+
+        <div class="wrap-header">
+
+            <div class="container-fluid">
+
+                <div class="row align-items-center">
+
+                    
+                    <!-- .col -->
+
+                    <div class="col border-top">
+
+                        <div class="align-items-center justify-content-between">
+
+                            <!-- Mobile Toggle Buttons -->
+
+                            <ul class="extensible-list horizontal justify-content-between my-2">
+                                <li><a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Infographic.aspx">
+                                    <button class="no-btn-style mr-auto" type="button">
+                                            <i class="fas fa-arrow-circle-left"></i>&nbsp;back to data stories
+                                    </button></a>
+                                </li>
+
+                                <li>
+                                        <button class="no-btn-style float-right" type="button" data-toggle="collapse"
+                                        data-target="#global-language" aria-controls="global-language"
+                                        aria-expanded="false">
+                                        <span class="fas fa-language fa-lg" ></span>
+                                    </button>
+                                </li>
+                            </ul>
+
+                            
+
+                        </div>
+                        <!-- .d-flex -->
+
+                    </div>
+                    <!-- .col -->
+
+                </div>
+                <!-- .row -->
+
+            </div>
+            <!-- .container-fluid -->
+
+        </div>
+        <!-- .wrap-header -->
+
+        <div class="container-fluid border-top collapse" id="global-language">
+            <div class="narrow py-2">
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid border-top collapse" id="global-search">
+            <form class="narrow py-2" aria-label="Search" role="search">
+                <div class="input-group">
+                    <label class="sr-only" for="global-search-bar">Search</label>
+                    <input class="form-control form-control-lg" id="global-search-bar" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary btn-lg" type="button" title="Search">
+                            <span class="sr-only">Search</span>
+                            <span class="fas fa-arrow-right" ></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </header>
+    <!-- #global-header -->
+
+
+    <body class="scrollspy-container" data-spy="scroll" data-target="#myScrollspy" data-offset="20" >
+    <main role="main">
+
+        <!-- Add your custom image class below (replace 'oculus' with your own custom class) -->
+        <div class="bg-primary d-flex flex-column titleslide" style="height: 500px; background-image: URL(title1.jpg)">
+
+            <div class="container-fluid my-auto">
+                <div class="medium my-3 text-left">
+                    <h1 class="display-4 titleheader">Air quality snapshots: key findings from 10 years of NYCCAS</h1>
+                </div>
+            </div>
+            <!-- .container -->
+
+            <!-- Toggle #main-nav on mobile. Comment this out if there are no chapters -->
+            <div class="container-fluid d-xl-none d-lg-none">
+                <div class="narrow">
+                    <div class="btn-toggle narrow">
+                        <button class="btn btn-block btn-lg btn-primary shadow" data-toggle="collapse"
+                            data-target="#sidebar-nav" aria-expanded="false" aria-controls="sidebar-nav">
+                            <span class="title">Title</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--#main-nav - comment this out if there are no chapters-->
+
+
+            <div class="sticky-top container-fluid collapse d-lg-block px-0 border-lg-top border-lg-bottom"  style="background-color:white;">
+
+                <h2 class="sr-only">
+                    Primary Navigation
+                </h2>
+        
+
+        
+            </div>
+            <!--end all navigation-->
+
+
+
+
+
+
+        <article class="container-fluid" id="skip-header-target">
+
+            <div class="row">
+
+                <div class="col-xl-3 border-right">
+                    <div class="sticky-top narrow collapse d-xl-block" id="sidebar-nav">
+
+                        <nav class="mx-xl-n2 pt-4 py-xl-0" role="navigation" id="myScrollspy">
+
+                            <a class="sr-only sr-only-focusable skip-menu" href="#primary-content">Skip Nav</a>
+
+                            <div class="list-group list-group-flush border-bottom fs-rg" role="list">
+                                <div class="px-2 py-2 text-center border-bottom"><strong>Air quality snapshots: 10 years of NYC air quality monitoring</strong></div>
+                                
+                                
+
+                                <a href="#section1" class="list-group-item list-group-item-action active" aria-current="page" role="listitem">
+                                    Health threats from traffic: air toxics
+                                </a>
+                                <a href="#section2" class="list-group-item list-group-item-action" role="listitem">
+                                    Health threats from traffic: noise
+                                </a>
+                                <a href="#section3" class="list-group-item list-group-item-action" role="listitem">
+                                        Cleaner heating fuels: who benefits?
+                                    </a>
+                                <a href="#section4" class="list-group-item list-group-item-action" role="listitem">
+                                    Special monitoring for environmental justice
+                                </a>
+                                <hr>
+                                <div class="px-2 py-1 fs-sm">
+                                    <a href=""><i class="fas fa-arrow-circle-left"></i>&nbsp;Back to the Air Quality hub</a></div>
+                            </div>
+
+                        </nav>
+
+                    </div>
+                    <!-- .sticky-top -->
+
+                </div>
+                <!-- .col -->
+
+
+                <!--start main content section-->
+                <div class="col-xl-8 overflow-hidden fs-rg mr-auto" id="primary-content">
+
+                    <div class="my-2">
+                    
+                        
+                        <div class="narrow">
+                            <p>For ten years, the New York City Community Air Survey (NYCCAS) has measured air quality at 100 locations around NYC. We’ve combined these measurements with a host of other data on things that affect air quality - like traffic, building emissions, green space, and much more - to model seasonal air quality in every New York City neighborhood. 
+                                </p>
+                            <p>Here are a few things we've found along the way.</p>
+                            </div>
+                            <div class="my-2 border" style="background:#EDF2F7">
+                            <div class="narrow py-4">
+                            <h2 id="section1" >Additional health threats of traffic volume</h3>
+                            <p>Traffic is a part of life in New York City and urban areas around the world. It can harm the health and quality of life of both commuters and residents. </p>
+                            <p>NYCCAS  air monitoring data shows that traffic is associated with higher levels of harmful pollutants: NO2, PM2.5 and black carbon (BC). </p>
+                            <p>But, studies show that traffic is associated with two more health threats: air toxics and noise.</p>
+                           <h3>Air toxics</h3>
+                            <p>Air toxics are air pollutants that increase the risk of cancer and other serious health effects. A study from the Environmental Protection Agency found that because of exposure to benzene and formaldehyde, 49% of New York City residents live in census tracts that exceed  a common benchmark for cancer risk, compared with 4.8% of the population nationwide.</p>
+                            <p>To further understand New Yorkers’ exposure to these air toxics, in 2011, we measured air toxics - including benzene, formaldehyde and other compounds - at 70 sites across the city. </p>
+                            <p>We found that average levels of benzene and formaldehyde varied across NYC, with some sites showing two, three or even six times more air toxics than cleaner sites - mostly due to traffic volume, congestion, and fuel-burning buildings. </p>
+   
+                        </div>
+                            <div class="medium my-4">
+                               [INSERT BENZENE MAP HERE]
+                            </div>
+
+                        </div>
+
+                        <div class="my-2 border" style="background:#EEF4E3">
+                        <div class="narrow my-4 py-4">
+                            <h3 id="section2">Noise</h3>
+                            <p>City residents  are exposed to more environmental noise. A Health Department survey showed that one in five adult New Yorkers experience noise that disrupts sleep and other home life three or more times per week - and some high-poverty neighborhoods experience even greater rates of noise disruption. </p>
+                            <p>Noise is more than an annoyance - it  can cause stress, increase blood pressure and heart disease risk. By disturbing sleep, it can interfere with health and even  cognitive development in children. </p>
+                            <P>To measure noise levels, we collected week-long sound pressure measurements at 56 sites across the city by mounting small sound-level meters on lampposts.</P>
+                            <P>We found:</P>
+                            <ul><li>All sites exceeded noise guidelines set by the EPA  and World Health Organization  to protect health and quality of life (55 dBA)</li>
+                                <li>Over half of sites exceeded EPA noise guidelines to prevent hearing loss (70 dBA). </li>
+                            </ul>
+                            <p>The highest noise levels happened during the weekday, daytime hours - in areas where there’s a lot of traffic within 100 meters. Because of that, it’s no surprise that where there are high levels of noise, there are also high levels of air pollution from vehicles.</p>
+                            <p>Reducing emissions of both noise and air pollution from vehicles and other sources would improve health and quality of life in many of our most burdened neighborhoods.</p>
+                            </div>
+                                <div class="medium my-4">
+                                    [INSERT NOISE MAP HERE]
+                                </div>
+
+                            </div>
+                            <div class="my-2 border" style="background:#FAF3FB">
+                                <div class="narrow my-4 py-4">
+
+                            <h2 id="section3">Cleaner fuels: who benefits?</h3>
+                            <p>With cold weather and high population density, the Northeast is the nation’s largest consumer of heating oil. We use these fuels year round in building boiler systems for heat and hot water. </p>
+                            <p>But NYCCAS data shows that the dirtiest heating oil - high sulfur heating oil - contributes to air pollution: neighborhoods with higher proportions of buildings that burn high sulfur heating oil have worse air pollution. Because of this, New York City has been phasing out fuel that contains high sulfur through new City and State regulations.</p>
+                            <p>But how can we estimate the public health benefits of cleaner heating fuel, given all this other work? To estimate the benefits of clean heat measures, we use sophisticated model simulations. Here’s what we did:</p>
+                            <ul>
+                                <li>Gathered emissions data: used boiler permits and other buildings and emissions data to see how boiler emissions changed after new regulations.</li>
+                                <li>Estimated the change in PM2.5 concentration from changes to boiler emissions: we used a complex air quality computer model that combines emissions information, meteorology data, and simulations of atmospheric chemical reactions</li>
+                                <LI>Combining modeled output with monitor data to estimate air pollution exposures before and after the regulations.</LI>
+                                <li>Estimated the health benefits: gathered neighborhood-level population and health outcome data to estimate the health events (like asthma, deaths, and more) that New Yorkers avoided due to cleaner air.</li>
+                            </ul>
+
+                        </div>
+                        <div class="medium my-4">
+
+                            [PREDICTED REDUCTIONS IN PM2.5 FROM CLEANER HEATING OIL MAP]
+
+                        </div>
+                     <div class="narrow my-4">
+                            <p>Here's what we found:</p>
+                            <p><strong>The greatest mortality reductions happen in places with the greatest PM2.5 reductions and the highest rates of premature mortality at baseline.</strong> These are the areas in the city that have poor air quality and high rates of death in the first place - including the Upper East and West Sides and Northern Manhattan. </p>
+                            <p><strong>Reductions in other health events in the Bronx and Brooklyn. </strong>Asthma ED visits, cardiovascular disease, and respiratory diseases reduce in neighborhoods that don’t have the most air pollution. These neighborhoods have higher rates of these diseases, and even though they have less air pollution, they benefit more strongly from reductions in PM2.5. </p>
+                            <p>In other words, reducing PM2.5 benefits places that have high PM2.5, but also places with lower PM2.5 but high respiratory diseases. You can explore these findings in the maps below.
+                                </p>
+                            </div>
+                            <div class="medium my-4">
+    
+                               FOUR UP MAP - INSERT TOGGLEJAWN
+    
+                            </div>
+                        </div>
+                        <div class="my-2 border" style="background:#FFFADE">
+
+
+
+                         <div class="narrow my-4 py-4">
+                            <h2 id="section4">Special monitoring for environmental justice</h2>
+                            <p>Across public health research, we see that communities with higher concentrations of poverty have higher rates of a variety of health conditions - including ones that are sensitive to air pollution. This makes people in these communities more vulnerable to harm from a given level of air pollution. </p>
+                            <p>So, we wanted to make sure that our monitoring network was accurately modeling air quality in high-poverty neighborhoods.To do this, we supplemented our monitoring network with 15 environmental justice (EJ) sites. We placed monitors in high-poverty neighborhoods with lower than average density of air quality monitors, or near important emissions sources.</p>
+                        </div>
+                        <div class="medium my-4">
+
+                           INSERT MAP: NEIGHBORHOODS WITH HIGH POVERTY, LOW PRIOR MONITORING DENSITY
+
+                        </div>
+                     <div class="narrow my-4">
+                        <P>Previously, our network of air quality monitors at 60 core sites gathered data that we used to model air quality across the entire city. With these 15 EJ sites in high-poverty, low-prior-monitoring neighborhoods, we could assess how well the model did at predicting the levels in these 15 EJ locations. </P>
+
+                        <P>To do this, we compared the modeled estimates to the actual measured levels at these locations. Here’s what we found:</P>
+                        <p><strong>Only small differences between predicted estimates and monitored values:</strong> We found no statistically significant difference in levels of PM2.5 across all four seasons, and no statistically significant difference in NO2 levels in two out of three seasons.
+                            </p>
+                        </div>
+                        <div class="medium my-4">
+
+                           INSERT CHART SIDE BY SIDE
+
+                        </div>
+                     <div class="narrow my-4">
+                        <p>Lower average concentrations of pollutants at 15 EJ sites: The 15 environmental justice sites measured, on average, 5% less PM2.5 than the citywide average of the 60 core sites, and 7% lower average NO2.</p>
+                        <p>But much like other sites citywide, there was variation in the levels measured at the new sites.
+                            </p>
+                        </div>
+                        <div class="medium my-4">
+
+                           INSERT CHART SIDE BY SIDE
+
+                        </div>
+                     <div class="narrow my-4">
+                        <p><strong>Additional confidence in our model:</strong> These findings show that the original model, based on the 60 core monitoring sites, is useful for predicting PM2.5 and NO2 levels - even in high-poverty neighborhoods with a low prior monitor density. </p>
+                        <p>Some of NYC’s  higher income neighborhoods, especially in Manhattan, tend to have higher PM2.5 and NO2 concentrations, due to higher density of buildings and traffic. Because of this, there’s not a straightforward relationship between neighborhood poverty and air pollution exposure.</p>
+                        <p>These findings help further articulate this relationship and lend additional confidence in our air quality monitor network and model. </p>
+                    <hr>
+                    </div>
+                </div>
+                <!--end color panel-->
+
+                    <div class="narrow">
+                        <p>For more information about NYCCAS and our findings over 10 years of air quality monitoring, [LINK TO NYCCAS REPORT OR AIR QUALITY HUB].</p>
+
+                     </div>
+                        <!-- .narrow -->
+
+                        <footer class="narrow my-4" id="article-footer">
+
+                            <div class="border-top border-dark">
+
+                                <ul class="extensible-list horizontal text-muted mt-3">
+            
+                                    <li>
+                                        <a class="text-muted" href="mailto:trackingportal@health.nyc.gov" title="Share through email">
+                                            <span class="fa fa-envelope"></span> Questions about this data story? Ideas for another one? Email us.</a>
+                                        
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- .narrow -->
+
+                        </footer>
+                        <!-- #article-footer -->
+
+
+
+                </div>
+                <!-- .col -->
+
+
+                <!--right-hand column for extra resources and links-->
+                <!-- .col -->
+
+            </div>
+            <!-- .row -->
+
+        </article>
+        <!-- #primary-content -->
+
+    </main>
+
+    <footer class="bg-black" id="global-footer" role="contentinfo">
+
+            <h2 class="sr-only">
+                Page Footer
+            </h2>
+     
+            <div class="bg-opacity-black-25 text-white" id="nyc-footer">
+     
+                <div class="container py-3 d-none" id="languages">
+     
+                    <div class="row fs-md">
+     
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg mb-2 mb-lg-0">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg">
+                            <ul class="extensible-list">
+                                <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                                <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                            </ul>
+                        </div>
+                    </div>
+     
+                </div>
+                <!-- #languages -->
+     
+                <div class="container py-3" id="languages">
+     
+                    <ul class="fs-md" role="list">
+                        <li><a class="lang-select text-reset" href="#" data-lang="ar">عربى</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="bn">বাঙালি</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="zh-CN">中文</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="fr">français</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ht">Kreyòl Ayisyen</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ko">한국어</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="pl">Polskie</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ru">русский</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="es">Español</a></li>
+                        <li><a class="lang-select text-reset" href="#" data-lang="ur">اردو</a></li>
+                    </ul>
+     
+                </div>
+                <!-- #languages -->
+     
+                <hr class="opacity-10" aria-hidden="true">
+     
+                <div class="container py-3">
+     
+                    <div class="row">
+     
+                        <div class="col-md-6 col-lg-8 mb-3 mb-lg-0">
+     
+                            <nav class="row fs-md" role="navigation">
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/nyc-resources/agencies.page">
+                                                <strong>City Agencies</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a858-nycnotify.nyc.gov/notifynyc/">
+                                                <strong>Notify NYC</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="http://www1.nyc.gov/connect/mobile-applications.page">
+                                                <strong>NYC Mobile Apps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- .col -->
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/home/contact-us.page">
+                                                <strong>Contact NYC Government</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="https://a856-citystore.nyc.gov/">
+                                                <strong>CityStore</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="http://maps.nyc.gov/doitt/nycitymap/">
+                                                <strong>Maps</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+     
+                                </div>
+                                <!-- .col -->
+     
+                                <div class="col-lg mb-3 mb-lg-0">
+     
+                                    <ul class="extensible-list">
+                                        <li>
+                                            <a class="text-reset"
+                                                href="https://a127-ess.nyc.gov/psp/prdess/?cmd=login&languageCd=ENG&">
+                                                <strong>City Employees</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset" href="http://www1.nyc.gov/connect/social-media.page">
+                                                <strong>Stay Connected</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-reset"
+                                                href="http://www1.nyc.gov/nyc-resources/resident-toolkit.page">
+                                                <strong>Resident Toolkit</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+     
+                                </div>
+                                <!-- .col -->
+     
+                            </nav>
+     
+                        </div>
+                        <!-- .col -->
+     
+                        <div class="col-md-6 col-lg-4">
+     
+                            <a class="mb-2" href="https://www1.nyc.gov" title="Go to nyc.gov" target="_blank">
+                                <img class="mb-2" src="https://nycehs.github.io/Portal-Core-Repo/images/nyc-bubble-logo.svg" width="90" alt="NYC Logo">
+                            </a>
+                            <p class="fs-sm">City of New York - 2019 All Rights Reserved. NYC is a trademark and service
+                                mark of the City of New York.</p>
+     
+                            <ul class="extensible-list horizontal fs-sm">
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/home/privacy-policy.page">Privacy
+                                        Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/home/terms-of-use.page">Terms
+                                        of Use</a>
+                                </li>
+                                <li>
+                                    <a class="text-reset" href="http://www1.nyc.gov/site/mopd/index.page"
+                                        title="Mayor's Office for People with Disabilities">
+                                        <span class="sr-only">Mayor's Office for People with Disabilities</span>
+                                        <span class="fab fa-lg fa-accessible-icon"></span>
+                                    </a>
+                                </li>
+                            </ul>
+     
+                        </div>
+                        <!-- .col -->
+     
+                    </div>
+                    <!-- .row -->
+     
+                </div>
+                <!-- .container -->
+     
+            </div>
+            <!-- #nyc-bottom-footer -->
+     
+        </footer>
+
+</body>
+    <!-- #content -->
+
+
+
+    <!-- jQuery (full, compressed version) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Popper.js and Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Google Translate -->
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- NYC template JS (RTL, search and language toggle, back to top)  -->
+    <script src="https://nycehs.github.io/Portal-Core-Repo/js/main.js"></script>
+
+
+
+</body>
+
+</html>
