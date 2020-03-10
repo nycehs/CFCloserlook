@@ -293,7 +293,7 @@
                             <p>Reducing emissions of both noise and air pollution from vehicles and other sources would improve health and quality of life in many of our most burdened neighborhoods.</p>
 
                             <div style="background: white;" class="py-2 px-2 border">
-                                <iframe title="Noise levels at all sites exceeded health guidelines." aria-label="USA new york city neighborhoods (ntas) Symbol map" id="datawrapper-chart-OkXon" src="//datawrapper.dwcdn.net/OkXon/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="514"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                                <iframe title="Noise levels at all sites exceeded health guidelines." aria-label="USA new york city neighborhoods (ntas) Symbol map" id="datawrapper-chart-OkXon" src="//datawrapper.dwcdn.net/OkXon/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="514"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
                                 </script>
                                 </div>
                             </div>
@@ -307,25 +307,74 @@
                             <p>With cold weather and high population density, the Northeast is the nation’s largest consumer of heating oil. We use these fuels year round in building boiler systems for heat and hot water. </p>
                             <p>But NYCCAS data shows that the dirtiest heating oil - high sulfur heating oil - contributes to air pollution: neighborhoods with higher proportions of buildings that burn high sulfur heating oil have worse air pollution. Because of this, New York City has been phasing out fuel that contains high sulfur through new City and State regulations.</p>
                             <p>But how can we estimate the public health benefits of cleaner heating fuel, given all this other work? To estimate the benefits of clean heat measures, we use sophisticated model simulations. Here’s what we did:</p>
-                            <ul>
-                                <li>Gathered emissions data: used boiler permits and other buildings and emissions data to see how boiler emissions changed after new regulations.</li>
-                                <li>Estimated the change in PM2.5 concentration from changes to boiler emissions: we used a complex air quality computer model that combines emissions information, meteorology data, and simulations of atmospheric chemical reactions</li>
-                                <LI>Combining modeled output with monitor data to estimate air pollution exposures before and after the regulations.</LI>
-                                <li>Estimated the health benefits: gathered neighborhood-level population and health outcome data to estimate the health events (like asthma, deaths, and more) that New Yorkers avoided due to cleaner air.</li>
-                            </ul>
-
-                            <div style="background: white;" class="py-2 px-2 border">
-                                [PREDICTED REDUCTIONS IN PM2.5 FROM CLEANER HEATING OIL MAP]
+                            <p><strong>Gathered emissions data: </strong>used boiler permits and other buildings and emissions data to see how boiler emissions changed after new regulations.</p>
+                            <p><strong>Estimated change in PM2.5</strong> concentration from changes to boiler emissions using a complex air quality computer model that combines emissions information, meteorology data, and simulations of atmospheric chemical reactions</p>
+                            <p>This map shows estimated reductions in PM2.5, by neighborhood:</p>
+                        
+                            <div style="background: white;" class="py-2 px-2 border my-2">
+                                <iframe title="Areas with high PM2.5 will see the biggest improvements from cleaner heating fuel rules" aria-label="USA new york city neighborhoods (ntas) choropleth map" id="datawrapper-chart-iGatY" src="//datawrapper.dwcdn.net/iGatY/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="570"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                                </script>
                                 </div>
-
-                            <p>Here's what we found:</p>
+                            <p>Then, we estimate air pollution exposures before and after the regulations, and estimated the health benefits: we gathered neighborhood-level population and health outcome data, and we estimated the health events (like asthma, deaths, and more) that New Yorkers avoided due to this cleaner air. Here's what we found:</p>
                             <p><strong>The greatest mortality reductions happen in places with the greatest PM2.5 reductions and the highest rates of premature mortality at baseline.</strong> These are the areas in the city that have poor air quality and high rates of death in the first place - including the Upper East and West Sides and Northern Manhattan. </p>
                             <p><strong>Reductions in other health events in the Bronx and Brooklyn. </strong>Asthma ED visits, cardiovascular disease, and respiratory diseases reduce in neighborhoods that don’t have the most air pollution. These neighborhoods have higher rates of these diseases, and even though they have less air pollution, they benefit more strongly from reductions in PM2.5. </p>
                             <p>In other words, reducing PM2.5 benefits places that have high PM2.5, but also places with lower PM2.5 but high respiratory diseases. You can explore these findings in the maps below.
                                 </p>
-                                <div style="background: white;" class="py-2 px-2 border">
-                                   FOURMAP TOGGLER
+
+                                <div class="nav nav-tabs device-md fs-sm" role="tablist">
+
+                                    <a class="nav-item nav-link active" id="tab-btn-01-a" href="#tab-01-a" data-toggle="tab"
+                                        aria-controls="tab-02-a" aria-selected="true" role="tab">
+                                        Mortality
+                                    </a>
+                                
+                                    <a class="nav-item nav-link" id="tab-btn-01-b" href="#tab-01-b" data-toggle="tab"
+                                        aria-controls="tab-01-b" aria-selected="false" role="tab">
+                                        CVD
+                                    </a>
+                                
+                                    <a class="nav-item nav-link" id="tab-btn-01-c" href="#tab-01-c" data-toggle="tab"
+                                        aria-controls="tab-01-c" aria-selected="false" role="tab">
+                                        Asthma
+                                    </a>
+
+                                    <a class="nav-item nav-link" id="tab-btn-01-d" href="#tab-01-d" data-toggle="tab"
+                                        aria-controls="tab-01-d" aria-selected="false" role="tab">
+                                        Respiratory
+                                    </a>
+                                
+                                </div>
+                                
+                                <div class="tab-content mb-2" id="tabs-01-content">
+                                
+                                    <div class="tab-pane fade show active" id="tab-01-a" aria-labelledby="tab-btn-01-a"
+                                        role="tabpanel">
+                                        <div style="background: white;" class="py-2 px-2 border-bottom border-right border-left">                               
+                                            Mortality
+                                        </div>
                                     </div>
+                                
+                                    <div class="tab-pane fade" id="tab-01-b" aria-labelledby="tab-btn-01-b" role="tabpanel">
+                                        <div style="background: white;" class="py-2 px-2 border-bottom border-right border-left">                               
+                                            CVD
+                                        </div>
+                                    </div>
+                                
+                                    <div class="tab-pane fade" id="tab-01-c" aria-labelledby="tab-btn-01-c" role="tabpanel">
+                                        <div style="background: white;" class="py-2 px-2 border-bottom border-right border-left">                               
+                                            Asthma
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tab-01-d" aria-labelledby="tab-btn-01-d" role="tabpanel">
+                                        <div style="background: white;" class="py-2 px-2 border-bottom border-right border-left">                               
+                                            Respiratory
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
                             </div>
 
                         </div>
@@ -335,30 +384,77 @@
                          <div class="narrow my-4 py-4">
                             <h2 id="section4">Special monitoring for environmental justice</h2>
                             <p>Across public health research, we see that communities with higher concentrations of poverty have higher rates of a variety of health conditions - including ones that are sensitive to air pollution. This makes people in these communities more vulnerable to harm from a given level of air pollution. </p>
-                            <p>So, we wanted to make sure that our monitoring network was accurately modeling air quality in high-poverty neighborhoods.To do this, we supplemented our monitoring network with 15 environmental justice (EJ) sites. We placed monitors in high-poverty neighborhoods with lower than average density of air quality monitors, or near important emissions sources.</p>
-                            <div style="background: white;" class="py-2 px-2 border">
+                            <p>So, we wanted to make sure that our monitoring network was accurately modeling air quality in high-poverty neighborhoods. To do this, we supplemented our monitoring network with 15 environmental justice (EJ) sites. We placed monitors in high-poverty neighborhoods with lower than average density of air quality monitors, or near important emissions sources.</p>
 
-                               
-                                INSERT MAP: NEIGHBORHOODS WITH HIGH POVERTY, LOW PRIOR MONITORING DENSITY
+                            <div class="nav nav-tabs device-md" role="tablist">
+
+                                <a class="nav-item nav-link active" id="tab-btn-02-a" href="#tab-02-a" data-toggle="tab"
+                                    aria-controls="tab-02-a" aria-selected="true" role="tab">
+                                    High poverty
+                                </a>
+                            
+                                <a class="nav-item nav-link" id="tab-btn-02-b" href="#tab-02-b" data-toggle="tab"
+                                    aria-controls="tab-02-b" aria-selected="false" role="tab">
+                                    Low monitor density
+                                </a>
+                            
+                                <a class="nav-item nav-link" id="tab-btn-02-c" href="#tab-02-c" data-toggle="tab"
+                                    aria-controls="tab-02-c" aria-selected="false" role="tab">
+                                    EJ neighborhoods
+                                </a>
+                            
                             </div>
+                            
+                            <div class="tab-content mb-2" id="tabs-02-content">
+                            
+                                <div class="tab-pane fade show active" id="tab-02-a" aria-labelledby="tab-btn-02-a"
+                                    role="tabpanel">
+                                    <div style="background: white;" class="py-2 px-2 border-bottom border-right border-left">                               
+                                        <iframe title="High poverty  neighborhoods" aria-label="choropleth map" id="datawrapper-chart-Ji3w3" src="//datawrapper.dwcdn.net/Ji3w3/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                                        </script>
+                                    </div>
+                                </div>
+                            
+                                <div class="tab-pane fade" id="tab-02-b" aria-labelledby="tab-btn-02-b" role="tabpanel">
+                                    <div style="background: white;" class="py-2 px-2 border-bottom border-right border-left">                               
+                                        <iframe title="Neighborhoods with low prior monitoring density" aria-label="choropleth map" id="datawrapper-chart-l7Ouh" src="//datawrapper.dwcdn.net/l7Ouh/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                                        </script>
+                                    </div>
+                                </div>
+                            
+                                <div class="tab-pane fade" id="tab-02-c" aria-labelledby="tab-btn-02-c" role="tabpanel">
+                                    <div style="background: white;" class="py-2 px-2 border-bottom border-right border-left">                               
+                                        <iframe title="Priority neighborhoods for environmental justice monitoring" aria-label="choropleth map" id="datawrapper-chart-v5vt2" src="//datawrapper.dwcdn.net/v5vt2/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
                         <P>Previously, our network of air quality monitors at 60 core sites gathered data that we used to model air quality across the entire city. With these 15 EJ sites in high-poverty, low-prior-monitoring neighborhoods, we could assess how well the model did at predicting the levels in these 15 EJ locations. </P>
 
                         <P>To do this, we compared the modeled estimates to the actual measured levels at these locations. Here’s what we found:</P>
                         <p><strong>Only small differences between predicted estimates and monitored values:</strong> We found no statistically significant difference in levels of PM2.5 across all four seasons, and no statistically significant difference in NO2 levels in two out of three seasons.
                             </p>
-                            <div style="background: white;" class="py-2 px-2 border">
+                            <div style="background: white;" class="py-2 px-2 mb-2 border">
                                 <div class="row">
-                                    <div class="col-6">left</div>
-                                    <div class="col-6">right</div>
+                                    <div class="col-6"><iframe title="" aria-label="Grouped Bars" id="datawrapper-chart-sAqVm" src="//datawrapper.dwcdn.net/sAqVm/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                                    </script></div>
+                                    <div class="col-6"><iframe title="" aria-label="Grouped Bars" id="datawrapper-chart-c9A7X" src="//datawrapper.dwcdn.net/c9A7X/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                                    </script></div>
                                 </div>
                             </div>
                         <p>Lower average concentrations of pollutants at 15 EJ sites: The 15 environmental justice sites measured, on average, 5% less PM2.5 than the citywide average of the 60 core sites, and 7% lower average NO2.</p>
                         <p>But much like other sites citywide, there was variation in the levels measured at the new sites.
                             </p>
-                            <div style="background: white;" class="py-2 px-2 border">
+                            <div style="background: white;" class="py-2 px-2 border mb-2">
                                 <div class="row">
-                                    <div class="col-6">left</div>
-                                    <div class="col-6">right</div>
+                                    <div class="col-6"><iframe title="" aria-label="Column Chart" id="datawrapper-chart-H1gyT" src="//datawrapper.dwcdn.net/H1gyT/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                                    </script></div>
+                                    <div class="col-6"><iframe title="" aria-label="Column Chart" id="datawrapper-chart-YLti3" src="//datawrapper.dwcdn.net/YLti3/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+                                    </script></div>
                                 </div>
                             </div>
                         <p><strong>Additional confidence in our model:</strong> These findings show that the original model, based on the 60 core monitoring sites, is useful for predicting PM2.5 and NO2 levels - even in high-poverty neighborhoods with a low prior monitor density. </p>
