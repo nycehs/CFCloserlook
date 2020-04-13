@@ -215,10 +215,33 @@
                             <p>There are 59 community districts in NYC, each overseen by a Community Board that advises on land use, zoning, city budgets, and more. As a political boundary, it is a useful geographic breakdown for city operations. <a href="https://www1.nyc.gov/site/cau/community-boards/about-commmunity-boards.page">Learn more about Community Boards</a>. </p>
 
                             <h3>Public Use Microdata Areas (PUMA)</h3>
-                            <p>PUMAs have boundaries defined by the US Census. They are made up of groups of census tracts, small geographic areas originally created by the US government as a way to break down area as part of the US Census. </p>
+                            <p>PUMAs have boundaries defined by the US Census. They are made up of groups of <a href="#NTAmodal" data-toggle="modal" class="badge badge-pill badge-warning">census tracts</a>, small geographic areas originally created by the US government as a way to break down area as part of the US Census. </p>
                             <p>PUMAs have very similar boundaries to Community Districts - except there are four PUMAs where two CDs are combined into one, leaving us with 55 areas instead of 59.  </p>
-                            <p>In New York City, we also have another unit of measurement: neighborhood tabulation areas, which are groups of census tracts.These are created by the NYC Department of City Planning, and each NTA has a population of at least 15,000 people.  </p>
+
+                            
+
+
+<!-- ZIP modal -->
+<div class="modal fade" id="NTAmodal" tabindex="-1" role="dialog" aria-labelledby="NTAmodalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="NTAmodalLongTitle">About Census Tracts and NTAs</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Census tracts are small geographic areas originally created by the US government as a way to break down area as part of the US Census.</p>
+            <p>In New York City, we also have another unit of measurement: neighborhood tabulation areas, which are groups of census tracts. These are created by the NYC Department of City Planning, and each NTA has a population of at least 15,000 people.  </p>
                             <p>Since each NTA is made up of a group of census tracts, we can say that census tracts “roll up” into NTAs - and, similarly, NTAs “roll up” into PUMAs. This nested approach is useful for zooming in or zooming out on data.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
                             
                         </div>
                             <div class="narrow my-4 py-2">
@@ -226,11 +249,9 @@
                             </div>
 
                             <div class="narrow my-2">
-                               <h3>United Hospital Fund neighborhoods</h3>
-                               <p>United Hospital Fund neighborhoods (UHFs) are used for health research. These neighborhood boundaries were drawn in the 1980s by the Health Department, the United Hospital Fund, and other City agencies in an attempt to draw neighborhood boundaries that approximated NYC’s Community Districts, but were based on ZIP codes.</p>
-                               <p>To protect privacy, health data - like a hospital admissions form, for example - is anonymized: we remove any information that can identify somebody, like their address. However, we keep the ZIP code so that we know <a href="#ZIPmodal" data-toggle="modal" class="badge badge-pill badge-warning">roughly where that person lives</a> so that we can do a geographic analysis of health behaviors and conditions.  </p>
-                               <p>However, we often can’t report data by ZIP code. The Health Department usually suppresses data if there are only a few cases of something - again, to protect privacy. That means that to report data, we need more of it: we need to aggregate data over a larger time period, or over a larger area. But because ZIP codes don’t share boundaries with community districts or census tracts, we can’t determine what CD or PUMA somebody lives in based on their ZIP code. </p>
-                               <p>So, we need neighborhoods that are made up of a collection of ZIP codes: UHFs. The Health Department has used UHFs in health research for decades. The methods for our surveys (like the Community Health Survey) are designed to include enough people from each UHF neighborhood so that there’s a “representative sample” of all New Yorkers, and so that we can compare one neighborhood to another with high statistical confidence. Usually, we use neighborhoods we call UHF42, which breaks the city down into 42 neighborhoods.</p>
+                               <h3>United Hospital Fund neighborhoods</h3>                               
+                               <p>United Hospital Fund neighborhoods (UHFs) are used for health research. These neighborhood boundaries were drawn in the 1980s by the Health Department, the United Hospital Fund, and other City agencies in an attempt to draw neighborhood boundaries that approximated NYC’s Community Districts, but were based on <a href="#ZIPmodal" data-toggle="modal" class="badge badge-pill badge-warning">ZIP codes</a>.</p>
+                               <p>To <a href="#privacymodal" data-toggle="modal" class="badge badge-pill badge-warning">protect privacy</a>, we aggregate data from an area larger than a ZIP code, so we need a scheme where neighborhoods are made up of a collection of ZIP codes: UHFs. The Health Department has used UHFs in health research for decades. The methods for our surveys (like the Community Health Survey) are designed to include enough people from each UHF neighborhood so that there’s a “representative sample” of all New Yorkers, and so that we can compare one neighborhood to another with high statistical confidence. Usually, we use neighborhoods we call UHF42, which breaks the city down into 42 neighborhoods.</p>
                                <p>Sometimes, though, we use UHF34 neighborhoods - grouping together some of the UHF42 neighborhoods to increase the statistical power of a survey. You can see the UHF42s in green below, and in various blues, the ones combined under UHF34.</p>
                                
                             </div>
@@ -249,6 +270,28 @@
         </div>
         <div class="modal-body">
             ZIP codes were introduced in 1963 for mail delivery. A ZIP code doesn’t actualy refer to an area. It actually refers to a collection of mail delivery routes, which are a collection of points, and sometimes change. To deal with this, Zip Code Tabulation Areas (ZCTAs) solidify ZIP codes into units of area. Often, data reported by ZIP code are mapped by ZCTA. 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Privacy modal -->
+<div class="modal fade" id="privacymodal" tabindex="-1" role="dialog" aria-labelledby="privacymodaltitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="privacymodallongtitle">Protecting provacy in health data</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Health data - like a hospital admissions form, for example - is anonymized: we remove any information that can identify somebody, like their address. However, we keep the ZIP code so that we know roughly where that person lives so that we can do a geographic analysis of health behaviors and conditions.  </p>
+            <p>However, we often can’t report data by ZIP code. The Health Department usually suppresses data if there are only a few cases of something - again, to protect privacy. That means that to report data, we need more of it: we need to aggregate data over a larger time period, or over a larger area. But because ZIP codes don’t share boundaries with community districts or census tracts, we can’t determine what CD or PUMA somebody lives in based on their ZIP code. So we aggregate up from ZIP codes to UHF neighborhoods.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
