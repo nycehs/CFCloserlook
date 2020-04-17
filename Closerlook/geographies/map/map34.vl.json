@@ -6,25 +6,23 @@
   "layer":[
     {
     "data":{
-    "url": "https://raw.githubusercontent.com/nycehs/NYC_geography/master/CD.topo.json",
+    "url": "https://raw.githubusercontent.com/nycehs/NYC_geography/master/UHF34.topo.json",
     "format": {"type": "topojson", "feature": "collection"}
     },
     "mark": {"type": "geoshape", "stroke": "#ffffff","fill":"lightgray"}
   },{
   "data": {
-    "url": "https://raw.githubusercontent.com/nycehs/NYC_geography/master/CD.topo.json",
+    "url": "https://raw.githubusercontent.com/nycehs/NYC_geography/master/UHF34.topo.json",
     "format": {"type": "topojson", "feature": "collection"}
   },
   "transform": [
     {
       "lookup": "properties.GEOCODE",
       "from": {
-        "data": {"url": "CD_DATA.csv"},
+        "data": {"url": "34_DATA.csv"},
         "key": "GEOCODE",
         "fields": [
           "GEOCODE",
-          "BOROUGH",
-          "GEONAME",
           "VALUE"
         ]
       },
@@ -48,7 +46,7 @@
     },
     "tooltip": [
       {
-        "field": "GEONAME",
+        "field": "properties.GEONAME",
         "type": "nominal",
         "title": "Neighborhood"
       },

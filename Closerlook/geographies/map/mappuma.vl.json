@@ -38,7 +38,7 @@
       "bin": false,
       "field": "VALUE",
       "type": "quantitative",
-      "scale": {"scheme": {"name": "redpurple", "extent": [0.2, 1.25]}}
+      "scale": {"scheme": {"name": "blues", "extent": [0.5, 1.25]}}
     },
     "strokeWidth": {
       "condition": [{"selection": "highlight", "value": 2}],
@@ -54,11 +54,6 @@
         "field": "GEOCODE",
         "type": "quantitative",
         "title": "Geo code"
-      },
-      {
-        "field": "VALUE",
-        "type": "quantitative",
-        "title": "Value"
       }
     ]
   }
