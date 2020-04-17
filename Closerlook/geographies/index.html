@@ -208,15 +208,43 @@
 
                             <p>For example, dig around in the Asthma data and you might wonder why <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=18,4466a0,11,Summarize">Adults with Asthma</a> is available for UHF34 neighborhoods, but <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2147,4466a0,11,Summarize">Public School Children with Asthma</a> is in UHF42. <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2383,4466a0,11,Summarize">Asthma emergency department visits</a> are offered in NTAs (neighborhood tabulation areas), while other indicators here and there are offered by Community District, ZIP code, PUMA, and occasionally even Police Precinct. 
                             </p>
-                            <p><strong>What are all these areas, why do we use one and not the other, and why isn’t the whole system consistent? </strong></p>
-                            <p>The most common neighborhood boundaries on the EH Data Portal are United Hospital Fund neighborhoods (UHF), Community Districts, and Public Use Microdata Areas (PUMAs). Let’s take a look at what these are, and why they are the way they are.</p>
+                            <p><strong>What are all these neighborhood schemes, why do we use one and not the other, and why isn’t the whole system consistent? </strong></p>
+                            <p>The most common neighborhood boundaries on the EH Data Portal are United Hospital Fund neighborhoods (UHF), Community Districts, and Public Use Microdata Areas (PUMAs). Let’s take a look at what these are, when they're used, and why they are the way they are.</p>
 
                             <h3>Community Districts</h3>
                             <p>There are 59 community districts in NYC, each overseen by a Community Board that advises on land use, zoning, city budgets, and more. As a political boundary, it is a useful geographic breakdown for city operations. <a href="https://www1.nyc.gov/site/cau/community-boards/about-commmunity-boards.page">Learn more about Community Boards</a>. </p>
 
                             <h3>Public Use Microdata Areas (PUMA)</h3>
                             <p>PUMAs have boundaries defined by the US Census. They are made up of groups of <a href="#NTAmodal" data-toggle="modal" class="badge badge-pill badge-warning">census tracts</a>, small geographic areas originally created by the US government as a way to break down area as part of the US Census. </p>
-                            <p>PUMAs have very similar boundaries to Community Districts - except there are four PUMAs where two CDs are combined into one, leaving us with 55 areas instead of 59.  </p>
+                            <p>PUMAs have very similar boundaries to Community Districts - notice that the Greenpoint/Williamsburg CD is almost identical to the PUMA. One difference between CDs and PUMAs is that there are four PUMAs where two CDs are combined into one, leaving us with 55 areas instead of 59 - for example, notice how two CDs in the South Bronx combine to form one PUMA.</p>
+                        </div>
+
+                        <div class="medium border-top border-bottom py-2">
+                            <iframe id="cdpumamap" src="map/cdpuma.html" scrolling="no" frameborder="0" style="position: relative; width: 100vmin; height: 100vmin;"></iframe>
+
+                        </div>
+
+
+ 
+
+                            <script>
+                                function seTMapContainerHeight() {
+                                // set variables for the two elements
+                                var iframeContainer = document.querySelector('#cdpumamap');
+                                var innerMapContainer = document.querySelector('#cdpumamap > html');
+                                //get height value of innerMap
+                                var mapRect = innerMapContainer.getBoundingClientRect();
+                                var mapHeight = mapRect.height;
+                                var mapHeightString = mapHeight.toString();
+                                var styleHeight = mapHeightString + 'px';
+                                //set height of iframe as map height
+                                iframeContainer.style.height = styleHeight;
+                                }
+                                // set map height on initial load;
+                                document.addEventListener('DOMContentLoaded', setMapContainerHeight);
+                                // add event handler on the window resize event, and attach map height function.
+                                document.addEventListener('resize', setMapContainerHeight);
+                                </script>
 
                             
 
@@ -244,9 +272,8 @@
   </div>
                             
                         </div>
-                            <div class="narrow my-4 py-2">
-                                <img src="CD-PUMA-NTA.gif" alt="An animation showing Brooklyn Community District 1, the Greenpoint-Williamsburg PUMA, and the censustracts that make up one of the NTAs.">
-                            </div>
+
+
 
                             <div class="narrow my-2">
                                <h3>United Hospital Fund neighborhoods</h3>                               
@@ -363,7 +390,7 @@
                 <div class="col-xl-2 border-xl-left">
 
                     <div class="narrow py-3 mt-n3 mt-xl-0 sticky-top" style="z-index: 0">
-                        <br><br>
+                        This is where supplemental content links go
 
                      
                     </div>
