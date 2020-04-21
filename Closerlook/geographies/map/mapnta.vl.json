@@ -6,23 +6,24 @@
   "layer":[
     {
     "data":{
-    "url": "https://raw.githubusercontent.com/nycehs/NYC_geography/master/UHF34.topo.json",
+    "url": "https://raw.githubusercontent.com/nycehs/NYC_geography/master/NTA.topo.json",
     "format": {"type": "topojson", "feature": "collection"}
     },
     "mark": {"type": "geoshape", "stroke": "#ffffff","fill":"lightgray"}
   },{
   "data": {
-    "url": "https://raw.githubusercontent.com/nycehs/NYC_geography/master/UHF34.topo.json",
+    "url": "https://raw.githubusercontent.com/nycehs/NYC_geography/master/NTA.topo.json",
     "format": {"type": "topojson", "feature": "collection"}
   },
   "transform": [
     {
-      "lookup": "properties.GEOCODE",
+      "lookup": "properties.NTACode",
       "from": {
-        "data": {"url": "34_DATA.csv"},
-        "key": "GEOCODE",
+        "data": {"url": "NTA_DATA.csv"},
+        "key": "NTACODE",
         "fields": [
-          "GEOCODE",
+          "NTACODE",
+          "NTANAME",
           "VALUE"
         ]
       },
@@ -46,14 +47,14 @@
     },
     "tooltip": [
       {
-        "field": "properties.GEONAME",
+        "field": "properties.NTACode",
         "type": "nominal",
-        "title": "Neighborhood"
+        "title": "NTA Code"
       },
       {
-        "field": "GEOCODE",
-        "type": "quantitative",
-        "title": "Geo code"
+        "field": "NTANAME",
+        "type": "nominal",
+        "title": "Neighborhood"
       }
     ]
   }

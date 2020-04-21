@@ -39,7 +39,7 @@
       "bin": false,
       "field": "VALUE",
       "type": "quantitative",
-      "scale": {"scheme": {"name": "blues", "extent": [0.25, 1.25]}}
+      "scale": {"scheme": {"name": "blues", "extent": [0.25, 0.75]}}
     },
     "strokeWidth": {
       "condition": [{"selection": "highlight", "value": 2}],

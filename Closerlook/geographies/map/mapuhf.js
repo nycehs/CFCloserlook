@@ -1,6 +1,7 @@
 
 let fortyTwoSpec = "map42.vl.json";
 let thirtyFourSpec = "map34.vl.json";
+let zipSpec = "mapZIP.vl.json";
 
 const opt = {"renderer":"svg"};
 const el = document.getElementById('map');
@@ -13,6 +14,7 @@ function listenRadios() {
   radios = document.querySelectorAll('input[type=radio][name="uhfRadioGroup"]');
   radios.forEach(radio => radio.addEventListener('change', () => {
     if (radio.value==='42') {fortyTwoMapCreate()}
+    else if (radio.value==="zip") {zipMapCreate()}
     else {thirtyFourMapCreate()}  // for if chosenField is uhf34
     ;
   }));
@@ -33,5 +35,12 @@ function thirtyFourMapCreate() {
       viewObj = result.view;
     }).catch(console.error);
   }
+
+  function zipMapCreate() {
+    vegaEmbed('#map', zipSpec, opt).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        viewObj = result.view;
+      }).catch(console.error);
+    }
 
 fortyTwoMapCreate();
