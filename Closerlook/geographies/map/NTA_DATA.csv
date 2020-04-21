@@ -49,7 +49,7 @@ BK91,Brooklyn,East Flatbush-Farragut,.1
 BK93,Brooklyn,Starrett City,.1
 BK95,Brooklyn,Erasmus,.1
 BK96,Brooklyn,Rugby-Remsen Village,.1
-BK99,Brooklyn,park-cemetery-etc-Brooklyn,.1
+BK99,Brooklyn,park-cemetery-etc-Brooklyn,0
 BX01,Bronx,Claremont-Bathgate,.1
 BX03,Bronx,Eastchester-Edenwald-Baychester,.1
 BX05,Bronx,Bedford Park-Fordham North,.1
@@ -87,7 +87,7 @@ BX62,Bronx,Woodlawn-Wakefield,.1
 BX63,Bronx,West Concourse,.1
 BX75,Bronx,Crotona Park East,.1
 BX98,Bronx,Rikers Island,.1
-BX99,Bronx,park-cemetery-etc-Bronx,.1
+BX99,Bronx,park-cemetery-etc-Bronx,0
 MN01,Manhattan,Marble Hill-Inwood,.1
 MN03,Manhattan,Central Harlem North-Polo Grounds,.1
 MN04,Manhattan,Hamilton Heights,.1
@@ -116,7 +116,7 @@ MN35,Manhattan,Washington Heights North,.1
 MN36,Manhattan,Washington Heights South,.1
 MN40,Manhattan,Upper East Side-Carnegie Hill,.1
 MN50,Manhattan,Stuyvesant Town-Cooper Village,.1
-MN99,Manhattan,park-cemetery-etc-Manhattan,.1
+MN99,Manhattan,park-cemetery-etc-Manhattan,0
 QN01,Queens,South Jamaica,.1
 QN02,Queens,Springfield Gardens North,.1
 QN03,Queens,Springfield Gardens South-Brookville,.1
@@ -173,8 +173,8 @@ QN70,Queens,Astoria,.1
 QN71,Queens,Old Astoria,.1
 QN72,Queens,Steinway,.1
 QN76,Queens,Baisley Park,.1
-QN98,Queens,Airport,.1
-QN99,Queens,park-cemetery-etc-Queens,.1
+QN98,Queens,Airport,0
+QN99,Queens,park-cemetery-etc-Queens,0
 SI01,Staten Island,Annadale-Huguenot-Prince's Bay-Eltingville,.1
 SI05,Staten Island,New Springville-Bloomfield-Travis,.1
 SI07,Staten Island,Westerleigh,.1
@@ -193,7 +193,7 @@ SI37,Staten Island,Stapleton-Rosebank,.1
 SI45,Staten Island,New Dorp-Midland Beach,.1
 SI48,Staten Island,Arden Heights,.1
 SI54,Staten Island,Great Kills,.1
-SI99,Staten Island,park-cemetery-etc-Staten Island,.1
+SI99,Staten Island,park-cemetery-etc-Staten Island,0
 ,,,
 ,,,
 ,,,
