@@ -40,6 +40,7 @@
       "bin": false,
       "field": "VALUE",
       "type": "quantitative",
+      "legend":null,
       "scale": {"scheme": {"name": "blues", "extent": [0.25, 0.75]}}
     },
     "strokeWidth": {
