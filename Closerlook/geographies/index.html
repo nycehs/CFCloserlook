@@ -169,7 +169,7 @@
 
             <div class="container-fluid my-auto">
                 <div class="medium my-3 text-left">
-                    <h1 class="display-4 titleheader">About the geographies: the neighborhood boundaries on the EH Data Portal</h1>
+                    <h1 class="display-4 titleheader">All About Geography:<br>The neighborhood boundaries on the EH Data Portal</h1>
                 </div>
             </div>
             <!-- .container -->
@@ -204,15 +204,100 @@
 
                         <div class="narrow my-2">
                             <h2>Mapping health data onto NYC's neighborhoods</h2>
-                            <p>In the 5 boroughs of New York City, there are hundreds of neighborhoods - maybe thousands. There are nearly as many ways of drawing neighborhood boundaries - and when you <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx">browse data on the Environment & Health Data Portal</a>, you might notice that data is available in several different neighborhood schemes. </p>
+                            <p>New York City has hundreds of neighborhoods and nearly as many ways of drawing neighborhood boundaries. When you <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx">browse data on the Environment & Health Data Portal</a>, you might notice that data is available in several different neighborhood schemes. </p>
 
-                            <p>For example, dig around in the Asthma data and you might wonder why <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=18,4466a0,11,Summarize">Adults with Asthma</a> is available for UHF34 neighborhoods, but <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2147,4466a0,11,Summarize">Public School Children with Asthma</a> is in UHF42. <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2383,4466a0,11,Summarize">Asthma emergency department visits</a> are offered in NTAs, while other indicators here and there are offered by CD, ZIP code, PUMA, and occasionally even Police Precinct. 
-                            </p>
-                            <p><strong>What are all these neighborhood schemes, why do we use one and not the other, and why isn’t the whole system consistent? </strong></p>
-                            <p>The most common neighborhood boundaries on the EH Data Portal are United Hospital Fund neighborhoods (UHF), Community Districts, and Public Use Microdata Areas (PUMAs). Let’s take a look at what these are, when they're used, and why they are the way they are.</p>
+                            <p>For example, dig around in the Asthma data and you might wonder why <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=18,4466a0,11,Summarize">Adults with Asthma</a> is available in something called UHF34 neighborhoods, but <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2147,4466a0,11,Summarize">Public School Children with Asthma</a> is in UHF42. <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2383,4466a0,11,Summarize">Asthma emergency department visits</a> are offered in NTAs, while other indicators here and there are offered by CD, ZIP code, PUMA, and occasionally even Police Precinct. <strong>What are all these neighborhood schemes, why do we use one and not the other, and why isn’t the whole system consistent? </strong></p>
+                            <p>The most common neighborhood boundaries on the EH Data Portal are United Hospital Fund neighborhoods (UHF), Community Districts, and Public Use Microdata Areas (PUMAs). These three common neighborhood schemes - Community Districts, PUMAs, and UHF neighborhoods - have different building blocks. Community Districts are political boundaries. PUMAs are made up of NTAs (neighborhood tabulation areas), which are made up of census tracts. And UHF neighborhoods are made up of ZIP codes.</P>
+                               </div>
+   
+                               <!--start wide-->
+                               <div class="wide my-4">
+                                   <h4 class="text-center mb-3">Nesting: how neighborhood schemes have different root units</h4>
+                                   <div class="row" style="font-size: 14px;">
+                                       <div class="col-lg-4 col-sm-8 mx-auto mb-2">
+                                           <p><span style="font-weight: bold; color: #22669e;">Community Districts</span> and <span style="font-weight: bold; color: #474747;">PUMAs</span> have similar boundaries.</p>
+   
+                                           <div style="width: 100%; height: 275px; background-color: #d0dce8; border-radius: 10px;"></div>
+                                           <div style="height: 275px; border: 3px solid grey; margin-left: -15px; margin-top: -260px; width: 100%; border-radius: 10px;">
+                                          <p class="text-center">PUMA</p></div>
+   
+                                          
+   
+                                       </div>
+   
+   
+                                       <div class="col-lg-4 col-sm-8 mx-auto mb-2">
+                                           <p><span style="font-weight: bold; color: #474747;">PUMAs</span> are made up of NTAs, which are made up of census tracts.</p>
+                                           <div style="width: 100%; height: 275px; border: 3px solid grey; border-radius: 10px;">
+   
+                                           <div id="ntaparent" style="width:50%; height:100%; float:right; border-radius: 5px;">
+                                           
+                                           <div style="width: 100%; height: 50%; border-radius: 5px;"></div>
+   
+                                           <div style="width: 100%; height: 50%; border-radius: 5px; background-color: #b8cbdd;"><p class="text-center">NTA</p>
+                                           
+                                           
+                                               <div id="ctparent" style="width:50%; height:100%; float:right">
+                                           
+                                                   <div style="width: 100%; height: 22%;"></div>
+           
+                                                   <div style="width: 100%; height: 50%; border-radius: 5px; background-color: #f9f9f9;"><p class="text-center" style="font-size: 12px;">Census<br>tract</p></div>
+                                                   
+                                                   </div>
+                                                
+                                                   
+                                                   <div id="emptyct" style="width:50%; height:100%;"></div>
+                                           
+                                           </div>
+                                           
+                                           </div>
+                                        
+                                           
+                                           <div id="emptyparent" style="width:50%; height:100%; border-radius: 5px;">
+                                               
+                                           
+                                           </div>
+   
+                                           
+   
+                                           
+                                           </div>
+                                           
+                                           
+   
+                                       </div>
+   
+   
+                                       <div class="col-lg-4 col-sm-8 mx-auto mb-2">
+                                           <p><span style="font-weight: bold; color: #104e34;">UHFs</span> are made up of ZIP codes tabulation areas (ZCTAs).</p>
+                                           <div style="width: 100%; height: 275px; background-color: #b4ccc2; border-radius: 10px;">
+                                           
+                                               <div id="uhfparent" style="width:50%; height:100%; float:right">
+                                           
+                                                   <div style="width: 100%; height: 50%;"></div>
+           
+                                                   <div style="width: 100%; height: 50%; border-radius: 5px; background-color: #e7edf3;"><p class="text-center">ZIP code<br>(or ZCTA)</p></div>
+                                                   
+                                                   </div>
+                                                
+                                                   
+                                                   <div id="uhfparent" style="width:50%; height:100%;"></div>
+                                           
+                                           </div>
+   
+                                       </div>
+   
+   
+                                   </div>
+   
+   
+                               </div>
+                               <!--end wide-->
 
-                            <h3>Community Districts</h3>
-                            <p>There are 59 community districts in NYC, each overseen by a Community Board that advises on land use, zoning, city budgets, and more. As a political boundary, it is a useful geographic breakdown for city operations. <a href="https://www1.nyc.gov/site/cau/community-boards/about-commmunity-boards.page">Learn more about Community Boards</a>. </p>
+                            <div class="narrow">
+
+                            <h3>Community Districts (CD)</h3>
+                            <p>There are 59 Community Districts in NYC, each overseen by a Community Board that advises on land use, zoning, city budgets, and more. As a political boundary, it is a useful geographic breakdown for city operations. <a href="https://www1.nyc.gov/site/cau/community-boards/about-commmunity-boards.page">Learn more about Community Boards</a>. </p>
 
                             <h3>Public Use Microdata Areas (PUMA)</h3>
                             <p>PUMAs have boundaries defined by the US Census. They are made up of groups of <a href="#NTAmodal" data-toggle="modal" class="badge badge-pill badge-warning">census tracts</a>, small geographic areas originally created as a way to break down area for the US Census. </p>
@@ -278,10 +363,12 @@
 
 
                             <div class="narrow my-2">
-                               <h3>United Hospital Fund neighborhoods</h3>                               
-                               <p>United Hospital Fund neighborhoods (UHFs) are used for health research. These neighborhood boundaries were drawn in the 1980s by the Health Department, the United Hospital Fund, and other City agencies in an attempt to draw neighborhood boundaries that approximated NYC’s Community Districts, but were based on <a href="#ZIPmodal" data-toggle="modal" class="badge badge-pill badge-warning">ZIP codes</a>.</p>
-                               <p>To <a href="#privacymodal" data-toggle="modal" class="badge badge-pill badge-warning">protect privacy</a>, we aggregate data from an area larger than a ZIP code, so we need a scheme where neighborhoods are made up of a collection of ZIP codes: UHFs. The Health Department has used UHFs in health research for decades. The methods for our surveys (like the Community Health Survey) are designed to include enough people from each UHF neighborhood so that there’s a “representative sample” of all New Yorkers, and so that we can compare one neighborhood to another with high statistical confidence. Usually, we use neighborhoods we call UHF42, which breaks the city down into 42 neighborhoods. Sometimes, though, we use UHF34 neighborhoods - grouping together some of the UHF42 neighborhoods to increase the statistical power of a survey. </p>
-                                <p>In the map below, you can see the UHF42s, notice how <span style="color:#22669e; font-weight:bold;">three UHF42 neighborhoods in the South Bronx</span> are combined into one UHF34 neigborhood - and how the UHF neighborhoods have ZIP codes as their root unit.</p>
+                               <h3>United Hospital Fund (UHF) neighborhoods</h3>                               
+                               <p>United Hospital Fund neighborhoods are used for health research. These neighborhood boundaries were created in the 1980s by the Health Department, the United Hospital Fund, and other city agencies to be similar to NYC’s Community Districts, but based on <a href="#ZIPmodal" data-toggle="modal" class="badge badge-pill badge-warning">ZIP codes</a>.</p>
+                               <p>To <a href="#privacymodal" data-toggle="modal" class="badge badge-pill badge-warning">protect privacy</a>, we often must bundle (or aggregate) data from a larger area, so we need a scheme of neighborhoods that are made up of a collection of ZIP codes: UHFs. 
+                                
+                                Collecting data by ZIP code and then "rolling up" into UHF neighborhoods has been used in health research for decades. The methods for our surveys (like the Community Health Survey) are designed to include enough people from each UHF neighborhood so that there’s a “representative sample” of all New Yorkers, and so that we can compare neighborhoods with high statistical confidence. Usually, we use neighborhoods we call UHF42, which breaks the city down into 42 neighborhoods. Sometimes, though, we use UHF34 neighborhoods - grouping together some of the UHF42 neighborhoods to increase the statistical power of a survey. </p>
+                                <p>In the map below, you can see the UHF42s, notice how <span style="color:#22669e; font-weight:bold;">three UHF42 neighborhoods in the South Bronx</span> are combined into one UHF34 neigborhood - and how the UHF neighborhoods have ZIP codes (or, more precisely, ZIP code tabulation areas) as their root unit.</p>
                                
                             </div>
 
@@ -298,7 +385,7 @@
           </button>
         </div>
         <div class="modal-body">
-            ZIP codes were introduced in 1963 for mail delivery. However, a ZIP code doesn’t actualy refer to an area. It actually refers to a collection of addresses - points - that make up a mail delivery route. These sometimes change. Additionally, in NYC, some large buildings have their own ZIP codes.</p>
+            What are ZIP codes? ZIP stands for Zone Improvement Plan, and ZIP codes were introduced in 1963 as a way to systematize how mail gets delivered. However, a ZIP code doesn’t actualy refer to an area. It actually refers to a collection of addresses - points - that make up a mail delivery route. These sometimes change. Additionally, in NYC, some large buildings have their own ZIP codes.</p>
             <p>To deal with this, Zip Code Tabulation Areas (ZCTAs) solidify ZIP codes into areas. Often, data reported by ZIP code are actually mapped by ZCTA. </p>
         </div>
         <div class="modal-footer">
@@ -337,86 +424,9 @@
 
 
 
-                            <div class="narrow my-2">
-                             <P>So, these three common neighborhood schemes - Community Districts, PUMAs, and UHF neighborhoods - have different building blocks. Community Districts are political boundaries. PUMAs are made up of NTAs (neighborhood tabulation areas), which are made up of census tracts. And UHF neighborhoods are made up of ZIP codes.</P>
-                            </div>
-
-                            <div class="wide my-4">
-                                <h4 class="text-center mb-3">Nesting: how neighborhood schemes have different root units</h4>
-                                <div class="row">
-                                    <div class="col-lg-4 col-sm-8 mx-auto mb-4">
-                                        <p class="text-center">Community District</p>
-
-                                        <div style="width: 100%; height: 275px; background-color: #d0dce8; border-radius: 10px;"></div>
-                                        <div style="height: 275px; border: 3px dotted grey; margin-left: 15px; margin-top: -260px; width: 100%; border-radius: 10px;">
-                                       <p class="text-center">PUMA</p></div>
-
-                                    </div>
 
 
-                                    <div class="col-lg-4 col-sm-8 mx-auto mb-4">
-                                        <p class="text-center">PUMA</p>
-                                        <div style="width: 100%; height: 275px; border: 3px dotted grey; border-radius: 10px;">
-
-                                        <div id="ntaparent" style="width:50%; height:100%; float:right; border-radius: 5px;">
-                                        
-                                        <div style="width: 100%; height: 50%; background-color: #d0dce8; border-radius: 5px;"></div>
-
-                                        <div style="width: 100%; height: 50%; border-radius: 5px; background-color: #b8cbdd;"><p class="text-center">NTA</p>
-                                        
-                                        
-                                            <div id="ctparent" style="width:50%; height:100%; float:right">
-                                        
-                                                <div style="width: 100%; height: 17%;"></div>
-        
-                                                <div style="width: 100%; height: 50%; border-radius: 5px; background-color: #f9f9f9;"><p class="text-center" style="font-size: 12px;">Census<br>tract</p></div>
-                                                
-                                                </div>
-                                             
-                                                
-                                                <div id="emptyct" style="width:50%; height:100%;"></div>
-                                        
-                                        </div>
-                                        
-                                        </div>
-                                     
-                                        
-                                        <div id="emptyparent" style="width:50%; height:100%; background-color: #e7edf3; border-radius: 5px;">
-                                            
-                                        
-                                        </div>
-
-                                        
-
-                                        
-                                        </div>
-
-                                    </div>
-
-
-                                    <div class="col-lg-4 col-sm-8 mx-auto mb-4">
-                                        <p class="text-center">UHF</p>
-                                        <div style="width: 100%; height: 275px; border: 2px solid grey; border-radius: 10px;">
-                                        
-                                            <div id="uhfparent" style="width:50%; height:100%; float:right">
-                                        
-                                                <div style="width: 100%; height: 50%;"></div>
-        
-                                                <div style="width: 100%; height: 50%; border-radius: 5px; background-color: #e7edf3;"><p class="text-center">ZIP code<br>(or ZCTA)</p></div>
-                                                
-                                                </div>
-                                             
-                                                
-                                                <div id="uhfparent" style="width:50%; height:100%;"></div>
-                                        
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-
-                            </div>
+                            
 
 
                             <div class="narrow my-2">
