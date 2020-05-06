@@ -413,11 +413,11 @@
             <div class="redcard-title"><h2 id="section2" class="storyanchor">Federal policy drove residential segregation.</h2></div>
             <div class="row no-gutters">
                 <div class="col-12 px-2"> <p>In the 1930s, <a href="#holcmodal" data-toggle="modal" class="badge badge-pill badge-success">the federal government</a> developed color-coded maps to guide loans to potential home buyers in cities across the U.S.  Neighborhoods were divided into 4 categories: 
-                    <ul>
-                        <li><strong><span style="color:#4FCF23">Best</span></li>
-                        <li><span style="color:#2338CF">Still desirable</span></li>
-                        <li><span style="color:#b6c200">Definitely declining</span></li>
-                        <li><span style="color:#DF0E0E">Hazardous</span></strong></li>
+                    <ul style="list-style:none;">
+                        <li><strong><span style="color:#4FCF23"><i class="fas fa-square-full"></i></span> Best</strong></li>
+                        <li><strong><span style="color:rgb(136, 145, 218)"><i class="fas fa-square-full"></i></span> Still desirable</strong></li>
+                        <li><strong><span style="color:#e4eb83"><i class="fas fa-square-full"></i></span> Definitely declining</strong></li>
+                        <li><strong><span style="color:#DF0E0E"><i class="fas fa-square-full"></i></span> Hazardous</strong></li>
                     </ul>
 
                 This classification was clearly rooted in racism, since neighborhood descriptions included statements like: 
@@ -611,10 +611,23 @@
 </div>
 
 
+<!--comment out singlemap with dropdown chooser
+<div class="row no-gutters">
+    <div class="col-lg-10 mx-auto" style="background-color: #ffffff; padding: 15px;">
+        <iframe src="map/puma-housing.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
+    </div>
+
+</div>
+-->
+
+
+
 <div class="row no-gutters">
     <div class="col-lg-10 mx-auto">
-        <div class="row mt-4 border-bottom border-top">
-            <div class="col-3 fs-sm">
+        <div class="redcard">
+        <h4 class="redcard-title">Percent of households with healthy housing problems:</h4>
+        <div class="row no-gutters" style="margin-bottom:0px!important;">
+            <div class="col-md-3 fs-sm" style="margin-top:0px!important;">
                     <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
                             <a class="nav-link active" id="heat-tab" data-toggle="pill" href="#heat" role="tab" aria-controls="heat" aria-selected="true">Heat breakdown</a>
                             <a class="nav-link" id="heat2-tab" data-toggle="pill" href="#heat2" role="tab" aria-controls="heat2" aria-selected="false">Supplemental heat</a>
@@ -625,50 +638,62 @@
                             <a class="nav-link" id="water-tab" data-toggle="pill" href="#water" role="tab" aria-controls="water" aria-selected="false">Water leaks</a>
                             <a class="nav-link" id="ac-tab" data-toggle="pill" href="#ac" role="tab" aria-controls="ac" aria-selected="false">No air conditioning</a>
                             <a class="nav-link" id="roaches-tab" data-toggle="pill" href="#roaches" role="tab" aria-controls="roaches" aria-selected="false">Cockroaches</a>
+                            <hr>
+                            <a class="nav-link" id="three-tab" data-toggle="pill" href="#three" role="tab" aria-controls="three" aria-selected="false">3+ healthy housing problems</a>
+                            <a class="nav-link" id="none-tab" data-toggle="pill" href="#none" role="tab" aria-controls="none" aria-selected="false">No healthy housing problems</a>
+
                           </div>
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                     <div class="tab-content" id="tabContent">
                             <div class="tab-pane fade show active" id="heat" role="tabpanel" aria-labelledby="heat-tab">
-                                <div style="height: 600px; background-color: #d3d3d3;">
+                                <div style="height: 600px; background-color: #ffffff;">
                                     
-                                    First map/chart
+                                    <iframe src="map/breakdown.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
 
                                 </div></div>
                             <div class="tab-pane fade" id="heat2" role="tabpanel" aria-labelledby="heat2-tab">
-                                    <div style="height: 600px; background-color: #d3d3d3;">Second map/chart
+                                    <div style="height: 600px; background-color: #ffffff;">
+                                        <iframe src="map/supplemental.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
                                         </div>
                             </div>
                             <div class="tab-pane fade" id="rodents" role="tabpanel" aria-labelledby="rodents-tab">
-                                    <div style="height: 600px; background-color: #d3d3d3;">Third map/chart
+                                    <div style="height: 600px; background-color: #d3d3d3;">
+                                        Third map/chart
                                         </div>
                             </div>
                             <div class="tab-pane fade" id="cracks" role="tabpanel" aria-labelledby="cracks-tab">
-                                    <div style="height: 600px; background-color: #d3d3d3;">Fourth map/chart
+                                    <div style="height: 600px; background-color: #d3d3d3;">
+                                        Fourth map/chart
                                         </div>
                             </div>
                             <div class="tab-pane fade" id="broken" role="tabpanel" aria-labelledby="broken-tab">
-                                    <div style="height: 600px; background-color: #d3d3d3;">Fifth map/chart
+                                    <div style="height: 600px; background-color: #d3d3d3;">
+                                        Fifth map/chart
                                         </div>
                             </div>
 
                             <div class="tab-pane fade" id="toilet" role="tabpanel" aria-labelledby="toilet-tab">
-                                    <div style="height: 600px; background-color: #d3d3d3;">Sixth map/chart
+                                    <div style="height: 600px; background-color: #d3d3d3;">
+                                        Sixth map/chart
                                         </div>
                             </div>
 
                             <div class="tab-pane fade" id="water" role="tabpanel" aria-labelledby="water-tab">
-                                    <div style="height: 600px; background-color: #d3d3d3;">Seventh map/chart
+                                    <div style="height: 600px; background-color: #d3d3d3;">
+                                        Seventh map/chart
                                         </div>
                             </div>
 
                             <div class="tab-pane fade" id="ac" role="tabpanel" aria-labelledby="ac-tab">
-                                    <div style="height: 600px; background-color: #d3d3d3;">Eighth map/chart
+                                    <div style="height: 600px; background-color: #d3d3d3;">
+                                        Eighth map/chart
                                         </div>
                             </div>
 
                             <div class="tab-pane fade" id="roaches" role="tabpanel" aria-labelledby="roaches-tab">
-                                    <div style="height: 600px; background-color: #d3d3d3;">Ninth map/chart
+                                    <div style="height: 600px; background-color: #d3d3d3;">
+                                        Ninth map/chart
                                         </div>
                             </div>
 
@@ -677,9 +702,12 @@
             </div>
         </div>
 
-        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
 
     </div>
+    <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+
+    </div>
+
 
 </div>
 
