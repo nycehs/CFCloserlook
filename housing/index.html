@@ -29,6 +29,7 @@
 
     <!--Custom data story CSS-->
     <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/css/datastories.css">
+    <link rel="stylesheet" href="housing.css">
 
 <style>
 
@@ -169,7 +170,7 @@
 
             <div class="container-fluid my-auto">
                 <div class="medium my-3 text-left">
-                    <h1 class="display-4 titleheader">Health, housing, and history</h1>
+                    <h1 class="display-4 titleheader py-3">Health, housing, and history</h1>
                 </div>
             </div>
             <!-- .container -->
@@ -212,6 +213,12 @@
         
                         </div>
                         <!-- .nav-item -->
+
+                        <div class="nav-item mx-auto">
+                            <a class="nav-link" role="button">
+                            <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
     
                         <div class="nav-item mx-auto">
         
@@ -274,229 +281,471 @@
 
 
 
-<div class="container-fluid fs-rg" id="skip-header-target">
-<div class="row">
+<div class="container-fluid fs-rg" id="skip-header-target" style="background-color: #f8f8f8;">
+
+
+    <!--commenting out template code
+<br><br><br><br>
+
+
+<div class="row no-gutters">
     <div class="col-lg-8 mx-auto">
-        <div class="medium mt-4 crossing-header">
-                <h2 id="section1" class="storyanchor">For health, place matters</h2>
+        <div class="redcard">
+            <div class="redcard-title"><h2>Red card title</h2></div>
+            <div class="row no-gutters">
+                <div class="col-6 pl-2">Left column</div>
+                <div class="col-6">Right column</div>
+            </div>
         </div>
-        <div class="narrow">
-                
-                <p>What determines whether or not you’re healthy? You may think about what you eat, whether you exercise, whether you smoke and your family medical history.
-                    </p>
-                <p>But you may not think about <a href="">how your home affects your health</a> - and you may not think about the factors that influence where you live. 
-                    </p>
-                
-                <h3>Some buildings aren't healthy places to live.</h3>
-                <p>Buildings with maintenance issues and disrepair can harm health. Across NYC, low-income neighborhoods have a higher percentage of buildings in disrepair – and Black and Latino people have less access to healthy housing.
-                    </p>
-                <p>Today’s racial inequality can be traced to a history of racism and neglect: redlining and segregation drove housing disrepair, which contributes to these health disparities.
-                    </p>
-            <p>Let's explore how.</p>
-        </div>
-
-
 
     </div>
 </div>
 
-<hr>
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
 
-<div class="row no-gutters mt-4">
-        <div class="col-lg-10 mx-auto">
-            <div class="crossing-header">
-                <h3>Racism has determined where people live in NYC ever since it was a Dutch colony.</h3>
+
+<div class="row no-gutters">
+    <div class="col-lg-8 mx-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h2>Red card title</h2></div>
+            <div class="row no-gutters">
+                <div class="col-12 px-2">Single column</div>
             </div>
         </div>
-    </div>
-    
-    <div class="row no-gutters">
-        <div class="col-lg-5 ml-auto panel-grid">
-                <p>In 1661, when New York City was just the southern tip of Manhattan, Wall Street got its name from the city’s protective wall.</p>
-                <p>When Black people petitioned the colony for land in the area, they were given land north of the wall, outside of the city proper.</p>
-                <p>More recently, a practice called redlining made racism a federal policy – with long-lasting repercussions for our housing and our health.</p>
-        </div>
-        <div class="col-lg-5 mr-auto panel-grid">
-               IMAGE.
-         </div>
-    </div>
 
-    <div class="row no-gutters mt-4">
-            <div class="col-lg-10 mx-auto">
-                <div class="crossing-header">
-                        <h2 id="section2" class="storyanchor">Redlining drove residential segregation</h2>
+    </div>
+</div>
+
+<br><br><br><br>
+-->
+
+
+
+<br><br><br><br>
+
+<div class="row no-gutters">
+    <div class="col-lg-8 mx-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h2 id="section1" class="storyanchor">For health, place matters</h2></div>
+            <div class="row no-gutters">
+                <div class="col-12 px-2">                
+                    <p>What determines whether or not you’re healthy? You may think about what you eat, whether you exercise, whether you smoke and your family medical history.
+                </p>
+                <p>But you may not think about <a href="#healthmodal" data-toggle="modal" class="badge badge-pill badge-success">how your home affects your health</a> - and you may not think about the factors that influence where you live. 
+                    </p>
+            
+            <h3>Some buildings aren't healthy places to live.</h3>
+            <p>Buildings with maintenance issues and disrepair can harm health. Across NYC, low-income neighborhoods have a higher percentage of buildings in disrepair – and Black and Latino people have less access to healthy housing.
+                </p>
+            <p>Today’s inequality can be traced to a history of racism and neglect: a practice known as redlining resulted in segregation which, in turn, drove housing disrepair and led to these health disparities.
+                </p>
+        <p>Let's explore how.</p></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+  <!-- Health modal -->
+  <div class="modal fade" id="healthmodal" tabindex="-1" role="dialog" aria-labelledby="healthmodaltitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="healthmodaltitle">What makes a healthy home?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <P>For a home to be healthy, it should be free of:
+              <ul>
+                  <li>Cracks</li>
+                  <li>Holes</li>
+                  <li>Leaks</li>
+                  <li>Smoke</li>
+                  <li>Pests</li>
+                  <li>Old, peeling paint</li>
+              </ul>
+              <p>In other words, a healthy home is a well-maintained home.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
+<div class="row no-gutters">
+    <div class="col-lg-10 mx-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h2>Racism has determined where people live in NYC</h2></div>
+            <div class="row no-gutters">
+                <div class="col-6 pl-2">
+                    <p>Racism has always played a role in residential patterns in New York City. When New York City was a Dutch Colony, it was just the southern tip of Manhattan.  Wall Street got its name from the city’s protective wall.</p>
+                    <p>In 1661, when Black people petitioned the colony for land in the area, they were given land north of the wall, outside of the city proper.</p>
+                    <p>Throughout history, many different practices have shaped racial and residential patterns in New York Ciy. In the 20th century, a practice called redlining made racism a federal policy – with long-lasting repercussions for our housing and our health.</p></div>
+                <div class="col-6">IMAGE</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
+<div class="row no-gutters">
+    <div class="col-lg-7 mx-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h2 id="section2" class="storyanchor">Federal policy drove residential segregation</h2></div>
+            <div class="row no-gutters">
+                <div class="col-12 px-2"> <p>In the 1930s, <a href="#holcmodal" data-toggle="modal" class="badge badge-pill badge-success">the federal government</a> developed color-coded maps to guide loans to potential home buyers in cities across the U.S.  Neighborhoods were divided into 4 categories: 
+                    <ul>
+                        <li><strong><span style="color:#4FCF23">Best</span></li>
+                        <li><span style="color:#2338CF">Still desirable</span></li>
+                        <li><span style="color:#b6c200">Definitely declining</span></li>
+                        <li><span style="color:#DF0E0E">Hazardous</span></strong></li>
+                    </ul>
+
+                This was clearly rooted in racism. Neighborhood descriptions included statements like: 
+                <div class="quote my-2 py-2"><em>"Detrimental influences: Infiltration of Negroes. Mixed races."</em></div>
+                The government denied loans to Black and Latino people trying to buy homes in redlined neighborhoods. Instead, these resources went to new White-only suburban communities – driving segregation. </p>
+            
+            <p>The map below shows how New York City's neighborhoods were categorized.</p>
+        </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+  <!-- HOLC modal -->
+  <div class="modal fade" id="holcmodal" tabindex="-1" role="dialog" aria-labelledby="holdmodaltitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="holcmodaltitle">The Home Owner's Loan Corporation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           <p>In the 1930s, the Great Depression caused a wave of foreclosures throughout the country. Unemployment rates were high and many people couldn't make mortgage payments. To help keep people in their homes, the federal government established the Home Owners Loan Corporation (HOLC). Its goal was to refinance mortgages with better terms – less interest and a longer repayment times. This would help people make payments and avoid foreclosure.</p>
+           <p>However, to determine what loans they could safely guarantee, HOLC sent people to appraise neighborhoods in cities across the USA, and generated the discriminatory redlining maps that would guide the real estate industry for decades. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
+<div class="row no-gutters">
+    <div class="col-lg-9 mx-auto">
+        <iframe src="HOLC_map/HOLC_map.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
+
+<div class="row no-gutters">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-6 mr-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h2 id="section3" class="storyanchor">This was "redlining." </h2></div>
+            <div class="row no-gutters">
+                <div class="col-12 px-2">
+                    <p>This process became known as "redlining:"" systematically denying public and private resources to people - usually people of color - based on where they live.</p>
+                    <p>Redlining helped drive urban segregation in the 20th century, as new neighborhoods were built for white people while people of color were forced into neighborhoods declared to be "declining." </p>
+                    <p>Since homeownership is an important way to accrue wealth, redlining drove economic inequality, too - by denying people of color the same opportunities for home ownership that white people had.  </p>
                 </div>
             </div>
         </div>
-        
-        <div class="row no-gutters">
-            <div class="col-lg-5 ml-auto panel-grid">
-                    <p>In the 1930s, <a href="" class="badge badge-pill badge-warning">the federal government</a> developed color-coded maps to guide loans to potential home buyers in cities across the U.S.  Neighborhoods were divided into 4 categories: 
-                        <ul>
-                            <li><strong><span style="color:#4FCF23">Best</span></li>
-                            <li><span style="color:#2338CF">Still desirable</span></li>
-                            <li><span style="color:#b6c200">Definitely declining</span></li>
-                            <li><span style="color:#DF0E0E">Hazardous</span></strong></li>
-                        </ul>
 
-                    This was called <a href="">redlining</a>, and it was rooted in racism. Neighborhood descriptions included statements like: 
-                    <div class="quote my-2 py-2"><em>"Detrimental influences: Infiltration of Negroes. Mixed races."</em></div>
-                    The government denied loans to people trying to buy homes in redlined neighborhoods, and real estate agents often sold homes only to White people. As a result, people of color were denied access to greenlined neighborhoods, and prevented from buying property even in redlined neighborhoods. </p>
-                
-            </div>
-            <div class="col-lg-5 mr-auto panel-grid">
-                    <iframe src="HOLC_map/HOLC_map.html" scrolling="no" frameborder="0" style="position: relative; height: 500px; width: 100%;"></iframe>
-             </div>
-        </div>
+    </div>
+</div>
 
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
 
-        <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="medium mt-4 crossing-header">
-                            <h2 id="section3" class="storyanchor">Discriminatory practices maintain segregation</h2>
-                    </div>
-                    <div class="narrow">
-                           <p>Redlining helped drive urban segregation in the 20th century. Since homeownership is an important way to accrue wealth, redlining drove economic inequality.  </p>
-                           <p>Other real estate practices like <a href="" class="badge badge-pill badge-warning">blockbusting</a>,<a href="" class="badge badge-pill badge-warning">contract selling</a>, and <a href="" class="badge badge-pill badge-warning">racially restrictive covenants</a> have maintained segregation. </p>
-                           <p>Today, housing advocates say that some landlords continue discriminatory practices, describing one landlord’s behavior this way:</p>
-                    </div>
-                    <div class="medium">
-                            <div class="quote my-2 py-2"><em>“This landlord has a pattern of buying old, worn out buildings in working class neighborhoods of color; letting the apartments of long-term tenants fall into disrepair; and making them wait months for low-quality repairs. Many tenants also say that this landlord gives preferential treatment to new tenants.” </em>                            </div>
-                            <div class="text-right">-from the <a href="https://www.worstevictorsnyc.org/evictors-list/">Right to Counsel NYC Coalition: Worst Evictor's List</a></div>
-                        </div>
-                    <div class="narrow mt-2">
-                            <p>These practices continue a legacy of housing racism and maintain residential segregation and, over time, result in disinvestment: when neighborhoods are deprived of resources that their residents need for health and opportunity.</p>
-                    </div>
-
-                    <div class="medium mt-4 crossing-header">
-                            <h2 id="section4" class="storyanchor">Disinvestment leads to housing disrepair</h2>
-                    </div>
-
-                    <div class="narrow">
-                            <p>Throughout the 20th century, redlined neighborhoods deteriorated as they were deprived of private investment and government resources. </p>
-                            <p>Landlords in these neighborhoods are less likely to adequately maintain homes. As a result, many homes have severe and chronic maintenance problems. </p>
-                            <p>And, these housing problems go far beyond inconvenience or mess. They can harm health.</p>
-                             <P>Click to explore NYC's common housing problems.</P>
-                    </div>
-
-                    <div class="medium">
-                        <div class="row mt-4 border-bottom border-top">
-                            <div class="col-3">
-                                    <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-                                            <a class="nav-link active" id="heat-tab" data-toggle="pill" href="#heat" role="tab" aria-controls="heat" aria-selected="true">Heat breakdown</a>
-                                            <a class="nav-link" id="heat2-tab" data-toggle="pill" href="#heat2" role="tab" aria-controls="heat2" aria-selected="false">Supplemental heat</a>
-                                            <a class="nav-link" id="rodents-tab" data-toggle="pill" href="#rodents" role="tab" aria-controls="rodents" aria-selected="false">Mice and rats</a>
-                                            <a class="nav-link" id="cracks-tab" data-toggle="pill" href="#cracks" role="tab" aria-controls="cracks" aria-selected="false">Cracks and holes in walls</a>
-                                            <a class="nav-link" id="broken-tab" data-toggle="pill" href="#broken" role="tab" aria-controls="broken" aria-selected="false">Broken plaster, peeling paint</a>
-                                            <a class="nav-link" id="toilet-tab" data-toggle="pill" href="#toilet" role="tab" aria-controls="toilet" aria-selected="false">Toilet breakdowns</a>
-                                            <a class="nav-link" id="water-tab" data-toggle="pill" href="#water" role="tab" aria-controls="water" aria-selected="false">Water leaks</a>
-                                            <a class="nav-link" id="ac-tab" data-toggle="pill" href="#ac" role="tab" aria-controls="ac" aria-selected="false">No air conditioning</a>
-                                            <a class="nav-link" id="roaches-tab" data-toggle="pill" href="#roaches" role="tab" aria-controls="roaches" aria-selected="false">Cockroaches</a>
-                                          </div>
-                            </div>
-                            <div class="col-9">
-                                    <div class="tab-content" id="tabContent">
-                                            <div class="tab-pane fade show active" id="heat" role="tabpanel" aria-labelledby="heat-tab">
-                                                <div style="height: 600px; background-color: #d3d3d3;">First map/chart
-                                                </div></div>
-                                            <div class="tab-pane fade" id="heat2" role="tabpanel" aria-labelledby="heat2-tab">
-                                                    <div style="height: 600px; background-color: #d3d3d3;">Second map/chart
-                                                        </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="rodents" role="tabpanel" aria-labelledby="rodents-tab">
-                                                    <div style="height: 600px; background-color: #d3d3d3;">Third map/chart
-                                                        </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="cracks" role="tabpanel" aria-labelledby="cracks-tab">
-                                                    <div style="height: 600px; background-color: #d3d3d3;">Fourth map/chart
-                                                        </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="broken" role="tabpanel" aria-labelledby="broken-tab">
-                                                    <div style="height: 600px; background-color: #d3d3d3;">Fifth map/chart
-                                                        </div>
-                                            </div>
-
-                                            <div class="tab-pane fade" id="toilet" role="tabpanel" aria-labelledby="toilet-tab">
-                                                    <div style="height: 600px; background-color: #d3d3d3;">Sixth map/chart
-                                                        </div>
-                                            </div>
-
-                                            <div class="tab-pane fade" id="water" role="tabpanel" aria-labelledby="water-tab">
-                                                    <div style="height: 600px; background-color: #d3d3d3;">Seventh map/chart
-                                                        </div>
-                                            </div>
-
-                                            <div class="tab-pane fade" id="ac" role="tabpanel" aria-labelledby="ac-tab">
-                                                    <div style="height: 600px; background-color: #d3d3d3;">Eighth map/chart
-                                                        </div>
-                                            </div>
-
-                                            <div class="tab-pane fade" id="roaches" role="tabpanel" aria-labelledby="roaches-tab">
-                                                    <div style="height: 600px; background-color: #d3d3d3;">Ninth map/chart
-                                                        </div>
-                                            </div>
-
-
-                                          </div>
-                            </div>
-                        </div>
-
-                            
-                                  
-                        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
-                    </div>
-
+<div class="row no-gutters">
+    <div class="col-lg-6 ml-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h2>Other discrimanatory practices maintain segregation.</h2></div>
+            <div class="row no-gutters">
+                <div class="col-12 px-2">
+                    <p>Other real estate practices like <a href="#bbmodal" data-toggle="modal" class="badge badge-pill badge-warning">blockbusting</a>,<a href="#contractmodal" data-toggle="modal" class="badge badge-pill badge-warning">contract selling</a>, and <a href="#rrcmodal" data-toggle="modal" class="badge badge-pill badge-warning">racially restrictive covenants</a> have maintained segregation. </p>
+                    <p>Today, housing advocates say that some landlords continue discriminatory practices, describing one landlord’s behavior this way:</p>
+                    <div class="quote my-2 py-2"><em>“This landlord has a pattern of buying old, worn out buildings in working class neighborhoods of color; letting the apartments of long-term tenants fall into disrepair; and making them wait months for low-quality repairs. Many tenants also say that this landlord gives preferential treatment to new tenants.” </em>                            </div>
+                    <div class="text-right my-3">-from the <a href="https://www.worstevictorsnyc.org/evictors-list/">Right to Counsel NYC Coalition: Worst Evictor's List</a></div>
+                    <p>These practices continue a legacy of housing racism and maintain residential segregation and, over time, result in disinvestment: when neighborhoods are deprived of resources that their residents need for health and opportunity.</p>
                 </div>
             </div>
+        </div>
+
+    </div>
+    <div class="col-lg-1"></div>
+</div>
+
+  <!-- Blockbusting modal -->
+  <div class="modal fade" id="bbmodal" tabindex="-1" role="dialog" aria-labelledby="bbmodaltitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bbmodaltitle">Blockbusting</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           <p>Blockbusting was a practice used by real estate agents. Since many white people viewed people of color as a social and economic threat to their neighborhoods, agents would tell white homeowners that people of color were about to move into the neighborhood. </p>
+           <p>This would convince homeowners that their house's value would fall - and they would sell for a lower price. Real estate agents would then turn around and sell property to people of color for inflated prices.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contract modal -->
+    <div class="modal fade" id="contractmodal" tabindex="-1" role="dialog" aria-labelledby="contractmodaltitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contractmodaltitle">Contract selling</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               <p>Contract selling was a deceptive and exploitative real estate practice that targeted people of color with private loans to buy homes. These loans often had high interests rates and manipulative terms - in some cases, forcing the buyer to give up their home if they missed even one loan payment. </p>
+               <p>These contracts often made people responsible for paying back far more money than the house they bought was worth.  </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <!-- RRC modal -->
+    <div class="modal fade" id="rrcmodal" tabindex="-1" role="dialog" aria-labelledby="rrcmodaltitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="rrcmodaltitle">Racially-restrictive covenants</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               <p>A racially-restrictive covenant is a clause in the deed for a property that prevents the owner from selling the property to people of color.</p>
+               <p>Racially-restrictive covenants were a way to enforce residential segretation, to ensure that people of color were kept out of white neighborhoods. </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
 
-<div class="row no-gutters mt-4">
-        <div class="col-lg-10 mx-auto">
-            <div class="crossing-header">
-                <h3>Who shoulders the burden of housing disrepair?</h3>
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
+<div class="row no-gutters">
+    <div class="col-lg-7 mx-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h2 id="section4" class="storyanchor">Disinvestment leads to housing disrepair</h2></div>
+            <div class="row no-gutters">
+                <div class="col-12 px-2">
+                    <p>Throughout the 20th century, redlined neighborhoods deteriorated as they were deprived of private investment and government resources. </p>
+                    <p>Landlords in these neighborhoods are less likely to adequately maintain homes. As a result, many homes have severe and chronic maintenance problems. </p>
+                     <P>Click to explore NYC's common housing problems.</P>
+                </div>
             </div>
         </div>
+
+    </div>
 </div>
-    
+
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
+
 <div class="row no-gutters">
-        <div class="col-lg-5 ml-auto panel-grid">
-               <p>As a result of the segregation and disinvestment caused by redlining, Black and Latino people having much less access to healthy housing. They are much more likely to live in buildings that have health-threatening maintenance issues.
-                </P>
-               
-        </div>
-        <div class="col-lg-5 mr-auto panel-grid">
-                                INSERT DISPARITIES CHART HERE            
-                                <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
-                        
-         </div>
-</div>
+    <div class="col-lg-10 mx-auto">
+        <div class="row mt-4 border-bottom border-top">
+            <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="heat-tab" data-toggle="pill" href="#heat" role="tab" aria-controls="heat" aria-selected="true">Heat breakdown</a>
+                            <a class="nav-link" id="heat2-tab" data-toggle="pill" href="#heat2" role="tab" aria-controls="heat2" aria-selected="false">Supplemental heat</a>
+                            <a class="nav-link" id="rodents-tab" data-toggle="pill" href="#rodents" role="tab" aria-controls="rodents" aria-selected="false">Mice and rats</a>
+                            <a class="nav-link" id="cracks-tab" data-toggle="pill" href="#cracks" role="tab" aria-controls="cracks" aria-selected="false">Cracks and holes in walls</a>
+                            <a class="nav-link" id="broken-tab" data-toggle="pill" href="#broken" role="tab" aria-controls="broken" aria-selected="false">Broken plaster, peeling paint</a>
+                            <a class="nav-link" id="toilet-tab" data-toggle="pill" href="#toilet" role="tab" aria-controls="toilet" aria-selected="false">Toilet breakdowns</a>
+                            <a class="nav-link" id="water-tab" data-toggle="pill" href="#water" role="tab" aria-controls="water" aria-selected="false">Water leaks</a>
+                            <a class="nav-link" id="ac-tab" data-toggle="pill" href="#ac" role="tab" aria-controls="ac" aria-selected="false">No air conditioning</a>
+                            <a class="nav-link" id="roaches-tab" data-toggle="pill" href="#roaches" role="tab" aria-controls="roaches" aria-selected="false">Cockroaches</a>
+                          </div>
+            </div>
+            <div class="col-9">
+                    <div class="tab-content" id="tabContent">
+                            <div class="tab-pane fade show active" id="heat" role="tabpanel" aria-labelledby="heat-tab">
+                                <div style="height: 600px; background-color: #d3d3d3;">First map/chart
+                                </div></div>
+                            <div class="tab-pane fade" id="heat2" role="tabpanel" aria-labelledby="heat2-tab">
+                                    <div style="height: 600px; background-color: #d3d3d3;">Second map/chart
+                                        </div>
+                            </div>
+                            <div class="tab-pane fade" id="rodents" role="tabpanel" aria-labelledby="rodents-tab">
+                                    <div style="height: 600px; background-color: #d3d3d3;">Third map/chart
+                                        </div>
+                            </div>
+                            <div class="tab-pane fade" id="cracks" role="tabpanel" aria-labelledby="cracks-tab">
+                                    <div style="height: 600px; background-color: #d3d3d3;">Fourth map/chart
+                                        </div>
+                            </div>
+                            <div class="tab-pane fade" id="broken" role="tabpanel" aria-labelledby="broken-tab">
+                                    <div style="height: 600px; background-color: #d3d3d3;">Fifth map/chart
+                                        </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="toilet" role="tabpanel" aria-labelledby="toilet-tab">
+                                    <div style="height: 600px; background-color: #d3d3d3;">Sixth map/chart
+                                        </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="water" role="tabpanel" aria-labelledby="water-tab">
+                                    <div style="height: 600px; background-color: #d3d3d3;">Seventh map/chart
+                                        </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="ac" role="tabpanel" aria-labelledby="ac-tab">
+                                    <div style="height: 600px; background-color: #d3d3d3;">Eighth map/chart
+                                        </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="roaches" role="tabpanel" aria-labelledby="roaches-tab">
+                                    <div style="height: 600px; background-color: #d3d3d3;">Ninth map/chart
+                                        </div>
+                            </div>
 
 
-<div class="row no-gutters mt-4">
-        <div class="col-lg-10 mx-auto">
-            <div class="crossing-header">
-                <h3>These disparities persist across income levels</h3>
+                          </div>
             </div>
         </div>
+
+        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+
+    </div>
+
 </div>
-    
+
+
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
+
 <div class="row no-gutters">
-        <div class="col-lg-5 ml-auto panel-grid">
-               <p>Black and Latino people have less access to healthy housing, but this isn’t due to different poverty rates in these populations.</P>
-               <p>Even higher-income Black and Latino people are more likely to live in buildings with serious maintenance issues.</p>
-               <p>These problems can’t be fixed by a little bit of tidying up – they stem from a chronic lack of maintenance by management and landlords, and old housing stock in disrepair after decades of disinvestment.</p>
+    <div class="col-lg-7 mx-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h2>Who shoulders the burden of housing disrepair?</h2></div>
+            <div class="row no-gutters">
+                <div class="col-12 px-2">
+                    <p>As a result of the segregation and disinvestment caused by redlining, Black and Latino people having much less access to healthy housing. They are much more likely to live in buildings that have health-threatening maintenance issues.
+                    </P>
+
+                    <hr>
+
+                    <em>INSERT DISPARITIES CHART HERE</em>
+
+                    <hr>
+
+                    <p>These housing problems go far beyond inconvenience or mess. They can harm health.</p>
+
+                </div>
+                
+            </div>
         </div>
-        <div class="col-lg-5 mr-auto panel-grid">
-                                INSERT DISPARITIES BY INCOME CHART HERE            
-                                <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
-                        
-         </div>
+        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+
+    </div>
 </div>
+
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
+
+<div class="row no-gutters">
+    <div class="col-lg-8 mx-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h2>These disparities persist across income levels</h2></div>
+            <div class="row no-gutters">
+                <div class="col-6 pl-2"><p>Black and Latino people have less access to healthy housing, but this isn’t due to higher poverty rates in these populations.</P>
+                    <p>Even higher-income Black and Latino people are more likely to live in buildings with serious maintenance issues.</p>
+                    <p>These problems can’t be fixed by a little bit of tidying up – they stem from chronic neglect maintenance by building management and landlords, and old housing stock in disrepair after decades of disinvestment.</p></div>
+                <div class="col-6">DISPARITIES BY INCOME CHART</div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+
+    </div>
+</div>
+
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
+
+
+
+
+
 
 <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-9 mx-auto">
             <div class="medium mt-4">
                     <h4>Meanwhile, the amount of affordable housing is shrinking...</h4>
             </div>
@@ -504,26 +753,28 @@
             <div class="medium mt-4 text-right">
                     <h4>...leading to a risk of eviction.</h4>
             </div>
-        <hr>
         </div>
     </div>
 
-    <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="medium mt-4 crossing-header">
-                        <h2 id="section5" class="storyanchor">This racist system results in health disparities</h2>
-                </div>
-                <div class="narrow">
-                        <p>Disinvestment in neighborhoods of color leads to housing disrepair which, in turn, creates unhealthy homes.
-                            </p>
-                        <p>Disrepair, mold, and pests trigger asthma attacks, sending children with asthma – with frantic, frightened caregivers– to hospitals.
-                            </p>
-                            <p>As a result, the highest rates of asthma emergency department visits for children age 5 to 14 are in neighborhoods that are home largely to people of color.
-                                </p>
-                </div>
+    <div class="row no-gutters connector">
+        <div class="col-1 ml-auto border-right-red"></div>
+        <div class="col-1 mr-auto"></div>
+    </div>
 
-                <div class="medium mt-4">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+    <div class="row no-gutters">
+        <div class="col-lg-8 mx-auto">
+            <div class="redcard">
+                <div class="redcard-title"><h2 id="section5" class="storyanchor">Racism and disinvestment show up in health data</h2></div>
+                <div class="row no-gutters">
+                    <div class="col-12 px-2">
+                        <p>Disinvestment in neighborhoods of color leads to housing disrepair which, in turn, creates unhealthy homes.
+                        </p>
+                    <p>Disrepair, mold, and pests trigger asthma attacks, sending children with asthma – with frantic, frightened caregivers– to hospitals.
+                        </p>
+                        <p>As a result, the highest rates of asthma emergency department visits for children age 5 to 14 are in neighborhoods that are home largely to people of color.
+                            </p>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                   <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Asthma disparities</a>
                                 </li>
@@ -543,49 +794,65 @@
                               </div>
 
 
-                        <hr>
+                    </div>
                 </div>
-
             </div>
-        </div>
-
-
-
-
-
-
-
-
-
-<!--empty onejawn-->
-<div class="row">
-        <div class="col-lg-8 mx-auto">
-            <div class="medium mt-4 crossing-header">
-                    <h2>Poorly maintained homes can harm health.</h2>
-            </div>
-            <div class="narrow">
-                    <p>A well-maintained, healthy home is vital. It’s protection from the weather. It’s a place for you to be safe. It’s a place where your family can grow and thrive.</p>
-                    <p>But a poorly maintained, unhealthy home can’t provide a truly safe haven. Instead, it presents a dangerous environment.</p>
-            </div>
-
-
-
-
+    
         </div>
     </div>
-<!--end onejawn-->
 
-<div class="row no-gutters mt-4">
-        <div class="col-lg-10 mx-auto">
-            <div class="crossing-header">
-                    <h3>Racial justice is a health priority. So how can we create a city in which race doesn't determine whether you have an opportunity to stay healthy?</h3>
+
+    <div class="row no-gutters connector">
+        <div class="col-1 ml-auto border-right-red"></div>
+        <div class="col-1 mr-auto"></div>
+    </div>
+
+
+    
+    
+    <div class="row no-gutters">
+        <div class="col-lg-6 mx-auto">
+            <div class="redcard">
+                <div class="redcard-title"><h2>A healthy home should be a right.</h2></div>
+                <div class="row no-gutters">
+                    <div class="col-12 px-2"><p>A home in good repair is vital. It’s protection from the weather. It’s a place for you to be safe. It’s a place where your family can grow and thrive.
+                    </p>
+                        <p>But a poorly maintained, unhealthy home can’t provide a truly safe haven. Instead, it presents a dangerous environment.</p>
+                    
+                    
+                    </div>
+                </div>
             </div>
+    
         </div>
-</div>
+    </div>
+
+    <div class="row no-gutters connector">
+        <div class="col-1 ml-auto border-right-red"></div>
+        <div class="col-1 mr-auto"></div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-lg-7 mx-auto">
+            <h3 class="text-center">
+                    So how can we create a city in which race doesn't determine whether you have an opportunity to stay healthy?</h3>
+        </div>
+    </div>
+
+    <div class="row no-gutters connector">
+        <div class="col-1 ml-auto border-right-red"></div>
+        <div class="col-1 mr-auto"></div>
+    </div>
+
+
+
+
+
     
 <div class="row no-gutters">
         <div class="col-lg-5 ml-auto panel-grid">
-               <p>Policymakers and community advocates can support racial justice initiatives:
+            <h4>Policymakers and community advocates can support racial justice initiatives:</h4>
+               <p>
                    <ul>
                        <li>Invest in neighborhoods harmed by a history of structural racism. Promote economic and educational equity and support <a href="https://wherewelive.cityofnewyork.us/">Where We Live initiatives</a>.</li>
                        <li>Support Department of Housing Preservation and Development initiatives aimed at rehabilitating older housing.</li>
@@ -598,18 +865,23 @@
                         
          </div>
 </div>
-<br>
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
 <div class="row no-gutters">
         <div class="col-lg-5 ml-auto panel-grid">
             INSERT IMAGE HERE
                
         </div>
         <div class="col-lg-5 mr-auto panel-grid">
-                <p>Tenants and homeowners can tap into systems that are here to support you:
+            <h4>Tenants and homeowners can tap into systems that are here to support you:</h4>
+                <p>
                         <ul>
                             <li>Report maintenance problems to your building's management. If your building manager doesn't address issues, call 311 to <a href="http://www1.nyc.gov/nyc-resources/service/1950/residential-maintenance-complaint">file a landlord maintenance complaint</a>.
                              </li>
-                            <li>Get help if you need it: If you have been diagnosed with asthma and live in a home with mice or cockroaches, you’re eligible for a free home assessment by the Health Department’s <a href="https://www1.nyc.gov/site/doh/health/health-topics/healthy-neighborhoods-asthma-triggers.page">Healthy Neighborhoods Program</a>.
+                            <li>Get help if you need it: If you have been diagnosed with asthma and live in a home with mice or cockroaches, you may be eligible for a free home assessment by the Health Department’s <a href="https://www1.nyc.gov/site/doh/health/health-topics/healthy-neighborhoods-asthma-triggers.page">Healthy Neighborhoods Program</a>.
                              </li>
                              <LI>Take action for fair housing with <a href="https://wherewelive.cityofnewyork.us/">Where We Live</a>.
                                  </LI>
@@ -618,10 +890,15 @@
                         
          </div>
 </div>
-<br>
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
 <div class="row no-gutters">
         <div class="col-lg-5 ml-auto panel-grid">
-               <p>Building owners and landlords should keep apartments safe and sanitary – it’s the law.
+            <h4>Building owners and landlords should keep apartments safe and sanitary – it’s the law.</h4>
+               <p>
 
                    <ul>
                        <li>Promptly fix problems that tenants report. 
@@ -638,7 +915,31 @@
                         
          </div>
 </div>
-<br>
+
+<div class="row no-gutters connector">
+    <div class="col-1 ml-auto border-right-red"></div>
+    <div class="col-1 mr-auto"></div>
+</div>
+
+<div class="row no-gutters">
+    <div class="col-lg-6 mx-auto">
+        <div class="redcard">
+            <div class="redcard-title"><h3>More on environmental health and justice</h3></div>
+            <div class="row no-gutters">
+                <div class="col-12 px-2">
+                    <ul>
+                        <li><a href="">Why asthma is a social justice issue</a></li>
+                        <li><a href="">How redlining explains health</a></li>
+                        <li><a href="">NYC's violence rates</a></li>
+                        <li><a href="">Interactive Heat Vulnerability Index</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br><br><br>
 
 
 
