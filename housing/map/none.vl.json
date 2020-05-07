@@ -44,7 +44,7 @@
         "orient":"top-left",
         "gradientLength": 100
     },
-      "scale": {"scheme": {"name": "greens", "extent": [0.2, 1.0]}}
+      "scale": {"scheme": {"name": "blues", "extent": [0.2, 1.0]}}
     },
     "strokeWidth": {
       "condition": [{"selection": "highlight", "value": 2}],
