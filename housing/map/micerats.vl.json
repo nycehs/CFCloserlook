@@ -23,7 +23,7 @@
         "key": "GEOCODE",
         "fields": [
           "GEOCODE",
-          "heating-breakdowns"
+          "mice-and-rats"
         ]
       },
       "default": "no data"
@@ -36,16 +36,16 @@
   "encoding": {
     "color": {
       "bin": false,
-      "field": "heating-breakdowns",
+      "field": "mice-and-rats",
       "type": "quantitative",
       "legend": {
-        "title": "Heating breakdowns",
+        "title": "Mice and rats",
         "titleFontSize": 12,
         "orient":"top-left",
         "gradientLength": 100
     },
-      "scale": {"scheme": {"name": "purplered", "extent": [0.01, 0.75]}}
-    },
+    "scale": {"scheme": {"name": "purplered", "extent": [0.01, 1.275]}}
+      },
     "strokeWidth": {
       "condition": [{"selection": "highlight", "value": 2}],
       "value": 0.5
@@ -57,9 +57,9 @@
         "title": "Neighborhood"
       },
       {
-        "field": "heating-breakdowns",
+        "field": "mice-and-rats",
         "type": "quantitative",
-        "title": "Percent of homes with heating breakdowns"
+        "title": "Percent of homes with mice and rats"
       }
     ]
   }

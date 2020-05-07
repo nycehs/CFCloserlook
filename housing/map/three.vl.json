@@ -23,7 +23,7 @@
         "key": "GEOCODE",
         "fields": [
           "GEOCODE",
-          "heating-breakdowns"
+          "3-or-more-problems"
         ]
       },
       "default": "no data"
@@ -36,15 +36,15 @@
   "encoding": {
     "color": {
       "bin": false,
-      "field": "heating-breakdowns",
+      "field": "3-or-more-problems",
       "type": "quantitative",
       "legend": {
-        "title": "Heating breakdowns",
+        "title": "3+ healthy housing problems",
         "titleFontSize": 12,
         "orient":"top-left",
         "gradientLength": 100
     },
-      "scale": {"scheme": {"name": "purplered", "extent": [0.01, 0.75]}}
+      "scale": {"scheme": {"name": "reds", "extent": [0.1, 1.0]}}
     },
     "strokeWidth": {
       "condition": [{"selection": "highlight", "value": 2}],
@@ -57,9 +57,9 @@
         "title": "Neighborhood"
       },
       {
-        "field": "heating-breakdowns",
+        "field": "3-or-more-problems",
         "type": "quantitative",
-        "title": "Percent of homes with heating breakdowns"
+        "title": "Percent of homes with 3+ healthy housing problems"
       }
     ]
   }
