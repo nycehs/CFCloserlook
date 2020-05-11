@@ -578,15 +578,16 @@
             <a class="nav-link" id="none-tab" data-toggle="pill" data-dismiss="modal" href="#none" role="tab" aria-controls="none" aria-selected="false"><strong>No healthy housing problems</strong></a>
             <br>
             <em class="pl-2">Healthy housing problems:</em>
+            <a class="nav-link" id="roaches-tab" data-toggle="pill" data-dismiss="modal" href="#roaches" role="tab" aria-controls="roaches" aria-selected="false">Cockroaches</a>
+            <a class="nav-link" id="rodents-tab" data-toggle="pill" data-dismiss="modal" href="#rodents" role="tab" aria-controls="rodents" aria-selected="false">Mice and rats</a>
+            <a class="nav-link" id="cracks-tab" data-toggle="pill" data-dismiss="modal" href="#cracks" role="tab" aria-controls="cracks" aria-selected="false">Cracks and holes in walls</a>
+            <a class="nav-link" id="water-tab" data-toggle="pill" data-dismiss="modal" href="#water" role="tab" aria-controls="water" aria-selected="false">Water leaks</a>
+            <a class="nav-link" id="broken-tab" data-toggle="pill" data-dismiss="modal" href="#broken" role="tab" aria-controls="broken" aria-selected="false">Broken plaster, peeling paint</a>
+
                 <a class="nav-link" id="heat-tab" data-toggle="pill" data-dismiss="modal" href="#heat" role="tab" aria-controls="heat" aria-selected="true">Heat breakdown</a>
                 <a class="nav-link" id="heat2-tab" data-toggle="pill" data-dismiss="modal" href="#heat2" role="tab" aria-controls="heat2" aria-selected="false">Supplemental heat</a>
-                <a class="nav-link" id="rodents-tab" data-toggle="pill" data-dismiss="modal" href="#rodents" role="tab" aria-controls="rodents" aria-selected="false">Mice and rats</a>
-                <a class="nav-link" id="cracks-tab" data-toggle="pill" data-dismiss="modal" href="#cracks" role="tab" aria-controls="cracks" aria-selected="false">Cracks and holes in walls</a>
-                <a class="nav-link" id="broken-tab" data-toggle="pill" data-dismiss="modal" href="#broken" role="tab" aria-controls="broken" aria-selected="false">Broken plaster, peeling paint</a>
-                <a class="nav-link" id="toilet-tab" data-toggle="pill" data-dismiss="modal" href="#toilet" role="tab" aria-controls="toilet" aria-selected="false">Toilet breakdowns</a>
-                <a class="nav-link" id="water-tab" data-toggle="pill" data-dismiss="modal" href="#water" role="tab" aria-controls="water" aria-selected="false">Water leaks</a>
                 <a class="nav-link" id="ac-tab" data-toggle="pill" data-dismiss="modal" href="#ac" role="tab" aria-controls="ac" aria-selected="false">No air conditioning</a>
-                <a class="nav-link" id="roaches-tab" data-toggle="pill" data-dismiss="modal" href="#roaches" role="tab" aria-controls="roaches" aria-selected="false">Cockroaches</a>
+                <a class="nav-link" id="toilet-tab" data-toggle="pill" data-dismiss="modal" href="#toilet" role="tab" aria-controls="toilet" aria-selected="false">Toilet breakdowns</a>
 
         </div>
         <div class="modal-footer">
@@ -607,88 +608,102 @@
                         <a class="nav-link" id="none-tab" data-toggle="pill" href="#none" role="tab" aria-controls="none" aria-selected="false"><strong>No healthy housing problems</strong></a>
                         <br>
                         <em class="pl-2">Healthy housing problems:</em>
+                        <a class="nav-link" id="roaches-tab" data-toggle="pill" href="#roaches" role="tab" aria-controls="roaches" aria-selected="false">Cockroaches</a>
+                        <a class="nav-link" id="rodents-tab" data-toggle="pill" href="#rodents" role="tab" aria-controls="rodents" aria-selected="false">Mice and rats</a>
+                        <a class="nav-link" id="cracks-tab" data-toggle="pill" href="#cracks" role="tab" aria-controls="cracks" aria-selected="false">Cracks and holes in walls</a>
+                        <a class="nav-link" id="water-tab" data-toggle="pill" href="#water" role="tab" aria-controls="water" aria-selected="false">Water leaks</a>
+                        <a class="nav-link" id="broken-tab" data-toggle="pill" href="#broken" role="tab" aria-controls="broken" aria-selected="false">Broken plaster, peeling paint</a>
+
                             <a class="nav-link" id="heat-tab" data-toggle="pill" href="#heat" role="tab" aria-controls="heat" aria-selected="true">Heat breakdown</a>
                             <a class="nav-link" id="heat2-tab" data-toggle="pill" href="#heat2" role="tab" aria-controls="heat2" aria-selected="false">Supplemental heat</a>
-                            <a class="nav-link" id="rodents-tab" data-toggle="pill" href="#rodents" role="tab" aria-controls="rodents" aria-selected="false">Mice and rats</a>
-                            <a class="nav-link" id="cracks-tab" data-toggle="pill" href="#cracks" role="tab" aria-controls="cracks" aria-selected="false">Cracks and holes in walls</a>
-                            <a class="nav-link" id="broken-tab" data-toggle="pill" href="#broken" role="tab" aria-controls="broken" aria-selected="false">Broken plaster, peeling paint</a>
-                            <a class="nav-link" id="toilet-tab" data-toggle="pill" href="#toilet" role="tab" aria-controls="toilet" aria-selected="false">Toilet breakdowns</a>
-                            <a class="nav-link" id="water-tab" data-toggle="pill" href="#water" role="tab" aria-controls="water" aria-selected="false">Water leaks</a>
                             <a class="nav-link" id="ac-tab" data-toggle="pill" href="#ac" role="tab" aria-controls="ac" aria-selected="false">No air conditioning</a>
-                            <a class="nav-link" id="roaches-tab" data-toggle="pill" href="#roaches" role="tab" aria-controls="roaches" aria-selected="false">Cockroaches</a>
+                            <a class="nav-link" id="toilet-tab" data-toggle="pill" href="#toilet" role="tab" aria-controls="toilet" aria-selected="false">Toilet breakdowns</a>
                           </div>
             </div>
-            <div class="col-md-9">
-                    <div class="tab-content" id="tabContent">
 
-                        <div class="tab-pane fade" id="none" role="tabpanel" aria-labelledby="none-tab">
-                            <div style="height: 600px; background-color: #ffffff;">
+
+<script>
+    function setdMapContainerHeight() {
+// set variables for the two elements
+var iframeContainer = document.querySelector('#tabContent');
+var innerMapContainer = document.querySelector('#tabContent > html');
                                 
-                                <iframe src="map/none.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
+//get height value of innerMap
+var mapRect = innerMapContainer.getBoundingClientRect();
+var mapHeight = mapRect.height;
+var mapHeightString = mapHeight.toString();
+var styleHeight = mapHeightString + 'px';
+//set height of iframe as map height
+iframeContainer.style.height = styleHeight;
+}
+                                
+// set map height on initial load;
+document.addEventListener('DOMContentLoaded', setMapContainerHeight);
+// add event handler on the window resize event, and attach map height function.
+document.addEventListener('resize', setMapContainerHeight);
+</script>
 
-                            </div></div>
+            <div class="col-md-9">
+                    <div class="tab-content" id="tabContent" style="height: 95vh; background-color: #ffffff;">
 
-                            <div class="tab-pane fade  show active" id="three" role="tabpanel" aria-labelledby="three-tab">
-                                <div style="height: 600px; background-color: #ffffff;">
-                                    
-                                    <iframe src="map/three.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
+                        <div class="tab-pane fade  show active" id="three" role="tabpanel" aria-labelledby="three-tab" style="height: 100%;"> 
+                            <iframe src="map/three.html" scrolling="no" frameborder="0" style="position: relative; height: 100%; width: 100%;"></iframe>
 
-                                </div></div>
+                        </div>
 
+                        <div class="tab-pane fade" id="none" role="tabpanel" aria-labelledby="none-tab" style="height: 100%;">  
+                                <iframe src="map/none.html" scrolling="no" frameborder="0" style="position: relative;  height: 100%;width: 100%;"></iframe>
 
-                            <div class="tab-pane fade" id="heat" role="tabpanel" aria-labelledby="heat-tab">
-                                <div style="height: 600px; background-color: #ffffff;">
-                                    
-                                    <iframe src="map/breakdown.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
-                                    
-                                </div></div>
-
-
-
-                            <div class="tab-pane fade" id="heat2" role="tabpanel" aria-labelledby="heat2-tab">
-                                    <div style="height: 600px; background-color: #ffffff;">
-                                        <iframe src="map/supplemental.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
-                                        </div>
-                            </div>
-                            <div class="tab-pane fade" id="rodents" role="tabpanel" aria-labelledby="rodents-tab">
-                                    <div style="height: 600px; background-color: #ffffff;">
-                                             <iframe src="map/micerats.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
-                                        </div>
-                            </div>
-                            <div class="tab-pane fade" id="cracks" role="tabpanel" aria-labelledby="cracks-tab">
-                                    <div style="height: 600px; background-color: #ffffff;">
-                                        <iframe src="map/cracks.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
-                                        </div>
-                            </div>
-                            <div class="tab-pane fade" id="broken" role="tabpanel" aria-labelledby="broken-tab">
-                                    <div style="height: 600px; background-color: #ffffff;">
-                                        <iframe src="map/broken.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
-                                        </div>
                             </div>
 
-                            <div class="tab-pane fade" id="toilet" role="tabpanel" aria-labelledby="toilet-tab">
-                                    <div style="height: 600px; background-color: #ffffff;">
-                                        <iframe src="map/toilet.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
-                                        </div>
-                            </div>
 
-                            <div class="tab-pane fade" id="water" role="tabpanel" aria-labelledby="water-tab">
-                                    <div style="height: 600px; background-color: #ffffff;">
-                                        <iframe src="map/water.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
-                                        </div>
-                            </div>
+                            <div class="tab-pane fade" id="heat" role="tabpanel" aria-labelledby="heat-tab" style="height: 100%;">
+                                <iframe src="map/breakdown.html" scrolling="no" frameborder="0" style="position: relative; height: 100%; width: 100%;"></iframe>      
+                                </div>
 
-                            <div class="tab-pane fade" id="ac" role="tabpanel" aria-labelledby="ac-tab">
-                                    <div style="height: 600px; background-color: #ffffff;">
-                                        <iframe src="map/noac.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
-                                        </div>
-                            </div>
 
-                            <div class="tab-pane fade" id="roaches" role="tabpanel" aria-labelledby="roaches-tab">
-                                    <div style="height: 600px; background-color: #ffffff;">
-                                        <iframe src="map/cockroaches.html" scrolling="no" frameborder="0" style="position: relative; height: 600px; width: 100%;"></iframe>
+
+                            <div class="tab-pane fade" id="heat2" role="tabpanel" aria-labelledby="heat2-tab" style="height: 100%;">
+                                        <iframe src="map/supplemental.html" scrolling="no" frameborder="0" style="position: relative; height: 100%; width: 100%;"></iframe>
                                         </div>
-                            </div>
+
+                            <div class="tab-pane fade" id="rodents" role="tabpanel" aria-labelledby="rodents-tab" style="height: 100%;">
+                                             <iframe src="map/micerats.html" scrolling="no" frameborder="0" style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+
+                            <div class="tab-pane fade" id="cracks" role="tabpanel" aria-labelledby="cracks-tab" style="height: 100%;">
+                                        <iframe src="map/cracks.html" scrolling="no" frameborder="0" style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+
+                            <div class="tab-pane fade" id="broken" role="tabpanel" aria-labelledby="broken-tab" style="height: 100%;">
+
+                                        <iframe src="map/broken.html" scrolling="no" frameborder="0" style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+                            
+
+                            <div class="tab-pane fade" id="toilet" role="tabpanel" aria-labelledby="toilet-tab" style="height: 100%;">
+                                  
+                                        <iframe src="map/toilet.html" scrolling="no" frameborder="0" style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+                         
+
+                            <div class="tab-pane fade" id="water" role="tabpanel" aria-labelledby="water-tab" style="height: 100%;">
+                             
+                                        <iframe src="map/water.html" scrolling="no" frameborder="0" style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+                        
+
+                            <div class="tab-pane fade" id="ac" role="tabpanel" aria-labelledby="ac-tab" style="height: 100%;">
+                                  
+                                        <iframe src="map/noac.html" scrolling="no" frameborder="0" style="position: relative;  height: 100%; width: 100%;"></iframe>
+                                        </div>
+                           
+
+                            <div class="tab-pane fade" id="roaches" role="tabpanel" aria-labelledby="roaches-tab" style="height: 100%;">
+                                 
+                                        <iframe src="map/cockroaches.html" scrolling="no" frameborder="0" style="position: relative; height: 100%; width: 100%;"></iframe>
+                                        </div>
+                          
 
 
                           </div>
