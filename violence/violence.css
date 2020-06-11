@@ -13,6 +13,13 @@
     margin-top: 50px;
 }
 
+.drawerbg {
+    background-color: #d7e6e3;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
 .heavyline {
     border: 5px solid #707070;
     border-radius: 5px;
