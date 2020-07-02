@@ -207,6 +207,7 @@
                             <p>New York City has hundreds of neighborhoods and nearly as many ways of drawing neighborhood boundaries. When you <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx">browse data on the Environment & Health Data Portal</a>, you might notice that data is available in several different neighborhood schemes. </p>
 
                             <p>For example, dig around in the Asthma data and you might wonder why <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=18,4466a0,11,Summarize">Adults with Asthma</a> is available in something called UHF34 neighborhoods, but <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2147,4466a0,11,Summarize">Public School Children with Asthma</a> is in UHF42. <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2383,4466a0,11,Summarize">Asthma emergency department visits</a> are offered in NTAs, while other indicators here and there are offered by CD, ZIP code, PUMA, and occasionally even Police Precinct. <strong>What are all these neighborhood schemes, why do we use one and not the other, and why isn’t the whole system consistent? </strong></p>
+
                             <p>The most common neighborhood boundaries on the EH Data Portal are United Hospital Fund neighborhoods (UHF), Community Districts, and Public Use Microdata Areas (PUMAs). These three common neighborhood schemes - Community Districts, PUMAs, and UHF neighborhoods - have different building blocks. Community Districts are political boundaries. PUMAs are made up of NTAs (neighborhood tabulation areas), which are made up of census tracts. And UHF neighborhoods are made up of ZIP codes.</P>
                                </div>
    
@@ -365,6 +366,10 @@
                             <div class="narrow my-2">
                                <h3>United Hospital Fund (UHF) neighborhoods</h3>                               
                                <p>United Hospital Fund neighborhoods are used for health research. These neighborhood boundaries were created in the 1980s by the Health Department, the United Hospital Fund, and other city agencies to be similar to NYC’s Community Districts, but based on <a href="#ZIPmodal" data-toggle="modal" class="badge badge-pill badge-warning">ZIP codes</a>.</p>
+
+                               <p>Health data - like somebody’s hospitalization record, for example, or a response to a survey - often includes a person’s ZIP code. It’s the most readily available piece of geographic information in administrative data. It’s also the neighborhood designation that most people know and can provide when responding to a survey.  </p>
+
+
                                <p>To <a href="#privacymodal" data-toggle="modal" class="badge badge-pill badge-warning">protect privacy</a>, we often must bundle (or aggregate) data from a larger area, so we need a scheme of neighborhoods that are made up of a collection of ZIP codes: UHFs. 
                                 
                                 Collecting data by ZIP code and then "rolling up" into UHF neighborhoods has been used in health research for decades. The methods for our surveys (like the Community Health Survey) are designed to include enough people from each UHF neighborhood so that there’s a “representative sample” of all New Yorkers, and so that we can compare neighborhoods with high statistical confidence. Usually, we use neighborhoods we call UHF42, which breaks the city down into 42 neighborhoods. Sometimes, though, we use UHF34 neighborhoods - grouping together some of the UHF42 neighborhoods to increase the statistical power of a survey. </p>
@@ -407,8 +412,7 @@
           </button>
         </div>
         <div class="modal-body">
-            <p>Health data - like a hospitalization record, for example - is anonymized: we remove any information that can identify somebody, like their name and address. However, we keep the ZIP code so that we know roughly where that person lives so that we can do a geographic analysis of health behaviors and conditions.  </p>
-            <p>However, we often can’t report data by ZIP code. The Health Department usually suppresses data if there are only a few cases of something - again, to protect privacy. That means that to report data, we need more of it: we need to aggregate data over a larger time period, or over a larger area. But because ZIP codes don’t share boundaries with community districts or census tracts, we can’t determine what CD or PUMA somebody lives in based on their ZIP code. So we aggregate up from ZIP codes to UHF neighborhoods.</p>
+            <p>The Health Department usually suppresses data if there are only a few cases of something, to protect privacy. That means that to report data, we need more of it: we need to aggregate data over a larger time period, or over a larger area. But because ZIP codes don’t share boundaries with community districts or census tracts, we can’t determine what CD or PUMA somebody lives in based on their ZIP code. So we aggregate up from ZIP codes to UHF neighborhoods.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -442,10 +446,9 @@
                             </div>
 
                             <div class="narrow my-2">
-                                <h2>Why can't it all be the same?</h2>
-                                <p>On the EH Data Portal, we aggregate data: we get it from lots of different sources. We have health department data, census data, and data from other city agencies, too. They might not line up exactly the way we want them to - some population data might be reported by the census tract, making it easy to roll up into NTA and PUMA (and easy to use PUMAs as nearly identical to Community Districts). But other data might only have ZIP code reported - which means that it gets rolled up into UHF neighborhoods and makes it a little bit harder to compare to data reported by PUMA. </p>
-                                <p>Data are collected in different ways for different purposes, so there are bound to be differences in the underlying geographies: law enforcement data might be collected and reported by Police Precinct, and educational data might be collected and reported by School District.</p>
-                                <p>The fact that there’s no one consistent root unit of spatial analysis does complicate things. <a href="https://carto.com/blog/zip-codes-spatial-analysis/">The geographer Matt Forrest points out that any unit might have problems</a>, since “humans don’t behave based on administrative units.” Since any way of drawing boundaries or aggregating data will smooth over some variation within groups, it’s important to know the boundaries and the data reported at that level. </p>
+                                <h2>So how can you use the data that’s available?  </h2>
+                                <p>On the EH Data Portal, we aggregate data from lots of different sources. They might not line up exactly the way we want them to: when data are collected in different ways for different purposes, so there are bound to be differences in the underlying geographies that the data make available.</p>
+                                <p>The fact that there’s no one consistent root unit of spatial analysis does complicate things. <a href="https://carto.com/blog/zip-codes-spatial-analysis/">The geographer Matt Forrest points out that any unit might have problems</a>, since “humans don’t behave based on administrative units.” Any way of drawing boundaries or aggregating data will smooth over some variation within groups. But despite data limitations, we can see and learn from health patterns by geography. Neighborhood health data have a lot to tell us, even when their boundaries are imperfect representations of New York City communities. </p>
                                 <p>If you're mapping health data, you can <a href="https://github.com/nycehs/NYC_geography">download and use shapefiles, geojson, and topojson files at our Github repository</a>. </p>
 
                             </div>
