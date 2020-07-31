@@ -40,7 +40,7 @@
       "field": "VALUE",
       "type": "quantitative",
       "legend":null,
-      "scale": {"scheme": {"name": "blues", "extent": [0.25, 0.75]}}
+      "scale": {"scheme": {"name": "purplegreen", "extent": [0.25, 0.75]}}
     },
     "strokeWidth": {
       "condition": [{"selection": "highlight", "value": 2}],

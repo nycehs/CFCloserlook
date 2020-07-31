@@ -32,10 +32,10 @@ BK63,Brooklyn,Crown Heights South,.1
 BK64,Brooklyn,Prospect Heights,.1
 BK68,Brooklyn,Fort Greene,.1
 BK69,Brooklyn,Clinton Hill,.1
-BK72,Brooklyn,Williamsburg,.25
-BK73,Brooklyn,North Side-South Side,.25
+BK72,Brooklyn,Williamsburg,-.5
+BK73,Brooklyn,North Side-South Side,-.5
 BK75,Brooklyn,Bedford,.1
-BK76,Brooklyn,Greenpoint,.25
+BK76,Brooklyn,Greenpoint,-.5
 BK77,Brooklyn,Bushwick North,.1
 BK78,Brooklyn,Bushwick South,.1
 BK79,Brooklyn,Ocean Hill,.1
@@ -44,7 +44,7 @@ BK82,Brooklyn,East New York,.1
 BK83,Brooklyn,Cypress Hills-City Line,.1
 BK85,Brooklyn,East New York (Pennsylvania Ave),.1
 BK88,Brooklyn,Borough Park,.1
-BK90,Brooklyn,East Williamsburg,.25
+BK90,Brooklyn,East Williamsburg,-.5
 BK91,Brooklyn,East Flatbush-Farragut,.1
 BK93,Brooklyn,Starrett City,.1
 BK95,Brooklyn,Erasmus,.1
@@ -63,17 +63,17 @@ BX14,Bronx,East Concourse-Concourse Village,.1
 BX17,Bronx,East Tremont,.1
 BX22,Bronx,North Riverdale-Fieldston-Riverdale,.1
 BX26,Bronx,Highbridge,.1
-BX27,Bronx,Hunts Point,.25
+BX27,Bronx,Hunts Point,.6
 BX28,Bronx,Van Cortlandt Village,.1
 BX29,Bronx,Spuyten Duyvil-Kingsbridge,.1
 BX30,Bronx,Kingsbridge Heights,.1
 BX31,Bronx,Allerton-Pelham Gardens,.1
-BX33,Bronx,Longwood,.25
-BX34,Bronx,Melrose South-Mott Haven North,.25
+BX33,Bronx,Longwood,.6
+BX34,Bronx,Melrose South-Mott Haven North,.6
 BX35,Bronx,Morrisania-Melrose,.1
 BX36,Bronx,University Heights-Morris Heights,.1
 BX37,Bronx,Van Nest-Morris Park-Westchester Square,.1
-BX39,Bronx,Mott Haven-Port Morris,.25
+BX39,Bronx,Mott Haven-Port Morris,.6
 BX40,Bronx,Fordham South,.1
 BX41,Bronx,Mount Hope,.1
 BX43,Bronx,Norwood,.1
@@ -173,8 +173,8 @@ QN70,Queens,Astoria,.1
 QN71,Queens,Old Astoria,.1
 QN72,Queens,Steinway,.1
 QN76,Queens,Baisley Park,.1
-QN98,Queens,Airport,0
-QN99,Queens,park-cemetery-etc-Queens,0
+QN98,Queens,Airport,
+QN99,Queens,park-cemetery-etc-Queens,
 SI01,Staten Island,Annadale-Huguenot-Prince's Bay-Eltingville,.1
 SI05,Staten Island,New Springville-Bloomfield-Travis,.1
 SI07,Staten Island,Westerleigh,.1

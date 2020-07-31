@@ -21,11 +21,11 @@
 407,Queens,Flushing and Whitestone (CD7),0.25
 205,Bronx,Fordham and University Heights (CD5),0.25
 302,Brooklyn,Fort Greene and Brooklyn Heights (CD2),0.25
-301,Brooklyn,Greenpoint and Williamsburg (CD1),1
+301,Brooklyn,Greenpoint and Williamsburg (CD1),-.5
 102,Manhattan,Greenwich Village and Soho (CD2),0.25
 204,Bronx,Highbridge and Concourse (CD4),0.25
 408,Queens,Hillcrest and Fresh Meadows (CD8),0.25
-202,Bronx,Hunts Point and Longwood (CD2),1
+202,Bronx,Hunts Point and Longwood (CD2),.9
 403,Queens,Jackson Heights (CD3),0.25
 412,Queens,Jamaica and Hollis (CD12),0.25
 409,Queens,Kew Gardens and Woodhaven (CD9),0.25
@@ -36,7 +36,7 @@
 109,Manhattan,Morningside Heights and Hamilton Heights (CD9),0.25
 211,Bronx,Morris Park and Bronxdale (CD11),0.25
 203,Bronx,Morrisania and Crotona (CD3),0.25
-201,Bronx,Mott Haven and Melrose (CD1),1
+201,Bronx,Mott Haven and Melrose (CD1),.9
 306,Brooklyn,Park Slope and Carroll Gardens (CD6),0.25
 209,Bronx,Parkchester and Soundview (CD9),0.25
 413,Queens,Queens Village (CD13),0.25

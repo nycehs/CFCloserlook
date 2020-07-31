@@ -204,11 +204,11 @@
 
                         <div class="narrow my-2">
                             <h2>Mapping health data onto NYC's neighborhoods</h2>
-                            <p>New York City has hundreds of neighborhoods and nearly as many ways of drawing neighborhood boundaries. When you <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx">browse data on the Environment & Health Data Portal</a>, you might notice that data is available in several different neighborhood schemes. </p>
+                            <p>New York City has hundreds of neighborhoods and nearly as many ways of drawing neighborhood boundaries. When you <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx">visit the Environment & Health Data Portal</a>, you might notice that data is available in several different neighborhood schemes. </p>
 
-                            <p>For example, dig around in the Asthma data and you might wonder why <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=18,4466a0,11,Summarize">Adults with Asthma</a> is available in something called UHF34 neighborhoods, but <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2147,4466a0,11,Summarize">Public School Children with Asthma</a> is in UHF42. <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2383,4466a0,11,Summarize">Asthma emergency department visits</a> are offered in NTAs, while other indicators here and there are offered by CD, ZIP code, PUMA, and occasionally even Police Precinct. <strong>What are all these neighborhood schemes, why do we use one and not the other, and why isn’t the whole system consistent? </strong></p>
+                            <p>For example, dig around in the asthma data pages and you'll find <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=18,4466a0,11,Summarize">Adults with Asthma</a> presented by UHF34 neighborhoods, <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2147,4466a0,11,Summarize">Public School Children with Asthma</a> presented by UHF42 neighborhoods, and <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2383,4466a0,11,Summarize">Asthma emergency department visits</a> are offered by NTAs. Other data on the portal are offered by CD, ZIP code, PUMA, and occasionally even police precinct. <strong>What are all these neighborhood schemes, why do we use one and not the other, and why isn’t the whole system consistent? </strong></p>
 
-                            <p>The most common neighborhood boundaries on the EH Data Portal are United Hospital Fund neighborhoods (UHF), Community Districts, and Public Use Microdata Areas (PUMAs). These three common neighborhood schemes - Community Districts, PUMAs, and UHF neighborhoods - have different building blocks. Community Districts are political boundaries. PUMAs are made up of NTAs (neighborhood tabulation areas), which are made up of census tracts. And UHF neighborhoods are made up of ZIP codes.</P>
+                            <p>The most common neighborhood boundaries on the EH Data Portal are Community Districts, Public Use Microdata Areas, and United Hospital Fund neighborhoods. These three common neighborhood schemes have different building blocks. Let's explore these.</P>
                                </div>
    
                                <!--start wide-->
@@ -297,14 +297,16 @@
 
                             <div class="narrow">
 
-                            <h3>Community Districts (CD)</h3>
-                            <p>There are 59 Community Districts in NYC, each overseen by a Community Board that advises on land use, zoning, city budgets, and more. As a political boundary, it is a useful geographic breakdown for city operations. <a href="https://www1.nyc.gov/site/cau/community-boards/about-commmunity-boards.page">Learn more about Community Boards</a>. </p>
+                            <h3>Community Districts</h3>
+                            <p>There are 59 Community Districts (CDs) in NYC, each overseen by a Community Board that advises on land use, zoning, city budgets, and more. As a political boundary, CDs are useful geographic units for breaking down city operations. <a href="https://www1.nyc.gov/site/cau/community-boards/about-commmunity-boards.page">Learn more about Community Boards</a>. </p>
 
-                            <h3>Public Use Microdata Areas (PUMA)</h3>
-                            <p>PUMAs have boundaries defined by the US Census. They are made up of groups of <a href="#NTAmodal" data-toggle="modal" class="badge badge-pill badge-warning">census tracts</a>, small geographic areas originally created as a way to break down area for the US Census. </p>
-                            <p>PUMAs have very similar boundaries to Community Districts, which means that often, one can be used as a proxy for the other. In the map below, notice how <span style="color:#22669e; font-weight:bold;">Brooklyn CD 1, in Greenpoint/Williamsburg</span>, is almost identical to the PUMA.</p>
-                            <p>There are four PUMAs that are made up of two CDs combined into one, leaving us with 55 areas instead of 59 - for example, notice how <span style="color:#22669e; font-weight:bold;">two CDs in the South Bronx</span> combine to form one PUMA.</p>
-                            <p>Each PUMA breaks down into Neighborhood Tabulation Areas (NTAs), and each NTA breaks down into census tracts.</p>
+                            <h3>Public Use Microdata Areas</h3>
+                            <p>Public Use Microdata Areas (PUMAs) have boundaries defined by the US Census. They are made up of groups of <a href="#NTAmodal" data-toggle="modal" class="badge badge-pill badge-warning">census tracts</a>. </p>
+
+                            <p>There are 55 PUMAs in NYC. PUMAs have similar boundaries to Community Districts, which means that often, one can be used as a proxy for the other. In the map below, notice how <span style="color:#B897C5; font-weight:bold;">Brooklyn CD 1, in Greenpoint/Williamsburg</span>, is almost identical to the PUMA.</p>
+
+                            <p>There are four PUMAs that are made up of two CDs combined into one. Notice how <span style="color:#90CC8F; font-weight:bold;">two CDs in the South Bronx</span> combine to form one PUMA.</p>
+                            <p>Each PUMA breaks down into Neighborhood Tabulation Areas (NTAs), and each NTA breaks down even further into census tracts.</p>
                         </div>
 
                         <div class="medium py-2">
@@ -348,9 +350,9 @@
           </button>
         </div>
         <div class="modal-body">
-            <p><a href="https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku">Census tracts</a> are small geographic areas originally created by the US government as a way to break down area as part of the US Census.</p>
-            <p>In New York City, we also have another unit of measurement: neighborhood tabulation areas, which are groups of census tracts. These are created by the NYC Department of City Planning, and each NTA has a population of at least 15,000 people.  </p>
-            <p>Since each NTA is made up of a group of census tracts, we can say that census tracts “roll up” into NTAs - and, similarly, NTAs “roll up” into PUMAs. This nested approach is useful for zooming in or zooming out on data.</p>
+            <p><a href="https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku">Census tracts</a> are small geographic areas originally created by the US government as a way to break down area as part of the US Census. About 1,200 to 1,800 people live in each census tract.</p>
+            <p>In New York City, we also have another unit of measurement that's based on census tracts: neighborhood tabulation areas (NTAs), which are groups of census tracts. These are created by the NYC Department of City Planning, and each NTA has a population of at least 15,000 people.  </p>
+            <p>Since each NTA is made up of a group of census tracts, we can say that census tracts “roll up” into NTAs - and, similarly, NTAs “roll up” into PUMAs. This nested approach is useful, since it allows you to break down data into smaller geographic areas (census tracts), or zoom out and look at the parent areas (NTAs).</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -364,16 +366,17 @@
 
 
                             <div class="narrow my-2">
-                               <h3>United Hospital Fund (UHF) neighborhoods</h3>                               
-                               <p>United Hospital Fund neighborhoods are used for health research. These neighborhood boundaries were created in the 1980s by the Health Department, the United Hospital Fund, and other city agencies to be similar to NYC’s Community Districts, but based on <a href="#ZIPmodal" data-toggle="modal" class="badge badge-pill badge-warning">ZIP codes</a>.</p>
+                               <h3>United Hospital Fund  neighborhoods</h3>                               
+                               <p>United Hospital Fund neighborhoods (UHFs) have boundaries based on <a href="#ZIPmodal" data-toggle="modal" class="badge badge-pill badge-warning">ZIP codes</a>. This geography was created by the Health Department, the United Hospital Fund, and other city agencies in the 1980s. They were designed for health research, and to be similar to NYC’s Community Districts.</p>
 
                                <p>Health data - like somebody’s hospitalization record, for example, or a response to a survey - often includes a person’s ZIP code. It’s the most readily available piece of geographic information in administrative data. It’s also the neighborhood designation that most people know and can provide when responding to a survey.  </p>
 
 
-                               <p>To <a href="#privacymodal" data-toggle="modal" class="badge badge-pill badge-warning">protect privacy</a>, we often must bundle (or aggregate) data from a larger area, so we need a scheme of neighborhoods that are made up of a collection of ZIP codes: UHFs. 
+                               <p>To <a href="#privacymodal" data-toggle="modal" class="badge badge-pill badge-warning">protect privacy</a>, we often bundle (or aggregate) data from a larger area, so we need a scheme of neighborhoods that are made up of a collection of ZIP codes: UHFs. 
                                 
-                                Collecting data by ZIP code and then "rolling up" into UHF neighborhoods has been used in health research for decades. The methods for our surveys (like the Community Health Survey) are designed to include enough people from each UHF neighborhood so that there’s a “representative sample” of all New Yorkers, and so that we can compare neighborhoods with high statistical confidence. Usually, we use neighborhoods we call UHF42, which breaks the city down into 42 neighborhoods. Sometimes, though, we use UHF34 neighborhoods - grouping together some of the UHF42 neighborhoods to increase the statistical power of a survey. </p>
-                                <p>In the map below, you can see the UHF42s, notice how <span style="color:#22669e; font-weight:bold;">three UHF42 neighborhoods in the South Bronx</span> are combined into one UHF34 neigborhood - and how the UHF neighborhoods have ZIP codes (or, more precisely, ZIP code tabulation areas) as their root unit.</p>
+                                Collecting data by ZIP code and then "rolling up" into UHF neighborhoods has been used in health research for decades. The methods for our surveys (like the Community Health Survey) are designed to include enough people from each UHF neighborhood so that there’s a “representative sample” of all New Yorkers, and so that we can compare neighborhoods with high statistical confidence. Usually, we use neighborhoods UHF42 neighborhoods, which breaks the city down into 42 neighborhoods. Sometimes, though, we use UHF34 neighborhoods - by grouping together some of the neighborhoods, we can increase the statistical power of a survey. </p>
+
+                                <p>In the map below, notice how <span style="color:#22669e; font-weight:bold;">three UHF42 neighborhoods in the South Bronx</span> are combined into one UHF34 neigborhood - and how the UHF neighborhoods have ZIP codes (or, more precisely, ZIP code tabulation areas) as their root unit.</p>
                                
                             </div>
 
@@ -384,14 +387,14 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="ZIPmodalLongTitle">About ZIPs</h5>
+          <h5 class="modal-title" id="ZIPmodalLongTitle">About ZIP codes</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-            What are ZIP codes? ZIP stands for Zone Improvement Plan, and ZIP codes were introduced in 1963 as a way to systematize how mail gets delivered. However, a ZIP code doesn’t actualy refer to an area. It actually refers to a collection of addresses - points - that make up a mail delivery route. These sometimes change. Additionally, in NYC, some large buildings have their own ZIP codes.</p>
-            <p>To deal with this, Zip Code Tabulation Areas (ZCTAs) solidify ZIP codes into areas. Often, data reported by ZIP code are actually mapped by ZCTA. </p>
+            ZIP stands for Zone Improvement Plan, and ZIP codes were introduced in 1963 as a way to systematize how mail gets delivered. However, a ZIP code doesn’t refer to an area, but to a collection of addresses - points - that make up a mail delivery route. These sometimes change. Also, in NYC, some large buildings have their own ZIP codes.</p>
+            <p>To deal with this, Zip Code Tabulation Areas (ZCTAs) represent ZIP codes as areas. Often, data reported by ZIP code are actually mapped by ZCTA. Sometimes, the Health Department reports data by "modified ZCTA," in which ZCTAs with small populations are combined, to provide more stable population estimates. </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -412,7 +415,9 @@
           </button>
         </div>
         <div class="modal-body">
-            <p>The Health Department usually suppresses data if there are only a few cases of something, to protect privacy. That means that to report data, we need more of it: we need to aggregate data over a larger time period, or over a larger area. But because ZIP codes don’t share boundaries with community districts or census tracts, we can’t determine what CD or PUMA somebody lives in based on their ZIP code. So we aggregate up from ZIP codes to UHF neighborhoods.</p>
+            <p>For a lot of health data, we remove any information that can identify someone, like their name and address. However, we keep the ZIP code so that we know roughly where people live so that we can do a geographic analysis of health behaviors and conditions.</p>
+
+            <p>However, we often can’t report data by ZIP code. The Health Department usually suppresses data if there are only a few cases of an illness, to protect privacy. That means that to report data, we need more of it: we need to aggregate data over a larger time period, or over a larger area. Because each UHF neighborhood is made up of ZIP codes, we can aggregate up, using the ZIP codes in our health data to report data by UHF neighborhood.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -434,11 +439,9 @@
 
 
                             <div class="narrow my-2">
-                             <h2>So which do you use, when?</h2>
-                             <p>These different neighborhood boundaries can make things confusing. For example, say you live in Ditmas Park and you want to take some health data to a meeting of your Community Board. Flatbush/Midwood is Community District 14. However, despite the fact that UHF neighborhoods were originally designed to approximate Community Districts, CD14 straddles two different UHF neighborhoods. </p>
-                             <p>We have <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/CommunityDistrict.aspx">a tool that helps you view the overlap and the differences</a>, but it still raises a difficult question: what data would you bring to your Community Board meeting? Sometimes, even with data, the answer isn’t clear-cut. 
-                             </p>
-
+                             <h2>How do you choose when boundaries overlap?</h2>
+                             <p>These different neighborhood boundaries can make things confusing. For example, say you live in Ditmas Park and you want to take some health data to a meeting of your Community Board. Ditmas Park is part of Community District 14, Flatbush/Midwood. But CD14 straddles two different UHF neighborhoods. </p>
+                             <p>We have <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/CommunityDistrict.aspx">a tool that helps you view the overlap and the differences</a> so that you can choose what Neighborhood Report to use, but it still raises a difficult question: what neighborhood's data would you bring to your Community Board meeting?</p>
                             </div>
 
                             <div class="narrow my-4 py-2">
@@ -446,9 +449,11 @@
                             </div>
 
                             <div class="narrow my-2">
-                                <h2>So how can you use the data that’s available?  </h2>
-                                <p>On the EH Data Portal, we aggregate data from lots of different sources. They might not line up exactly the way we want them to: when data are collected in different ways for different purposes, so there are bound to be differences in the underlying geographies that the data make available.</p>
-                                <p>The fact that there’s no one consistent root unit of spatial analysis does complicate things. <a href="https://carto.com/blog/zip-codes-spatial-analysis/">The geographer Matt Forrest points out that any unit might have problems</a>, since “humans don’t behave based on administrative units.” Any way of drawing boundaries or aggregating data will smooth over some variation within groups. But despite data limitations, we can see and learn from health patterns by geography. Neighborhood health data have a lot to tell us, even when their boundaries are imperfect representations of New York City communities. </p>
+                                <p>On the EH Data Portal, we aggregate data from lots of different sources. They might not line up exactly the way we want them to: when data are collected in different ways for different purposes, there will be differences in the underlying geographies that the data make available. The fact that there’s no one consistent root unit of spatial analysis does complicate things. </p>
+                                <p>But <em>any</em> way of drawing boundaries or aggregating data will smooth over some variation within groups. Despite data limitations, we can still see and learn from health patterns by geography. Neighborhood health data have a lot to tell us, even when their boundaries are imperfect representations of New York City's communities. </p>
+
+                                <hr>
+
                                 <p>If you're mapping health data, you can <a href="https://github.com/nycehs/NYC_geography">download and use shapefiles, geojson, and topojson files at our Github repository</a>. </p>
 
                             </div>
