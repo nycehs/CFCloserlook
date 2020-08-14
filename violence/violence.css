@@ -1,8 +1,7 @@
 .vcard {
     margin-top: 5px;
     margin-bottom: 5px;
-    border-left: 2px dotted #6D8448;
-    border-top: 2px dotted #6D8448;	
+    border-left: 8px solid #e3f8c3;
     box-shadow: 10px 10px 5px 0px #dfdfdf;
     background-color: #ffffff;
     padding-bottom: 15px;
@@ -26,9 +25,9 @@
 }
 
 .vcard-title {
-    background-color: #BCCCA3;
+    background-color: #e3f8c3;
     padding: 15px;
-    color: #5C5C5C;
+    color: #6439c9;
     margin-bottom: 15px;
 }
 
