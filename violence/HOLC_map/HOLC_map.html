@@ -32,6 +32,7 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
+        <script src="data/NYPDShootingsYTD.js"></script>
         <script src="data/HOLCClassD_0.js"></script>
         <script src="data/HOLCClassC_1.js"></script>
         <script src="data/HOLCClassB_2.js"></script>
@@ -52,22 +53,11 @@
                 map.fitBounds(bounds_group.getBounds());
             }
         }
+
         function pop_HOLCClassD_0(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['holc_id'] !== null ? Autolinker.link(String(feature.properties['holc_id'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['holc_grade'] !== null ? Autolinker.link(String(feature.properties['holc_grade'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['area_description_data'] !== null ? Autolinker.link(String(feature.properties['area_description_data'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['layer'] !== null ? Autolinker.link(String(feature.properties['layer'])) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['area_description_data'] !== null ? Autolinker.link(String(feature.properties.area_description_data['1c'])) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -97,7 +87,43 @@
             style: style_HOLCClassD_0_0,
         });
         bounds_group.addLayer(layer_HOLCClassD_0);
+        //map.addLayer(layer_HOLCClassD_0);
+
+
+        function pop_Shootings(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['occur_date'] !== null ? Autolinker.link(String(feature.properties['occur_date'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        var geojsonMarkerOptions = {
+                radius: 2,
+                fillColor: "black",
+                color: "black",
+                weight: 1,
+                opacity: 0.5,
+                fillOpacity: 0.8
+            };
+        
+        map.createPane('pane_Shootings');
+        map.getPane('pane_Shootings').style.zIndex = 600;
+        map.getPane('pane_Shootings').style['mix-blend-mode'] = 'normal';
+        var layer_Shootings = new L.geoJson(json_Shootings, {
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, geojsonMarkerOptions);
+                },
+            attribution: '',
+            pane: 'pane_Shootings',
+            onEachFeature: pop_Shootings
+        });
+        bounds_group.addLayer(layer_Shootings);
+        map.addLayer(layer_Shootings);
         map.addLayer(layer_HOLCClassD_0);
+
+
         function pop_HOLCClassC_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -143,7 +169,7 @@
             style: style_HOLCClassC_1_0,
         });
         bounds_group.addLayer(layer_HOLCClassC_1);
-        map.addLayer(layer_HOLCClassC_1);
+        //map.addLayer(layer_HOLCClassC_1);
         function pop_HOLCClassB_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -189,7 +215,7 @@
             style: style_HOLCClassB_2_0,
         });
         bounds_group.addLayer(layer_HOLCClassB_2);
-        map.addLayer(layer_HOLCClassB_2);
+        //map.addLayer(layer_HOLCClassB_2);
         function pop_HOLCClassA_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -235,7 +261,9 @@
             style: style_HOLCClassA_3_0,
         });
         bounds_group.addLayer(layer_HOLCClassA_3);
-        map.addLayer(layer_HOLCClassA_3);
+        //map.addLayer(layer_HOLCClassA_3);
+
+
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
             position: 'topleft',
@@ -247,7 +275,10 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/HOLCClassA_3.png" /> Class A: Best': layer_HOLCClassA_3,'<img src="legend/HOLCClassB_2.png" /> Class B: Still desirable': layer_HOLCClassB_2,'<img src="legend/HOLCClassC_1.png" /> Class C: Definitely declining': layer_HOLCClassC_1,'<img src="legend/HOLCClassD_0.png" /> Class D: Hazardous': layer_HOLCClassD_0,},{collapsed:false}).addTo(map);
+        //L.control.layers(baseMaps,{'<img src="legend/HOLCClassA_3.png" /> Class A: Best': layer_HOLCClassA_3,'<img src="legend/HOLCClassB_2.png" /> Class B: Still desirable': layer_HOLCClassB_2,'<img src="legend/HOLCClassC_1.png" /> Class C: Definitely declining': layer_HOLCClassC_1,'<img src="legend/HOLCClassD_0.png" /> Class D: Hazardous': layer_HOLCClassD_0,},{collapsed:false}).addTo(map);
+
+        L.control.layers(baseMaps,{'Shootings, YTD':layer_Shootings,'<img src="legend/HOLCClassD_0.png" /> Class D: "Hazardous"': layer_HOLCClassD_0,}
+            ,{collapsed:false}).addTo(map);    
         setBounds();
         </script>
     </body>
