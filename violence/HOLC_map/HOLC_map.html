@@ -10,18 +10,29 @@
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
         <style>
-        html, body, #map {
+        html, body {
             width: 100%;
             height: 100%;
             padding: 0;
             margin: 0;
         }
+        #map {
+            position: absolute;
+			top: 20px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+        }
+        #range {
+            width: 100%;
+        }
         </style>
         <title></title>
     </head>
     <body>
-        <div id="map">
-        </div>
+        <div id="map"></div>
+        <input id="range" type="range" min="0" max="1.0" step="any" />
+
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script><script src="js/L.Control.Locate.min.js"></script>
         <script src="js/leaflet.rotatedMarker.js"></script>
@@ -53,6 +64,9 @@
                 map.fitBounds(bounds_group.getBounds());
             }
         }
+
+
+        
 
         function pop_HOLCClassD_0(feature, layer) {
             var popupContent = '<table>\
@@ -280,6 +294,33 @@
         L.control.layers(baseMaps,{'Shootings, YTD':layer_Shootings,'<img src="legend/HOLCClassD_0.png" /> Class D: "Hazardous"': layer_HOLCClassD_0,}
             ,{collapsed:false}).addTo(map);    
         setBounds();
+
+
+        // Start swipe function (input slider above also needed)
+        // Logic borrowed from Vladimir Agafonkin: https://gist.github.com/mourner/8104526
+        var panes = map.getPanes(),
+        pane = panes.altPane = L.DomUtil.create('div', 'leaflet-overlay-pane'),
+        svg = L.svg({pane: 'altPane'});
+
+		//panes.objectsPane.insertBefore(pane, panes.markerPane); //this seems no longer needed
+
+		//var geojson = L.geoJson(statesData, {style: style}).on(events).addTo(map);
+		//var geojson2 = L.geoJson(statesData, {style: style2, renderer: svg}).on(events).addTo(map);
+        
+		var range = document.getElementById('range');
+
+		function clip() {
+			var nw = map.containerPointToLayerPoint([0, 0]),
+				se = map.containerPointToLayerPoint(map.getSize()),
+				clipX = nw.x + (se.x - nw.x) * range.value;
+
+			panes.overlayPane.style.clip = 'rect(' + [nw.y, se.x, se.y, clipX].join('px,') + 'px)';
+			pane.style.clip              = 'rect(' + [nw.y, clipX, se.y, nw.x].join('px,') + 'px)';
+		}
+
+		range['oninput' in range ? 'oninput' : 'onchange'] = clip;
+		map.on('move', clip, svg);
+		clip();
         </script>
     </body>
 </html>
