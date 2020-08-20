@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+        <link rel="stylesheet" href="https://nycehs.github.io/Portal-Core-Repo/fontawesome/css/all.min.css">
         <style>
         html, body {
             width: 100%;
@@ -31,7 +32,9 @@
     </head>
     <body>
         <div id="map"></div>
+        <!--commenting out Swipe input slider to disable it
         <input id="range" type="range" min="0" max="1.0" step="any" />
+        -->
 
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script><script src="js/L.Control.Locate.min.js"></script>
@@ -88,7 +91,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: .7,
-                fillColor: 'rgba(221,34,37,1.0)',
+                fillColor: 'rgba(221,34,37,0.7)',
             }
         }
         map.createPane('pane_HOLCClassD_0');
@@ -291,7 +294,7 @@
         var baseMaps = {};
         //L.control.layers(baseMaps,{'<img src="legend/HOLCClassA_3.png" /> Class A: Best': layer_HOLCClassA_3,'<img src="legend/HOLCClassB_2.png" /> Class B: Still desirable': layer_HOLCClassB_2,'<img src="legend/HOLCClassC_1.png" /> Class C: Definitely declining': layer_HOLCClassC_1,'<img src="legend/HOLCClassD_0.png" /> Class D: Hazardous': layer_HOLCClassD_0,},{collapsed:false}).addTo(map);
 
-        L.control.layers(baseMaps,{'Shootings, YTD':layer_Shootings,'<img src="legend/HOLCClassD_0.png" /> Class D: "Hazardous"': layer_HOLCClassD_0,}
+        L.control.layers(baseMaps,{'<i class="fas fa-circle"></i>&nbsp;Shootings, YTD':layer_Shootings,'<img src="legend/HOLCClassD_0.png" /> Class D: "Hazardous"': layer_HOLCClassD_0,}
             ,{collapsed:false}).addTo(map);    
         setBounds();
 
