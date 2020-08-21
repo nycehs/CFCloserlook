@@ -712,12 +712,36 @@ document.addEventListener('resize', setMapContainerHeight);
 
 
     </div>
-    <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+
+    <button type="button" class="btn btn-med float-right btn-light" data-toggle="modal" data-target="#hvsModal">Get the data</button>
 
     </div>
 
 
 </div>
+
+<!-- HVS Modal -->
+<div class="modal fade" id="hvsModal" tabindex="-1" role="dialog" aria-labelledby="hvsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="hvsModalTitle">Get the data: Housing and Vacancy Survey</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Data on housing maintenance conditions come from the <a href="https://www.census.gov/programs-surveys/nychvs.html">2017 Housing and Vancancy Survey</a>. Explore more data from the HVS at the <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=1,4&subtopic_id=36">Environment & Health Data Portal: Housing</a>.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 
 <div class="row no-gutters connector">
@@ -738,10 +762,10 @@ document.addEventListener('resize', setMapContainerHeight);
                         <p>Healthy housing problems - like maintenance deficiencies and general disrepair - are associated with many adverse health outcomes.
                             <ul>
                                 <li>General disrepair is associated with anxiety and depression.</li>
-                                <li>Some forms, like <strong>broken plaster and peeling paint</strong>, or <strong>cracks and holes in interior walls</strong>, can expose children to lead paint.</li>
-                                <li><strong>Water leaks</strong>, broken windows, or <strong>toilet breakdowns</strong> can introduce mold - which triggers allergies, asthma, and can make chronic conditions worse.</li>
-                                <li>Pests, like <strong>cockroaches, mice, and rats</strong> can make asthma and allergies worse.</li>
-                                <li>The <strong>lack of an air conditioner</strong> places people at risk of death during hot weather.</li>
+                                <li>Some forms, like <strong>broken plaster and peeling paint</strong>, or <strong>cracks and holes in interior walls</strong>, can <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=2,3&subtopic_id=14">expose children to lead paint</a>.</li>
+                                <li><strong>Water leaks</strong>, broken windows, or <strong>toilet breakdowns</strong> can introduce mold - which triggers allergies, <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=2,3&subtopic_id=11">asthma</a>, and can make chronic conditions worse.</li>
+                                <li>Pests, like <strong>cockroaches, mice, and rats</strong> can make <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=2,3&subtopic_id=11">asthma</a> and allergies worse.</li>
+                                <li>The <strong>lack of an air conditioner</strong> places people at risk of <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=2,3&subtopic_id=100">death during hot weather</a>.</li>
                         </ul>
                     </div>
                     <p>As a result of the segregation and disinvestment caused by redlining, <strong>Black and Latino people have less access to healthy housing</strong>. They are more likely to live in buildings that have health-threatening maintenance issues.
@@ -749,7 +773,7 @@ document.addEventListener('resize', setMapContainerHeight);
 
                     <hr>
 
-                    <iframe title="" aria-label="Split Bars" id="datawrapper-chart-PTyc4" src="https://datawrapper.dwcdn.net/PTyc4/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="231"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+                    <iframe title="" aria-label="Split Bars" id="datawrapper-chart-PTyc4" src="https://datawrapper.dwcdn.net/PTyc4/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="231"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
                     </script>
 
 
@@ -759,7 +783,7 @@ document.addEventListener('resize', setMapContainerHeight);
                 
             </div>
         </div>
-        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+        <button type="button" class="btn btn-med float-right btn-light" data-toggle="modal" data-target="#hvsModal">Get the data</button>
 
     </div>
 </div>
@@ -776,7 +800,7 @@ document.addEventListener('resize', setMapContainerHeight);
             <div class="redcard-title"><h2 id="section5" class="storyanchor">These disparities persist across income levels.</h2></div>
             <div class="row no-gutters">
                 <div class="col-12 pl-2"><p>Black and Latino people have less access to healthy housing, but this isn’t due to higher poverty rates in these populations.</P>
-                    <p>Black and Latino people with higher incomes are also more likely to live in buildings with serious maintenance issues.</p>
+                    <p>Black and Latino people with higher incomes are also more likely to live in buildings with serious maintenance issues - further suggesting that racism is behind these disparities.</p>
                     
                 
                     <hr>
@@ -853,7 +877,7 @@ document.addEventListener('resize', setMapContainerHeight);
 
             </div>
         </div>
-        <button type="button" class="btn btn-med float-right btn-light">Get the data</button>
+        <button type="button" class="btn btn-med float-right btn-light" data-toggle="modal" data-target="#hvsModal">Get the data</button>
 
     </div>
 </div>
@@ -871,26 +895,6 @@ document.addEventListener('resize', setMapContainerHeight);
 
 
 
-<!--
-<div class="row">
-        <div class="col-lg-9 mx-auto">
-            <div class="medium mt-4">
-                    <h4>Meanwhile, the amount of affordable housing is shrinking...</h4>
-            </div>
-
-            <div class="medium my-4 text-right">
-                    <h4>...as people pay more for worse housing, <br>low-income New Yorkers face a greater risk of eviction.</h4>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row no-gutters connector">
-        <div class="col-1 ml-auto border-right-red"></div>
-        <div class="col-1 mr-auto"></div>
-    </div>
-        -->
-
 
     <div class="row no-gutters">
         <div class="col-lg-8 mx-auto">
@@ -898,7 +902,7 @@ document.addEventListener('resize', setMapContainerHeight);
                 <div class="redcard-title"><h2>Racism and disinvestment show up in health data.</h2></div>
                 <div class="row no-gutters">
                     <div class="col-12 px-2">
-                        <p>Disinvestment in neighborhoods of color leads to housing disrepair which, in turn, creates unhealthy homes. Disrepair, mold, and pests trigger asthma attacks, sending children with asthma – with frantic, frightened caregivers– to hospitals.
+                        <p>Disinvestment in neighborhoods of color leads to housing disrepair which, in turn, creates unhealthy homes. Disrepair, mold, and pests trigger asthma attacks, sending children with asthma to hospitals - an often frightening experience for both children and their caregivers.
                         </p>
                         <p>As a result, the highest rates of asthma emergency department visits for children age 5 to 14 are in neighborhoods that are home largely to people of color.
                             </p>
@@ -913,10 +917,10 @@ document.addEventListener('resize', setMapContainerHeight);
                               </ul>
                               <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        <iframe title="" aria-label="Table" id="datawrapper-chart-LeCdQ" src="//datawrapper.dwcdn.net/LeCdQ/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="795"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+                                        <iframe title="" aria-label="Table" id="datawrapper-chart-LeCdQ" src="//datawrapper.dwcdn.net/LeCdQ/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="795"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
                                 </div>
                                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    <iframe title="" aria-label="chart" id="datawrapper-chart-XBLYk" src="https://datawrapper.dwcdn.net/XBLYk/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="600"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+                                    <iframe title="" aria-label="chart" id="datawrapper-chart-XBLYk" src="https://datawrapper.dwcdn.net/XBLYk/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="600"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
                                     </script>
                                 </div>
 
@@ -927,8 +931,35 @@ document.addEventListener('resize', setMapContainerHeight);
                 </div>
             </div>
     
+            <button type="button" class="btn btn-med float-right btn-light" data-toggle="modal" data-target="#asthmaModal">Get the data</button>
+
+
         </div>
     </div>
+
+    <!-- Asthma Modal -->
+<div class="modal fade" id="asthmaModal" tabindex="-1" role="dialog" aria-labelledby="asthmaModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="asthmaModalTitle">Get the data: Asthma and population</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Data on <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Subtopic.aspx?theme_code=2,3&subtopic_id=11">childhood asthma emergency department visits</a> come from the New York State Statewide Planning and Research Cooperative System (SPARCS) Deidentified Hospital Discharge Data.</p>
+            <p>Data on the <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2325,4466a0,109,Summarize">race/ethnicity of people by neighborhood</a> come from the American Community Survey.</p>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <div class="row no-gutters connector">
@@ -964,7 +995,7 @@ document.addEventListener('resize', setMapContainerHeight);
     <div class="row no-gutters">
         <div class="col-lg-7 mx-auto">
             <h3 class="text-center">
-                    So how can we create a city in which race doesn't determine whether you have an opportunity to stay healthy?</h3>
+                    So how can we create a city in which race - and racism - doesn't determine whether you have an opportunity to stay healthy?</h3>
         </div>
     </div>
 
@@ -1057,10 +1088,12 @@ document.addEventListener('resize', setMapContainerHeight);
             <div class="row no-gutters">
                 <div class="col-12 px-2">
                     <ul>
-                        <li><a href="">Why asthma is a social justice issue</a></li>
+                        <li><a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Closerlook/povasthma/index.html">Why asthma is a social justice issue</a></li>
+                        <!--Awaiting go-live
                         <li><a href="">How redlining explains health</a></li>
-                        <li><a href="">NYC's violence rates</a></li>
-                        <li><a href="">Interactive Heat Vulnerability Index</a></li>
+                        -->
+                        <li><a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Closerlook/assaults/index.html">NYC's violence rates</a></li>
+                        <li><a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/HeatHub/hvi.html">Interactive Heat Vulnerability Index</a></li>
                     </ul>
                 </div>
             </div>
