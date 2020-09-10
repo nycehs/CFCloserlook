@@ -6,7 +6,7 @@
   "layer":[
     {
     "data":{
-    "url": "https://raw.githubusercontent.com/nycehs/NYC_geography/master/PUMA_or_Subborough.geo.json",
+    "url": "https://raw.githubusercontent.com/nycehs/NYC_geography/master/PUMA_or_Subborough.topo.json",
     "format": {"type": "topojson", "feature": "collection"}
     },
     "mark": {"type": "geoshape", "stroke": "#ffffff","fill":"lightgray"}
@@ -29,9 +29,6 @@
       "default": "no data"
     }
   ],
-  "selection": {
-    "highlight": {"type": "single", "empty": "none", "on": "mouseover"}
-  },
   "mark": {"type": "geoshape", "stroke": "#ffffff"},
   "encoding": {
     "color": {
@@ -47,7 +44,7 @@
       "scale": {"scheme": {"name": "purplered", "extent": [0.01, 0.75]}}
     },
     "strokeWidth": {
-      "condition": [{"selection": "highlight", "value": 2}],
+      "condition": [],
       "value": 0.5
     },
     "tooltip": [
