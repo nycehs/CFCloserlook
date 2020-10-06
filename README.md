@@ -6,4 +6,3 @@ To ready for deployment, add Google Analytics code to the header of a story, and
 
 Remove folders from this repo once the data stories are live.
 
-Testing automatic commit.
