@@ -374,7 +374,7 @@
 
                             <div class="medium">
                                 <figure class="figure my-3 pt-2">
-                                    <img src="redlinedoc1.png"
+                                    <img class="img-fluid" width="100%" src="redlinedoc1.png"
                                         alt="A redlining document that details housing, construction type, average age, repair condition, occupancy, price range, and other information">
                                     <figcaption class="figure-caption font-italic my-1">A redlining document that
                                         details housing, construction type, average age, repair condition, occupancy,
@@ -384,7 +384,7 @@
                                 <hr>
 
                                 <figure class="figure pb-2 border-bottom">
-                                    <img class="mt-2" src="redlinedoc2.png"
+                                    <img class="mt-2 img-fluid" width="100%" src="redlinedoc2.png"
                                         alt="A redining document that reads: Detrimental influences: Obsolescence and poor maintenance. Infiltration of Negroes. Elevated structures on Lexington Ave & Fulton & Grand Avenue. Mixed races.">
                                     <figcaption class="figure-caption font-italic my-1">A redining document that reads:
                                         Detrimental influences: Obsolescence and poor maintenance. Infiltration of
@@ -512,6 +512,12 @@
                                             aria-controls="staten" aria-selected="false">Staten island</a>
                                     </li>
 
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="map-tab" data-toggle="tab" href="#citywidemap"
+                                            role="tab" aria-controls="citywidemap" aria-selected="false">Citywide
+                                            Map</a>
+                                    </li>
+
 
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
@@ -590,6 +596,19 @@
                                         <p>Like Queens, Staten Island saw much less redlining than other boroughs.</p>
                                     </div>
 
+                                    <div class="tab-pane fade" id="citywidemap" role="tabpanel"
+                                        aria-labelledby="map-tab">
+                                        <iframe title="Aggressive redlining of the Bronx, Brooklyn, and Manhattan"
+                                            aria-label="USA new york city community districts choropleth map"
+                                            id="datawrapper-chart-4Vuf4" src="//datawrapper.dwcdn.net/4Vuf4/4/"
+                                            scrolling="no" frameborder="0"
+                                            style="width: 0; min-width: 100% !important; border: none;"
+                                            height="500"></iframe>
+                                        <script
+                                            type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
+
+                                    </div>
+
 
 
 
@@ -617,13 +636,7 @@
                                     between
                                     original redlining and today's poverty rates. However, this is in part due to the
                                     displacement of the original residents of those neighborhoods. </p>
-                                <iframe title="Aggressive redlining of the Bronx, Brooklyn, and Manhattan"
-                                    aria-label="USA new york city community districts choropleth map"
-                                    id="datawrapper-chart-4Vuf4" src="//datawrapper.dwcdn.net/4Vuf4/4/" scrolling="no"
-                                    frameborder="0" style="width: 0; min-width: 100% !important; border: none;"
-                                    height="500"></iframe>
-                                <script
-                                    type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
+
                                 <p>HOLC's redlining maps caused inequality that continued from one generation to the
                                     next: neighborhoods that were redlined in the 1930s have higher rates of poverty
                                     even today – nearly 90 years after the maps were created. According to the <a
@@ -677,9 +690,9 @@
                                     leaving a legacy of income and racial
                                     disparities in health outcomes.</p>
 
-                                <p>This reminds us that public health is about far more than changing people's behaviors
+                                <p>Public health is about far more than changing people's behaviors
                                     at the individual level: it's about building a society that supports health and
-                                    well-being, and moving into our future by confronting our past.</p>
+                                    well-being, and moving into our future by confronting the past.</p>
 
 
                             </div>
