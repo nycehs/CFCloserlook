@@ -219,7 +219,8 @@
                                 <div id="NYCCAS" class="collapse mb-2 drawerbg px-2 py-2 mx-2 fs-sm">
                                     NYCCAS is the largest urban air monitoring program in the country. We measure air
                                     pollution at nearly 100 locations
-                                    around the city, and use a complex land-use regression model to identify what
+                                    around the city, and use land-use and other emissions data in a statistical model to
+                                    identify what
                                     factors are most closely associated with
                                     different pollutants.
                                 </div>
@@ -229,11 +230,11 @@
 
                                 <p>Let's look at PM2.5, or <a href="#pm25" data-toggle="collapse"
                                         class="badge badge-pill badge-primary">fine particles</a>. PM2.5 levels vary
-                                    across the city. Previously, we could accurately estimate (or
-                                    model) PM2.5 concentrations by looking
-                                    at data on building boilers, which burn fuel to generate heat and release PM2.5.
-                                    There are a lot of sources of PM2.5 in
-                                    the air, but building density was the most important one.</p>
+                                    across the city. Previously, we could accurately estimate (or model) PM2.5
+                                    concentrations by looking at data on building boilers, which
+                                    burn fossil fuels to generate heat and hot water and release PM2.5. There are a lot
+                                    of sources of PM2.5 in the air, but
+                                    building density was the most important one.</p>
 
                                 <div class="collapse mb-2 drawerbg px-2 py-2 mx-2 fs-sm" id="pm25">
                                     PM2.5 is either emitted by combustion or form in the atmosphere out of other
@@ -266,14 +267,15 @@
                                         class="badge badge-pill badge-primary">reduce emissions from buildings</a>.</p>
 
                                 <div id="laws" class="collapse mb-2 drawerbg px-2 py-2 mx-2 fs-sm">
-                                    Local regulations passed in 2011 required all buildings with residual
-                                    heat oil boilers to switch to cleaner
-                                    fuels. And, a State law lowered the allowed sulfur content of Number 2 fuel oil,
-                                    which further cleaned up building
-                                    emissions.
+                                    Local Law 43 of 2010 outlawed the burning of heavy fuel oil (Number 6) in New York
+                                    City buildings, requiring
+                                    buildings to switch to cleaner fuels. In 2012, New York State lowered the allowed
+                                    sulfur content of Number 2 fuel
+                                    oil, which further cleaned up building emissions.
                                 </div>
 
-                                <p>So over time, PM2.5 emissions have gone down. Meanwhile, emissions from another
+                                <p>So over time, PM2.5 emissions from buildings have gone down. Meanwhile, emissions
+                                    from another
                                     source has gone up, according to
                                     <a href="#epa" data-toggle="collapse"
                                         class="badge badge-pill badge-primary">emissions estimates</a>.
@@ -291,7 +293,8 @@
                                         more about the NEI</a>.
                                 </div>
 
-                                <p>Emissions from commercial cooking (that is, restaurants) have gone up.</p>
+                                <p>Emissions from commercial cooking (that is, grills and charbroilers in restaurants)
+                                    have gone up.</p>
                             </div>
                             <div class="medium my-4">
                                 <iframe title="Emissions over time" aria-label="Interactive line chart"
@@ -322,18 +325,11 @@
                                         quality data at the NYCCAS Annual Report</a>.
                                 </div>
 
-                                <p>Following these changes in emissions, our model shows that the concentration of
-                                    commercial cooking in a neighborhood is
-                                    a better predictor of its PM2.5 concentrations than building density. It’s always
-                                    been a powerful predictor of summer
-                                    PM2.5 concentrations – when building emissions are very low.</p>
-                                <p>
-                                    But recently, in line with the drop in wintertime building boiler emissions and the
-                                    rise in commercial cooking
-                                    emissions, commercial cooking density has become a more powerful predictor of PM2.5
-                                    concentrations – explaining a
-                                    greater variation in PM2.5 concentrations.
-                                </p>
+                                <p>Following these changes in emissions, our model shows that the number of restaurants
+                                    with permits for grills or charbroilers in a neighborhood is
+                                    a better predictor of its PM2.5 concentrations than building density. It explains a
+                                    greater variation in PM2.5 concentrations.</p>
+
                             </div>
                             <div class="medium my-4">
                                 <iframe title="Winter" aria-label="Interactive line chart" id="datawrapper-chart-AEQXF"
@@ -354,7 +350,8 @@
                                 </p>
 
                                 <p>
-                                    The Department of Environmental Protection included commercial cooking regulations
+                                    The Department of Environmental Protection included regulations on grills and
+                                    charbroilers
                                     in the air code that was passed in
                                     2015. So hopefully, by focusing attention on emissions from commercial cooking, NYC
                                     can continue to clean up its air –
