@@ -203,11 +203,6 @@
                     </div>
                     <!-- .col -->
 
-                    <style>
-                        .hlt {
-                            border-bottom: 4px solid darkgreen;
-                        }
-                    </style>
 
                     <!--start main content section-->
                     <div class="col-xl-8 overflow-hidden fs-rg" id="primary-content">
@@ -218,15 +213,12 @@
                                 <h2>The urban heat island effect, and what it means for your neighborhood</h2>
 
                                 <p>At 6.00 PM on June 30 2018, the air temperature at the La Guardia Airport Weather
-                                    Station was <span class="hlt">89 degrees</span> Fahrenheit.</p>
+                                    Station was 89 degrees Fahrenheit.</p>
 
                                 <p>At the same time, the air temperature on a block in East Harlem (below left) was
-                                    <span class="hlt">93.9 degrees</span> - nearly 5 degrees hotter than at the LGA
-                                    weather station. The air
-                                    temperature on the block in Bed-Stuy (below right) was <span class="hlt">92.5
-                                        degrees</span>: cooler, but
-                                    still <span class="hlt">3.5 degrees</span> hotter than at the weather station.
-                                </p>
+                                    93.9 degrees - nearly 5 degrees hotter than at the LGA weather station. The air
+                                    temperature on the block in Bed-Stuy (below right) was 92.5 degrees: cooler, but
+                                    still 3.5 degrees hotter than at the weather station.</p>
                             </div>
                             <div class="wide my-4">
                                 <div class="row">
@@ -234,7 +226,8 @@
                                         <img src="100thst.png">
                                         <div class="databox fs-sm pt-2">
                                             100th St, between Lexington and 3rd Ave<br>
-                                            Manhattan: <strong class="hlt">93.9° F</strong>
+                                            Manhattan<br>
+                                            <strong>93.9° F</strong>
                                         </div>
                                     </div>
 
@@ -242,8 +235,8 @@
                                         <img src="Stuyvesant.png">
                                         <div class="databox fs-sm pt-2">
                                             Stuyvesant Ave, between Jefferson and Putnam<br>
-                                            Brooklyn:
-                                            <strong class="hlt">92.5° F</strong>
+                                            Brooklyn<br>
+                                            <strong>92.5° F</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -292,8 +285,6 @@
                                         determine the effect that different factors have on hyperlocal temperature.
                                     </P>
                                 </div>
-
-                                <p>These are the factors we explored, which affect hyperlocal temperature:</p>
 
 
 
@@ -482,90 +473,78 @@
                             <div class="narrow my-2">
 
 
-                                <p>Each of these factors either helps to cool a
-                                    block, or retains heat and prevents cooling. But what matters the most?</p>
+                                <p>Each of these factors affect hyperlocal temperature - by either helping to cool a
+                                    block, or by retaining heat and preventing cooling. <strong>But the most important
+                                        factor? Green space.</strong>
+                                    More tree canopy, or coverage by grass and shrubs, reduces temperatures the most.
+                                </p>
 
-                                <p>We built a statistical model that looked at these neighborhood factors, our
-                                    temperature measurements, and predicts the average annual temperature on a
-                                    hypothetical city block. Our model showed that <strong>the most important factor was
-                                        green space:</strong> trees, grass, and shrubs reduce temperature the most.</p>
+                                <p>Based on 2018 data, we modelled the <em>predicted average summer temperature from 6
+                                        PM
+                                        to 9 PM</em>, and how it would change based on different factors. This time
+                                    frame
+                                    is important - it's when the Urban Heat Island Effect causes the highest temperature
+                                    differences as the sun sets but the city retains heat.</p>
 
-                                <p>This is intuitive, but what cools more - grass, or trees?</p>
-
-                                <p>Below, we modeled the average temperature from 6 to 9PM, when the Urban Heat Island
-                                    Effect causes the highest temperature as the sun sets but the city retains heat. We
-                                    looked at land-use factors in the <span class="hlt">right-of-way</span> - basically,
-                                    what's happening between the buildings and the street. The model below assumes a
-                                    very green street, with the right-of-way covered by either trees or grass.</p>
-
-                            </div>
+                                <p>To understand how grass and tree canopy affects temperature, we kept other
+                                    variables
+                                    (like building height and location)
+                                    constant. Explore how tree canopy and grass and shrub coverage affect predicted
+                                    average
+                                    temperature below:</p>
 
 
-                            <div class="wide">
+
+
+
+
                                 <div class="row border-top py-2">
-                                    <div class="col-md-8">
-                                        <div class="row no-gutters">
-                                            <div class="col-3">
-                                                Tree canopy<br>
-                                                <div id="tc" class="outputbox">XX%</div>
+                                    <div class="col">
+                                        <strong>Block factors</strong>
+                                    </div>
+                                </div>
 
-                                            </div>
-                                            <div class="col-6 px-2">
-                                                Change the ratio<br>
-                                                <input id="slider" type="range" min="0" max="100" step="5" value="80">
-                                            </div>
-                                            <div class="col-3">
-                                                Grass/shrubs<br>
-                                                <div id="gs" class="outputbox">XX%</div>
+                                <div class="row py-2">
 
-                                            </div>
-                                        </div>
-                                        <div class="row no-gutters border-top mt-2">
-                                            <div class="col-12 mx-auto">
-                                                <div style="background-image: url(block1.png)">
-                                                    <div id="treeoverlay" class="overlay1" style="opacity: .8">
-                                                    </div>
-                                                </div>
-                                                <div class="overlay2" id="grassoverlay" style="opacity: .2"></div>
+                                    <div class="col-4">
+                                        Tree canopy
+                                    </div>
 
+                                    <div class="col-5">
+                                        <input id="tc" type="range" min="0" max="100" step="5" value="50">
+                                    </div>
 
+                                    <div class="col-3">
+                                        <div id="tcoutput" class="outputbox">XX%</div>
+                                    </div>
+                                </div>
 
+                                <div class="row">
+                                    <div class="col-4">
+                                        Grass and shrubs
+                                    </div>
 
-
-                                            </div>
-                                        </div>
-
+                                    <div class="col-5">
+                                        <input id="gs" type="range" min="0" max="100" step="5" value="50">
 
                                     </div>
 
-                                    <style>
-                                        .overlay1 {
-                                            display: inline-block;
-                                            width: 100%;
-                                            height: 400px;
-                                            background: -webkit-linear-gradient(top, rgba(41, 90, 1, 0.87) 0%, rgba(255, 255, 255, 0.164) 20%);
-                                            /* Chrome10+,Safari5.1+ */
-                                            z-index: 1;
-                                        }
+                                    <div class="col-3">
+                                        <div id="gsoutput" class="outputbox">XX%</div>
+                                    </div>
+                                </div>
 
-                                        .overlay2 {
-                                            display: inline-block;
-                                            width: 100%;
-                                            height: 25px;
-                                            background: -webkit-linear-gradient(bottom, rgba(41, 90, 1, 0.87) 0%, rgba(255, 255, 255, 0.164) 100%);
-                                            border-bottom-left-radius: 5px;
-                                            border-bottom-right-radius: 5px;
-                                        }
+                                <div class="row py-4 border-bottom">
+                                    <div class="col-md-9">
+                                        <strong>Illustration</strong>
+                                        <div id="imgwrapper" style="width:100%; height: 300px;">
+                                            <img id="illimg" src="img.jpg">
+                                        </div>
+
+                                    </div>
 
 
-                                        #illimg {
-                                            position: relative;
-                                            display: block;
-                                            z-index: -1;
-                                        }
-                                    </style>
-
-                                    <div class="col-md-2 mx-auto">
+                                    <div class="col-md-3">
                                         <strong>Temperature</strong>
                                         <div id="printtemp" class="outputbox mx-auto mb-2">
                                             XX deg F
@@ -576,6 +555,21 @@
                                                 style="background-color: white; height: 50%; width: 100%; border-radius: 50px 50px 0px 0px;">
                                             </div>
                                         </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="wide">
+                                <div class="row border-top py-2">
+                                    <div class="col-md-8">
+                                        SLIDER<br>
+                                        IMAGE
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        THERMOMETER
                                     </div>
 
                                 </div>
@@ -615,7 +609,6 @@
                                         height: 30px;
                                         border: 1px dotted gray;
                                         width: 100%;
-                                        margin-top: 5px;
                                         padding-left: 5px;
                                         padding-right: 5px;
                                         font-family: 'Courier New', Courier, monospace;
@@ -734,57 +727,23 @@
 
 
                             <div class="narrow my-4">
-                                <p>More greenspace means lower temperatures, and the model shows that grass and shrubs
-                                    can provide substantial cooling - even more than tree canopy coverage.</p>
+                                <p>More greenspace means lower temperatures. But the ability of trees, grass, and shrubs
+                                    to cool a neighborhood is reduced when we add other factors - like impervious
+                                    surfaces. Driveways and sidewalks absorb sunlight and reflect and retain heat. They
+                                    increase the temperature, and reduce area available to convert into greenspace.</p>
 
-                                <p>But not many blocks in New York City are fully covered by either trees or grass and
-                                    shrubs. Most have some form of <span class="hlt">impervious surfaces</span>:
-                                    asphalt, concrete, or even hard packed dirt. They absorb sunlight and retain heat,
-                                    and they take up room that could be covered in grass or shrubs.</p>
+                                <iframe title="Predicted evening temperature" aria-label="chart"
+                                    id="datawrapper-chart-Rnei3" src="https://datawrapper.dwcdn.net/Rnei3/1/"
+                                    scrolling="no" frameborder="0"
+                                    style="width: 0; min-width: 100% !important; border: none;" height="556"></iframe>
+                                <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
+                                </script>
 
-                                <p>So, we added impervious surfaces to the model, and combined tree canopy and grass and
-                                    shrubs together as "vegetative material."</p>
-
-                                <div class="my-4">
-                                    <iframe title="Predicted evening temperature" aria-label="chart"
-                                        id="datawrapper-chart-Rnei3" src="https://datawrapper.dwcdn.net/Rnei3/1/"
-                                        scrolling="no" frameborder="0"
-                                        style="width: 0; min-width: 100% !important; border: none;"
-                                        height="556"></iframe>
-                                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
-                                    </script>
-                                </div>
+                                <p>So while our models show the potential for a 7-degree reduction in temperature from
+                                    tree canopy and grass and shrub coverage, once we add impervious surfaces into the
+                                    model, we see the potential for only about 2 degrees of cooling. </p>
 
 
-
-                                <p>A block where the right of way is covered in vegetative material might have an
-                                    average temp of <span class="cooler">77 degrees</span>, but one completely covered
-                                    in impervious surfaces would have an average temp of <span class="hotter">79
-                                        degrees</span>.</p>
-
-                                <p>So while our models show the potential for a 4-degree reduction in temperature from
-                                    <span class="hlt">tree canopy, grass and shrub coverage</span>, once we add
-                                    impervious surfaces into the
-                                    model, we see the potential for only about 2 degrees of cooling.
-                                </p>
-
-                                <style>
-                                    .cooler {
-                                        background-color: #0d0787;
-                                        color: white;
-                                        font-weight: 600;
-                                        padding-left: 3px;
-                                        padding-right: 3px;
-                                    }
-
-                                    .hotter {
-                                        background-color: #f0f723;
-                                        color: black;
-                                        font-weight: 600;
-                                        padding-left: 3px;
-                                        padding-right: 3px;
-                                    }
-                                </style>
 
 
                                 <h3>This may sound small, but...</h3>
@@ -823,18 +782,11 @@
                                     events as the climate changes.</p>
                                 <p>You can explore the areas where we measured temperatures, and their average annual
                                     temperature, using the map below.</p>
-                            </div>
-
-                            <div class="medium">
-                                <iframe width="100%" height="600" frameborder="0" scrolling="no"
-                                    src="map69pm201819.html"></iframe>
+                                <iframe width="100%" height="500" frameborder="0" scrolling="no" src="airtlocmap.html">
 
                                 </iframe>
 
                             </div>
-
-
-
 
                             <!-- .narrow -->
 
@@ -1122,15 +1074,15 @@
     <script src="https://nycehs.github.io/Portal-Core-Repo/js/main.js"></script>
 
     <script>
-        var tempvar = 75;
+        var temp = 75;
         var canopy;
-        var canopyclean;
         var green;
         var allData;
-        var outputData;
+        var outputData
 
         const merc = document.getElementById('merc');
-        const slider = document.getElementById('slider');
+        const input1 = document.getElementById('tc');
+        const input2 = document.getElementById('gs');
 
         allData = [
             { tree: 0, grass: 0, temp: 79.08026687 },
@@ -1575,54 +1527,44 @@
             { tree: 0.95, grass: 1, temp: 71.9015679 },
             { tree: 1, grass: 1, temp: 71.8005847 }]
 
-
         function handleUpdate() {
-            canopy = .01 * slider.value;
-            canopyclean = Number(canopy.toFixed(2));
-            green = (100 - slider.value) / 100;
-
-            console.log(slider.value, canopy, green);
+            canopy = input1.value;
+            green = input2.value;
+            canPct = canopy / 100;
+            greenPct = green / 100;
 
             // get temp based on canopy and grass inputs
             outputData = allData.filter(function (sf) {
-                return sf.tree === canopyclean && sf.grass === green;
-            });
+                return sf.tree === canPct && sf.grass === greenPct;
+            })
 
-            // assign temp based on canopy and green values
-            tempvar = Number(outputData[0].temp.toFixed(2));
-            console.log(tempvar);
-
+            temp = outputData[0].temp.toFixed(2); // assign temp
 
             printValues(); // Print values to HTML
         }
 
         function printValues() {
-            document.getElementById('tc').innerHTML = slider.value + "%";
-            document.getElementById('gs').innerHTML = 100 - slider.value + "%";
-            document.getElementById('printtemp').innerHTML = tempvar + "° F";
-            document.getElementById('treeoverlay').style.opacity = slider.value / 100;
-            document.getElementById('grassoverlay').style.opacity = 1 - (slider.value / 100);
+            document.getElementById('tcoutput').innerHTML = canopy + "%";
+            document.getElementById('gsoutput').innerHTML = green + "%";
+            document.getElementById('printtemp').innerHTML = temp + "° F";
+            document.getElementById('illimg').style.borderTop = (input1.value / 5) + "px solid green";
+            document.getElementById('illimg').style.borderBottom = (input2.value / 5) + "px solid green";
 
-            merc.style.height = 25 + 50 * ((79 - tempvar) / 7) + "%"
+            merc.style.height = 25 + 50 * ((79 - temp) / 7) + "%"
         }
 
         handleUpdate();
 
 
-        slider.addEventListener('change', handleUpdate);
-        slider.addEventListener('mousemove', handleUpdate);
-
+        input1.addEventListener('change', handleUpdate);
+        input1.addEventListener('mousemove', handleUpdate);
+        input2.addEventListener('change', handleUpdate);
+        input2.addEventListener('mousemove', handleUpdate);
 
 
         // Next steps: improve image animation
         // Improve layout.
         // Add arrow-clickers to range inputs? 
-
-
-        //NEW APPROACH:
-        //we will take a single input value for tree canopy
-        //we will look for the temp for tc = input and gs =  1-input
-        //print temp, tc, gs values
 
 
     </script>
