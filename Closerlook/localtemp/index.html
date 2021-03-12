@@ -179,7 +179,7 @@
 
                 <div class="container-fluid my-auto">
                     <div class="medium my-3 text-left">
-                        <h1 class="display-4 titleheader py-2">What cools your block?</h1>
+                        <h1 class="display-4 titleheader py-2">The Urban Heat Island Effect in New York City</h1>
                     </div>
                 </div>
                 <!-- .container -->
@@ -205,7 +205,7 @@
 
                     <style>
                         .hlt {
-                            border-bottom: 4px solid darkgreen;
+                            border-bottom: 2px solid darkgreen;
                         }
                     </style>
 
@@ -215,8 +215,6 @@
                         <div class="my-4">
 
                             <div class="narrow my-2">
-                                <h2>The urban heat island effect, and what it means for your neighborhood</h2>
-
                                 <p>At 6.00 PM on June 30 2018, the air temperature at the La Guardia Airport Weather
                                     Station was <span class="hlt">89 degrees</span> Fahrenheit.</p>
 
@@ -273,32 +271,221 @@
                                     characteristics contribute to an
                                     area’s air temperature during hot weather?</p>
 
-                                <p>To find out how much different characteristics affect "hyperlocal temperature" we
-                                    combined temperature data with data on neighborhood factors. <a href="#methods"
-                                        data-toggle="collapse" class="badge badge-pill badge-primary">Read more about
+                                <p>To find out how much different characteristics affect "hyperlocal temperature," we
+                                    installed air temperature monitors on blocks around the city. Then, we reviewed
+                                    land-use data and satellite imagery to build a profile of each block where we were
+                                    monitoring temperature. </p>
+
+                                <p>Here's an example of satellite imagery:</p>
+                            </div>
+
+
+                            <div class="wide fs-sm">
+                                <div class="row pb-2 border-bottom">
+                                    <div class="col-md-6">
+                                        <img src="lidarnote0.png" class="img-fluid my-2">
+                                        <p>These satellite images show:
+                                        <ul style="list-style-type: none">
+                                            <li>
+                                                <div class="pinkdot"></div>&nbsp;Location of air temperature
+                                                monitor
+                                            </li>
+                                            <li><span class="justabox" style="background-color: lightgray"></span>
+                                                Buildings
+                                            </li>
+                                            <li><span class="justabox"
+                                                    style="background-color: rgb(119, 119, 119)"></span>
+                                                Impervious surfaces</li>
+                                            <li><span class="justabox" style="background-color: black"></span>
+                                                Roads</li>
+                                            <li><span class="justabox" style="background-color: green"></span>
+                                                Tree canopy coverage</li>
+                                            <li><span class="justabox" style="background-color: greenyellow"></span>
+                                                Grass
+                                                and shrubs</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <img src="lindarnote.png" class="img-fluid my-2">
+                                        <p>To measure characteristics of blocks where we were monitoring
+                                            temperature, we
+                                            looked
+                                            at the <span class="hlt">right of way</span>. That's the area from the front
+                                            of
+                                            one building, across the side walk and street, to the buildings on the
+                                            other
+                                            side of
+                                            the street - or, between the blue lines on the image above.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <!--
+                            <div class="narrow mt-2">
+                                <p><a href="#methods" data-toggle="collapse" class="badge badge-pill badge-primary">Read
+                                        more about
                                         our methods.</a></p>
 
                                 <div id="methods" class="collapse mb-2 drawerbg px-2 py-2 mx-2 fs-sm">
                                     <p>We
-                                        installed over 500 air temperature sensors in 16 different neighborhoods, and
+                                        installed over 500 air temperature sensors in 16 different neighborhoods,
+                                        and
                                         collected a
-                                        temperature reading every 10 minutes from June to September in 2018 and 2019.
+                                        temperature reading every 10 minutes from June to September in 2018 and
+                                        2019.
                                     </p>
-                                    <p>Then, we collected data from a variety of sources, including sattelite imagery,
-                                        to determine things like building height, tree canopy coverage, green space, and
-                                        impervious surfaces for each place where we were monitoring temperature. </p>
+                                    <p>Then, we collected data from a variety of sources, including sattelite
+                                        imagery,
+                                        to determine things like building height, tree canopy coverage, green space,
+                                        and
+                                        impervious surfaces for each place where we were monitoring temperature.
+                                    </p>
                                     <P>We used this data to develop a model that
                                         analyses the temperature data to
                                         determine the effect that different factors have on hyperlocal temperature.
                                     </P>
                                 </div>
+                                </p>
+                            </div>
+                            -->
+
+                            <style>
+                                .justabox {
+                                    height: 15px;
+                                    width: 15px;
+                                    display: inline-block;
+                                    margin-right: 3px;
+                                }
+                            </style>
+
+
+                            <div class="narrow my-2">
+                                <p>The two examples below show that different block can have dramatically different
+                                    characteristics. The Brownsville location has very little vegetative material
+                                    (trees, grass, and shrubs), while the Edenwald location has high grass and tree
+                                    coverage. Its average temperature is over 2 degrees cooler.</p>
+                            </div>
+
+
+                            <div class="wide my-2 fs-sm">
+
+
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span class="">Brownsville, Brooklyn</span>
+
+                                        <img src="Bk-BR_12_lidar.png" class="img-fluid">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Measure:</th>
+                                                    <th scope="col">Tertile</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Tree canopy</th>
+                                                    <td><span style="display:inline-block; width: 100%;"
+                                                            class="badge badge-pill badge-warning">Low</a>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Grass/shrubs</th>
+                                                    <td><span style="display:inline-block; width: 100%;"
+                                                            class="badge badge-pill badge-warning">Low</a>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Building height:</th>
+                                                    <td><span style="display:inline-block; width: 100%;"
+                                                            class="badge badge-pill badge-light">Low</span>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Average temp:</th>
+                                                    <td>
+                                                        <span style="display:inline-block; width: 100%;"
+                                                            class="badge badge-pill badge-danger">82.04</span>
+
+                                                    </td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <span class="">Edenwald, the Bronx</span>
+                                        <img src="Bx-EC_07_lidar.png" class="img-fluid">
+                                        <table class="table" style="color: black!important;">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Measure:</th>
+                                                    <th scope="col">Tertile</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Tree canopy</th>
+                                                    <td><span style="display:inline-block; width: 100%;"
+                                                            class="badge badge-pill badge-success">High</span>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Grass/shrubs</th>
+                                                    <td><span style="display:inline-block; width: 100%;"
+                                                            class="badge badge-pill badge-success">High</span>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Building height:</th>
+                                                    <td><span style="display:inline-block; width: 100%;"
+                                                            class="badge badge-pill badge-light">Medium</span>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Average temp:</th>
+                                                    <td><span style="display:inline-block; width: 100%;"
+                                                            class="badge badge-pill badge-warning">79.77</span>
+                                                    </td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            <div class="narrow my-2">
 
                                 <p>These are the factors we explored, which affect hyperlocal temperature:</p>
 
-
-
                             </div>
-                            <div class="wide my-4">
+
+                            <div class="wide my-4 fs-sm">
                                 <div class="accordion-group my-3" role="tablist" id="accordion-01">
                                     <div class="row fs-sm">
 
@@ -317,15 +504,21 @@
 
                                                     <div class="card-body">
                                                         <p>
-                                                            The percent of total <strong>tree canopy coverage</strong>
+                                                            The percent of total <strong>tree canopy
+                                                                coverage</strong>
                                                             on the sidewalk in
                                                             the right of way of the monitored street. Trees provide
-                                                            shade and prevent the ground from heating up. They also can
-                                                            cool the air through evapotranspiration. Evapotranspiration
+                                                            shade and prevent the ground from heating up. They also
+                                                            can
+                                                            cool the air through evapotranspiration.
+                                                            Evapotranspiration
                                                             occurs when the sun’s rays hit plants, causing water to
-                                                            evaporate from the leaves. This change from liquid to vapor
-                                                            cools the plants – just as sweating cools our bodies – and
-                                                            uses energy thereby reducing the amount of energy left to
+                                                            evaporate from the leaves. This change from liquid to
+                                                            vapor
+                                                            cools the plants – just as sweating cools our bodies –
+                                                            and
+                                                            uses energy thereby reducing the amount of energy left
+                                                            to
                                                             warm the air.
 
                                                         </p>
@@ -386,7 +579,8 @@
                                                                 height</strong> (the middle
                                                             range of sorted values) of buildings on the block.
                                                             Taller buildings can absorb and reflect more heat
-                                                            (increasing the street's temperature), but also shade the
+                                                            (increasing the street's temperature), but also shade
+                                                            the
                                                             street to
                                                             cool it.
 
@@ -413,11 +607,13 @@
 
                                                     <div class="card-body">
                                                         <p>
-                                                            <strong>Impervious surfaces</strong> are made from asphalt,
+                                                            <strong>Impervious surfaces</strong> are made from
+                                                            asphalt,
                                                             concrete,
                                                             astroturf, even hard packed dirt. These surfaces absorb
                                                             sunlight
-                                                            and reflect and retain heat. They increase the temperature
+                                                            and reflect and retain heat. They increase the
+                                                            temperature
                                                             of the block.
 
                                                         </p>
@@ -429,6 +625,10 @@
                                             </div>
                                             <!-- .card (end of first accordion, repeat as needed) -->
 
+
+                                        </div>
+
+                                        <div class="col mt-2">
                                             <div class="card">
 
                                                 <a class="card-header collapse collapsed" id="acc-button-06"
@@ -443,13 +643,17 @@
 
                                                     <div class="card-body">
                                                         <p>
-                                                            <strong>Other factors</strong>, like the orientation of the
+                                                            <strong>Other factors</strong>, like the orientation of
+                                                            the
                                                             street
                                                             (North/South or East/West), how close the area is to the
                                                             ocean, the elevation
-                                                            of the area, daily wind speed and weather patterns can also
-                                                            influence how hot a block is. These other factors are hard
-                                                            to quantify reliably, but can affect variation in hyperlocal
+                                                            of the area, daily wind speed and weather patterns can
+                                                            also
+                                                            influence how hot a block is. These other factors are
+                                                            hard
+                                                            to quantify reliably, but can affect variation in
+                                                            hyperlocal
                                                             temperature.
 
                                                         </p>
@@ -472,37 +676,50 @@
 
                             </div>
 
+                            <style>
+                                .pinkdot {
+                                    width: 5px;
+                                    height: 5px;
+                                    margin-left: 5px;
+                                    margin-right: 7px;
+                                    border-radius: 5px;
+                                    background-color: hotpink;
+                                    display: inline-block;
+                                    margin-bottom: 3px;
+                                }
 
-
-
-
-
-
+                                .table th {
+                                    color: rgb(88, 88, 88) !important;
+                                }
+                            </style>
 
                             <div class="narrow my-2">
 
-
-                                <p>Each of these factors either helps to cool a
-                                    block, or retains heat and prevents cooling. But what matters the most?</p>
-
+                                <h3>What factors matter the most?</h3>
                                 <p>We built a statistical model that looked at these neighborhood factors, our
                                     temperature measurements, and predicts the average annual temperature on a
-                                    hypothetical city block. Our model showed that <strong>the most important factor was
-                                        green space:</strong> trees, grass, and shrubs reduce temperature the most.</p>
+                                    hypothetical city block. We modeled the average temperature from 6 to 9PM, when the
+                                    Urban Heat
+                                    Island
+                                    Effect causes the highest temperature as the sun sets but the city retains heat. Our
+                                    model showed that <strong>the most important factor
+                                        was
+                                        green space:</strong> trees, grass, and shrubs reduce temperature the most.
+                                </p>
 
-                                <p>This is intuitive, but what cools more - grass, or trees?</p>
+                                <p>This is intuitive. Imagine a block that has a park running down the middle of it
+                                    instead of a street. The <span class="hlt">right of way</span> is completely covered
+                                    in trees,
+                                    grass, or shrubs.</p>
 
-                                <p>Below, we modeled the average temperature from 6 to 9PM, when the Urban Heat Island
-                                    Effect causes the highest temperature as the sun sets but the city retains heat. We
-                                    looked at land-use factors in the <span class="hlt">right-of-way</span> - basically,
-                                    what's happening between the buildings and the street. The model below assumes a
-                                    very green street, with the right-of-way covered by either trees or grass.</p>
+                                <p>Below, you can see how the predicted temperature changes depending on how much tree
+                                    canopy coverage or grass and shrubs there is.</p>
 
                             </div>
 
 
                             <div class="wide">
-                                <div class="row border-top py-2">
+                                <div class="row py-2">
                                     <div class="col-md-8">
                                         <div class="row no-gutters">
                                             <div class="col-3">
@@ -512,7 +729,7 @@
                                             </div>
                                             <div class="col-6 px-2">
                                                 Change the ratio<br>
-                                                <input id="slider" type="range" min="0" max="100" step="5" value="80">
+                                                <input id="slider" type="range" min="0" max="100" step="5" value="50">
                                             </div>
                                             <div class="col-3">
                                                 Grass/shrubs<br>
@@ -551,8 +768,8 @@
                                         .overlay2 {
                                             display: inline-block;
                                             width: 100%;
-                                            height: 25px;
-                                            background: -webkit-linear-gradient(bottom, rgba(41, 90, 1, 0.87) 0%, rgba(255, 255, 255, 0.164) 100%);
+                                            height: 45px;
+                                            background: -webkit-linear-gradient(bottom, rgba(41, 90, 1, 0.87) 0%, rgba(131, 224, 9, 0.164) 100%);
                                             border-bottom-left-radius: 5px;
                                             border-bottom-right-radius: 5px;
                                         }
@@ -570,8 +787,8 @@
                                         <div id="printtemp" class="outputbox mx-auto mb-2">
                                             XX deg F
                                         </div>
-                                        <div id="therm" class="mx-auto"
-                                            style="height: 300px; width: 75px; background-color: red; border-radius: 50px;border: 1px solid red; ">
+                                        <div id="therm" class="mx-auto mt-4"
+                                            style="height: 400px; width: 75px; background-color: red; border-radius: 50px;border: 1px solid red; ">
                                             <div id="merc"
                                                 style="background-color: white; height: 50%; width: 100%; border-radius: 50px 50px 0px 0px;">
                                             </div>
@@ -734,35 +951,40 @@
 
 
                             <div class="narrow my-4">
-                                <p>More greenspace means lower temperatures, and the model shows that grass and shrubs
+                                <p>More greenspace means lower temperatures, and the model shows that grass and
+                                    shrubs
                                     can provide substantial cooling - even more than tree canopy coverage.</p>
 
-                                <p>But not many blocks in New York City are fully covered by either trees or grass and
-                                    shrubs. Most have some form of <span class="hlt">impervious surfaces</span>:
-                                    asphalt, concrete, or even hard packed dirt. They absorb sunlight and retain heat,
+                                <p>But not many blocks in New York City have vegetation running down the middle. Most
+                                    have a street. A street is a form of <span class="hlt">impervious surface</span>.
+                                    These surfaces are
+                                    asphalt, concrete, or even hard packed dirt. They absorb sunlight and retain
+                                    heat,
                                     and they take up room that could be covered in grass or shrubs.</p>
 
-                                <p>So, we added impervious surfaces to the model, and combined tree canopy and grass and
-                                    shrubs together as "vegetative material."</p>
+                                <p>So, we added impervious surfaces to the model, and combined tree canopy and grass
+                                    and
+                                    shrubs together as "vegetative material" to see how these impervious surfaces affect
+                                    the predicted temperature.</p>
+                            </div>
 
-                                <div class="my-4">
-                                    <iframe title="Predicted evening temperature" aria-label="chart"
-                                        id="datawrapper-chart-Rnei3" src="https://datawrapper.dwcdn.net/Rnei3/1/"
-                                        scrolling="no" frameborder="0"
-                                        style="width: 0; min-width: 100% !important; border: none;"
-                                        height="556"></iframe>
-                                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } })) }();
-                                    </script>
-                                </div>
+                            <div class="wide my-4">
+                                <div style="width: 100%; height: 450px; border: 1px solid black;">Insert veg/IS slider
+                                    sidget here.</div>
+                            </div>
 
 
+
+                            <div class="narrow my-4">
 
                                 <p>A block where the right of way is covered in vegetative material might have an
-                                    average temp of <span class="cooler">77 degrees</span>, but one completely covered
+                                    average temp of <span class="cooler">77 degrees</span>, but one completely
+                                    covered
                                     in impervious surfaces would have an average temp of <span class="hotter">79
                                         degrees</span>.</p>
 
-                                <p>So while our models show the potential for a 4-degree reduction in temperature from
+                                <p>So while our models show the potential for a 4-degree reduction in temperature
+                                    from
                                     <span class="hlt">tree canopy, grass and shrub coverage</span>, once we add
                                     impervious surfaces into the
                                     model, we see the potential for only about 2 degrees of cooling.
@@ -789,18 +1011,21 @@
 
                                 <h3>This may sound small, but...</h3>
                                 <p>Cooling a block by an average of 2 degrees may not sound like much, but small
-                                    differences in temperature - especially at peak summer temperatures - can mean the
+                                    differences in temperature - especially at peak summer temperatures - can mean
+                                    the
                                     difference bewteen small numbers and large numbers of <a
                                         href="http://a816-dohbesp.nyc.gov/IndicatorPublic/HeatHub/syndromic.html">heat-related
                                         emergency department visits</a>, and heat-related deaths.</p>
 
 
 
-                                <p>After all, hot weather is dangerous. In New York City and across the country, more
+                                <p>After all, hot weather is dangerous. In New York City and across the country,
+                                    more
                                     people
                                     die
                                     from extreme heat than from all other
-                                    natural disasters combined. And, NYC is more vulnerable to heat than suburban areas.
+                                    natural disasters combined. And, NYC is more vulnerable to heat than suburban
+                                    areas.
                                 </p>
 
                                 <p>That means that rising average temperatures and heat waves are even hotter in the
@@ -821,7 +1046,8 @@
                                     Even modest cooling can save lives,
                                     especially as we anticipate increasing frequency and intensity of extreme heat
                                     events as the climate changes.</p>
-                                <p>You can explore the areas where we measured temperatures, and their average annual
+                                <p>You can explore the areas where we measured temperatures, and their average
+                                    annual
                                     temperature, using the map below.</p>
                             </div>
 
@@ -847,7 +1073,8 @@
                                         <li>
                                             <a class="text-muted" href="mailto:trackingportal@health.nyc.gov"
                                                 title="Share through email">
-                                                <span class="fa fa-envelope"></span> Questions about this data story?
+                                                <span class="fa fa-envelope"></span> Questions about this data
+                                                story?
                                                 Ideas for another one? Email us.</a>
 
                                         </li>
@@ -873,10 +1100,10 @@
                             <br><br>
                             <p>Explore the data:
                                 <hr>
-                                <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/AQHub/index.html">Outdoor air
-                                    quality</a>
+                                <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/HeatHub/hvi.html">Heat
+                                    Vulnerability Index</a>
                                 <hr>
-                                <a href="https://nyccas.cityofnewyork.us/nyccas2020/web/report">NYCCAS annual report</a>
+                                link to more data stories!!!
                                 <hr>
                             </p>
                         </div>
