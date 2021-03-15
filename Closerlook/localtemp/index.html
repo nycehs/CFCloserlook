@@ -37,6 +37,204 @@
         border-radius: 5px;
         border-left: 8px solid #e0e0e0;
     }
+
+    :root {
+        --spacing: 10px;
+    }
+
+    #illimg {
+        filter: blur (5px);
+        border-radius: 3px;
+    }
+
+    .databox {
+        height: 100%;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+
+    .outputbox {
+        height: 30px;
+        border: 1px dotted gray;
+        width: 100%;
+        margin-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+
+    input[type=range] {
+        height: 36px;
+        -webkit-appearance: none;
+        width: 100%;
+    }
+
+    input[type=range]:focus {
+        outline: none;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 25px;
+        cursor: pointer;
+        animate: 0.2s;
+        box-shadow: 0px 0px 0px #000000;
+        background: #D6D6D6;
+        border-radius: 5px;
+        border: 0px solid #000000;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        box-shadow: 0px 0px 0px #000000;
+        border: 0px solid #000000;
+        height: 30px;
+        width: 30px;
+        border-radius: 4px;
+        background: #18800D;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -2.5px;
+    }
+
+    input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #D6D6D6;
+    }
+
+    input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 25px;
+        cursor: pointer;
+        animate: 0.2s;
+        box-shadow: 0px 0px 0px #000000;
+        background: #D6D6D6;
+        border-radius: 5px;
+        border: 0px solid #000000;
+    }
+
+    input[type=range]::-moz-range-thumb {
+        box-shadow: 0px 0px 0px #000000;
+        border: 0px solid #000000;
+        height: 30px;
+        width: 30px;
+        border-radius: 4px;
+        background: #18800D;
+        cursor: pointer;
+    }
+
+    input[type=range]::-ms-track {
+        width: 100%;
+        height: 25px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+
+    input[type=range]::-ms-fill-lower {
+        background: #D6D6D6;
+        border: 0px solid #000000;
+        border-radius: 10px;
+        box-shadow: 0px 0px 0px #000000;
+    }
+
+    input[type=range]::-ms-fill-upper {
+        background: #D6D6D6;
+        border: 0px solid #000000;
+        border-radius: 10px;
+        box-shadow: 0px 0px 0px #000000;
+    }
+
+    input[type=range]::-ms-thumb {
+        margin-top: 1px;
+        box-shadow: 0px 0px 0px #000000;
+        border: 0px solid #000000;
+        height: 30px;
+        width: 30px;
+        border-radius: 4px;
+        background: #18800D;
+        cursor: pointer;
+    }
+
+    input[type=range]:focus::-ms-fill-lower {
+        background: #D6D6D6;
+    }
+
+    input[type=range]:focus::-ms-fill-upper {
+        background: #D6D6D6;
+    }
+
+    .justabox {
+        height: 15px;
+        width: 15px;
+        display: inline-block;
+        margin-right: 3px;
+    }
+
+    .cooler {
+        background-color: #0d0787;
+        color: white;
+        font-weight: 600;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .hotter {
+        background-color: #f0f723;
+        color: black;
+        font-weight: 600;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .hlt {
+        border-bottom: 2px solid darkgreen;
+    }
+
+    .pinkdot {
+        width: 5px;
+        height: 5px;
+        margin-left: 5px;
+        margin-right: 7px;
+        border-radius: 5px;
+        background-color: hotpink;
+        display: inline-block;
+        margin-bottom: 3px;
+    }
+
+    .table th {
+        color: rgb(88, 88, 88) !important;
+    }
+
+    .overlay1 {
+        display: inline-block;
+        width: 100%;
+        height: 400px;
+        background: -webkit-linear-gradient(top, rgba(41, 90, 1, 0.87) 0%, rgba(255, 255, 255, 0.164) 30%);
+        /* Chrome10+,Safari5.1+ */
+        z-index: 1;
+    }
+
+    .overlay2 {
+        display: inline-block;
+        width: 100%;
+        height: 45px;
+        background: -webkit-linear-gradient(bottom, rgba(41, 90, 1, 0.87) 0%, rgba(131, 224, 9, 0.164) 100%);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+
+    #illimg {
+        position: relative;
+        display: block;
+        z-index: -1;
+    }
 </style>
 
 
@@ -203,11 +401,7 @@
                     </div>
                     <!-- .col -->
 
-                    <style>
-                        .hlt {
-                            border-bottom: 2px solid darkgreen;
-                        }
-                    </style>
+
 
                     <!--start main content section-->
                     <div class="col-xl-8 overflow-hidden fs-rg" id="primary-content">
@@ -215,21 +409,25 @@
                         <div class="my-4">
 
                             <div class="narrow my-2">
-                                <p>At 6.00 PM on June 30 2018, the air temperature at the La Guardia Airport Weather
-                                    Station was <span class="hlt">89 degrees</span> Fahrenheit.</p>
+                                <p>At 6.00 PM on June 30, 2018, the air temperature at the La Guardia Airport Weather
+                                    Station was <span class="hlt">89°</span> Fahrenheit.</p>
 
                                 <p>At the same time, the air temperature on a block in East Harlem (below left) was
-                                    <span class="hlt">93.9 degrees</span> - nearly 5 degrees hotter than at the LGA
-                                    weather station. The air
-                                    temperature on the block in Bed-Stuy (below right) was <span class="hlt">92.5
-                                        degrees</span>: cooler, but
-                                    still <span class="hlt">3.5 degrees</span> hotter than at the weather station.
+                                    nearly 5° hotter than at the LGA
+                                    weather station, and the
+                                    temperature on a block in Bed-Stuy (below right) was 3.5°
+                                    hotter than at the weather station.
                                 </p>
                             </div>
                             <div class="wide my-4">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="100thst.png">
+
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!4v1615653383424!6m8!1m7!1sm7WWRgDOZJz10tQupUzeHw!2m2!1d40.78797664606837!2d-73.94797464842142!3f299.71127124368036!4f8.067917696436893!5f0.7820865974627469"
+                                            width="100%" height="400" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+
                                         <div class="databox fs-sm pt-2">
                                             100th St, between Lexington and 3rd Ave<br>
                                             Manhattan: <strong class="hlt">93.9° F</strong>
@@ -237,7 +435,11 @@
                                     </div>
 
                                     <div class="col-md-6">
-                                        <img src="Stuyvesant.png">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!4v1615653441200!6m8!1m7!1srUpwKj_CGrwUIfTTr-1Fkw!2m2!1d40.68542566442477!2d-73.93257482281815!3f355.1643149714268!4f13.920819302599512!5f0.7820865974627469"
+                                            width="100%" height="400" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+
                                         <div class="databox fs-sm pt-2">
                                             Stuyvesant Ave, between Jefferson and Putnam<br>
                                             Brooklyn:
@@ -252,19 +454,19 @@
 
                                 <p>This is an example of the <strong>Urban Heat Island Effect</strong>: when cities are
                                     hotter than
-                                    surrounding areas. In cities, more surfaces like roofs
+                                    surrounding areas.</p>
+                                <p>In cities, more surfaces like roofs
                                     and roads absorb heat,
                                     building
                                     boilers and car engines generate additional heat, and there's limited vegetation to
-                                    cool things down.</p>
-
-
-                                <p>As the pictures above illustrate, temperatures vary from block to
-                                    block within a city. Characteristics
-                                    of different areas
-                                    contribute to their temperature differences.</p>
+                                    cool things down. As the pictures above illustrate, <strong>temperatures even vary
+                                        from block to
+                                        block </strong>within a city.</p>
 
                                 <h3>What cools your block?</h3>
+                                <p>Characteristics
+                                    of different areas
+                                    contribute to temperature differences from one block to another.</p>
                                 <p>Anyone who has looked for a shady spot under a tree during a hot sunny day knows
                                     that trees help to cool off a street.
                                     But by how much? How effective are trees at cooling neighborhoods, and what other
@@ -283,7 +485,7 @@
                             <div class="wide fs-sm">
                                 <div class="row pb-2 border-bottom">
                                     <div class="col-md-6">
-                                        <img src="lidarnote0.png" class="img-fluid my-2">
+                                        <img src="images/lidarnote0.png" class="img-fluid my-2">
                                         <p>These satellite images show:
                                         <ul style="list-style-type: none">
                                             <li>
@@ -307,7 +509,7 @@
                                     </div>
 
                                     <div class="col-md-6">
-                                        <img src="lindarnote.png" class="img-fluid my-2">
+                                        <img src="images/lindarnote.png" class="img-fluid my-2">
                                         <p>To measure characteristics of blocks where we were monitoring
                                             temperature, we
                                             looked
@@ -353,21 +555,18 @@
                             </div>
                             -->
 
-                            <style>
-                                .justabox {
-                                    height: 15px;
-                                    width: 15px;
-                                    display: inline-block;
-                                    margin-right: 3px;
-                                }
-                            </style>
+
 
 
                             <div class="narrow my-2">
-                                <p>The two examples below show that different block can have dramatically different
+                                <p>Below are two exaples of locations where we measured temperature throughout the
+                                    summer. On the left is a spot in Brownsville, Brooklyn. On the right is a spot in
+                                    Edenwald, The Bronx.</p>
+                                <p>These two blocks have dramatically different
                                     characteristics. The Brownsville location has very little vegetative material
                                     (trees, grass, and shrubs), while the Edenwald location has high grass and tree
-                                    coverage. Its average temperature is over 2 degrees cooler.</p>
+                                    coverage. The average temperature at the Edenwald spot is over 2° cooler than
+                                    the Brownsville spot.</p>
                             </div>
 
 
@@ -379,7 +578,7 @@
                                     <div class="col-md-6">
                                         <span class="">Brownsville, Brooklyn</span>
 
-                                        <img src="Bk-BR_12_lidar.png" class="img-fluid">
+                                        <img src="images/Bk-BR_12_lidar.png" class="img-fluid">
                                         <table class="table">
                                             <thead>
                                                 <tr>
@@ -427,7 +626,7 @@
                                     <div class="col-md-6">
 
                                         <span class="">Edenwald, the Bronx</span>
-                                        <img src="Bx-EC_07_lidar.png" class="img-fluid">
+                                        <img src="images/Bx-EC_07_lidar.png" class="img-fluid">
                                         <table class="table" style="color: black!important;">
                                             <thead>
                                                 <tr>
@@ -512,7 +711,7 @@
                                                             can
                                                             cool the air through evapotranspiration.
                                                             Evapotranspiration
-                                                            occurs when the sun’s rays hit plants, causing water to
+                                                            happens when the sun’s rays hit plants, causing water to
                                                             evaporate from the leaves. This change from liquid to
                                                             vapor
                                                             cools the plants – just as sweating cools our bodies –
@@ -547,7 +746,15 @@
                                                             The percent of <strong>grass and shrubs</strong> on the
                                                             sidewalk of the
                                                             monitored street. Grass and shrubs cool the air through
-                                                            evapotranspiration and shading.
+                                                            shading and evapotranspiration. Evapotranspiration
+                                                            happens when the sun’s rays hit plants, causing water to
+                                                            evaporate from the leaves. This change from liquid to
+                                                            vapor
+                                                            cools the plants – just as sweating cools our bodies –
+                                                            and
+                                                            uses energy thereby reducing the amount of energy left
+                                                            to
+                                                            warm the air.
 
                                                         </p>
                                                     </div>
@@ -614,7 +821,7 @@
                                                             sunlight
                                                             and reflect and retain heat. They increase the
                                                             temperature
-                                                            of the block.
+                                                            of the surrounding area.
 
                                                         </p>
                                                     </div>
@@ -676,32 +883,17 @@
 
                             </div>
 
-                            <style>
-                                .pinkdot {
-                                    width: 5px;
-                                    height: 5px;
-                                    margin-left: 5px;
-                                    margin-right: 7px;
-                                    border-radius: 5px;
-                                    background-color: hotpink;
-                                    display: inline-block;
-                                    margin-bottom: 3px;
-                                }
 
-                                .table th {
-                                    color: rgb(88, 88, 88) !important;
-                                }
-                            </style>
 
                             <div class="narrow my-2">
 
                                 <h3>What factors matter the most?</h3>
-                                <p>We built a statistical model that looked at these neighborhood factors, our
-                                    temperature measurements, and predicts the average annual temperature on a
-                                    hypothetical city block. We modeled the average temperature from 6 to 9PM, when the
+                                <p>We built a statistical model predicts the average annual temperature on a
+                                    hypothetical city block, based on these neighborhood factors. We modeled the average
+                                    temperature from 6 to 9PM, when the
                                     Urban Heat
                                     Island
-                                    Effect causes the highest temperature as the sun sets but the city retains heat. Our
+                                    Effect is the greatest (the sun sets but the city retains heat). Our
                                     model showed that <strong>the most important factor
                                         was
                                         green space:</strong> trees, grass, and shrubs reduce temperature the most.
@@ -721,10 +913,10 @@
                             <div class="wide">
                                 <div class="row py-2">
                                     <div class="col-md-8">
-                                        <div class="row no-gutters">
+                                        <div class="row no-gutters fs-sm">
                                             <div class="col-3">
-                                                Tree canopy<br>
-                                                <div id="tc" class="outputbox">XX%</div>
+                                                Grass/shrubs<br>
+                                                <div id="gs" class="outputbox">XX%</div>
 
                                             </div>
                                             <div class="col-6 px-2">
@@ -732,14 +924,15 @@
                                                 <input id="slider" type="range" min="0" max="100" step="5" value="50">
                                             </div>
                                             <div class="col-3">
-                                                Grass/shrubs<br>
-                                                <div id="gs" class="outputbox">XX%</div>
+                                                Tree canopy<br>
+                                                <div id="tc" class="outputbox">XX%</div>
+
 
                                             </div>
                                         </div>
                                         <div class="row no-gutters border-top mt-2">
                                             <div class="col-12 mx-auto">
-                                                <div style="background-image: url(block1.png)">
+                                                <div style="background-image: url(images/block1.png)">
                                                     <div id="treeoverlay" class="overlay1" style="opacity: .8">
                                                     </div>
                                                 </div>
@@ -755,32 +948,7 @@
 
                                     </div>
 
-                                    <style>
-                                        .overlay1 {
-                                            display: inline-block;
-                                            width: 100%;
-                                            height: 400px;
-                                            background: -webkit-linear-gradient(top, rgba(41, 90, 1, 0.87) 0%, rgba(255, 255, 255, 0.164) 20%);
-                                            /* Chrome10+,Safari5.1+ */
-                                            z-index: 1;
-                                        }
 
-                                        .overlay2 {
-                                            display: inline-block;
-                                            width: 100%;
-                                            height: 45px;
-                                            background: -webkit-linear-gradient(bottom, rgba(41, 90, 1, 0.87) 0%, rgba(131, 224, 9, 0.164) 100%);
-                                            border-bottom-left-radius: 5px;
-                                            border-bottom-right-radius: 5px;
-                                        }
-
-
-                                        #illimg {
-                                            position: relative;
-                                            display: block;
-                                            z-index: -1;
-                                        }
-                                    </style>
 
                                     <div class="col-md-2 mx-auto">
                                         <strong>Temperature</strong>
@@ -809,138 +977,7 @@
 
 
 
-                                <style>
-                                    :root {
-                                        --spacing: 10px;
-                                    }
 
-                                    #illimg {
-                                        filter: blur (5px);
-                                        border-radius: 3px;
-                                    }
-
-                                    .databox {
-                                        height: 100%;
-                                        width: 100%;
-                                        padding-left: 5px;
-                                        padding-right: 5px;
-                                        font-family: 'Courier New', Courier, monospace;
-                                        font-weight: bold;
-                                    }
-
-                                    .outputbox {
-                                        height: 30px;
-                                        border: 1px dotted gray;
-                                        width: 100%;
-                                        margin-top: 5px;
-                                        padding-left: 5px;
-                                        padding-right: 5px;
-                                        font-family: 'Courier New', Courier, monospace;
-                                        font-weight: bold;
-                                        border-radius: 3px;
-                                    }
-
-                                    input[type=range] {
-                                        height: 36px;
-                                        -webkit-appearance: none;
-                                        width: 100%;
-                                    }
-
-                                    input[type=range]:focus {
-                                        outline: none;
-                                    }
-
-                                    input[type=range]::-webkit-slider-runnable-track {
-                                        width: 100%;
-                                        height: 25px;
-                                        cursor: pointer;
-                                        animate: 0.2s;
-                                        box-shadow: 0px 0px 0px #000000;
-                                        background: #D6D6D6;
-                                        border-radius: 5px;
-                                        border: 0px solid #000000;
-                                    }
-
-                                    input[type=range]::-webkit-slider-thumb {
-                                        box-shadow: 0px 0px 0px #000000;
-                                        border: 0px solid #000000;
-                                        height: 30px;
-                                        width: 30px;
-                                        border-radius: 4px;
-                                        background: #18800D;
-                                        cursor: pointer;
-                                        -webkit-appearance: none;
-                                        margin-top: -2.5px;
-                                    }
-
-                                    input[type=range]:focus::-webkit-slider-runnable-track {
-                                        background: #D6D6D6;
-                                    }
-
-                                    input[type=range]::-moz-range-track {
-                                        width: 100%;
-                                        height: 25px;
-                                        cursor: pointer;
-                                        animate: 0.2s;
-                                        box-shadow: 0px 0px 0px #000000;
-                                        background: #D6D6D6;
-                                        border-radius: 5px;
-                                        border: 0px solid #000000;
-                                    }
-
-                                    input[type=range]::-moz-range-thumb {
-                                        box-shadow: 0px 0px 0px #000000;
-                                        border: 0px solid #000000;
-                                        height: 30px;
-                                        width: 30px;
-                                        border-radius: 4px;
-                                        background: #18800D;
-                                        cursor: pointer;
-                                    }
-
-                                    input[type=range]::-ms-track {
-                                        width: 100%;
-                                        height: 25px;
-                                        cursor: pointer;
-                                        animate: 0.2s;
-                                        background: transparent;
-                                        border-color: transparent;
-                                        color: transparent;
-                                    }
-
-                                    input[type=range]::-ms-fill-lower {
-                                        background: #D6D6D6;
-                                        border: 0px solid #000000;
-                                        border-radius: 10px;
-                                        box-shadow: 0px 0px 0px #000000;
-                                    }
-
-                                    input[type=range]::-ms-fill-upper {
-                                        background: #D6D6D6;
-                                        border: 0px solid #000000;
-                                        border-radius: 10px;
-                                        box-shadow: 0px 0px 0px #000000;
-                                    }
-
-                                    input[type=range]::-ms-thumb {
-                                        margin-top: 1px;
-                                        box-shadow: 0px 0px 0px #000000;
-                                        border: 0px solid #000000;
-                                        height: 30px;
-                                        width: 30px;
-                                        border-radius: 4px;
-                                        background: #18800D;
-                                        cursor: pointer;
-                                    }
-
-                                    input[type=range]:focus::-ms-fill-lower {
-                                        background: #D6D6D6;
-                                    }
-
-                                    input[type=range]:focus::-ms-fill-upper {
-                                        background: #D6D6D6;
-                                    }
-                                </style>
 
 
 
@@ -969,49 +1006,34 @@
                             </div>
 
                             <div class="wide my-4">
-                                <div style="width: 100%; height: 450px; border: 1px solid black;">Insert veg/IS slider
-                                    sidget here.</div>
+                                <iframe src="isvegwidget.html" frameborder="no" width="100%;" height="600px;"></iframe>
                             </div>
 
 
 
                             <div class="narrow my-4">
 
-                                <p>A block where the right of way is covered in vegetative material might have an
-                                    average temp of <span class="cooler">77 degrees</span>, but one completely
+                                <p>A block where the right of way is covered in trees, grass, and shrubs might have
+                                    an
+                                    average summertime evening temperature of <span class="hlt">77°</span>, but
+                                    one
+                                    completely
                                     covered
-                                    in impervious surfaces would have an average temp of <span class="hotter">79
-                                        degrees</span>.</p>
+                                    in impervious surfaces would be <span class="hlt">79°</span>.</p>
 
-                                <p>So while our models show the potential for a 4-degree reduction in temperature
-                                    from
-                                    <span class="hlt">tree canopy, grass and shrub coverage</span>, once we add
+                                <p>Our models show the potential for significant cooling from vegetative material, but
+                                    once we add
                                     impervious surfaces into the
-                                    model, we see the potential for only about 2 degrees of cooling.
+                                    equation, we see the potential for only about 2° of cooling.
                                 </p>
 
-                                <style>
-                                    .cooler {
-                                        background-color: #0d0787;
-                                        color: white;
-                                        font-weight: 600;
-                                        padding-left: 3px;
-                                        padding-right: 3px;
-                                    }
 
-                                    .hotter {
-                                        background-color: #f0f723;
-                                        color: black;
-                                        font-weight: 600;
-                                        padding-left: 3px;
-                                        padding-right: 3px;
-                                    }
-                                </style>
 
 
                                 <h3>This may sound small, but...</h3>
-                                <p>Cooling a block by an average of 2 degrees may not sound like much, but small
-                                    differences in temperature - especially at peak summer temperatures - can mean
+                                <p>Cooling a block by an average of 2° may not sound like much, but small
+                                    differences in temperature - especially at peak summer temperatures - can
+                                    mean
                                     the
                                     difference bewteen small numbers and large numbers of <a
                                         href="http://a816-dohbesp.nyc.gov/IndicatorPublic/HeatHub/syndromic.html">heat-related
@@ -1024,11 +1046,13 @@
                                     people
                                     die
                                     from extreme heat than from all other
-                                    natural disasters combined. And, NYC is more vulnerable to heat than suburban
+                                    natural disasters combined. And, NYC is more vulnerable to heat than
+                                    suburban
                                     areas.
                                 </p>
 
-                                <p>That means that rising average temperatures and heat waves are even hotter in the
+                                <p>That means that rising average temperatures and heat waves are even hotter in
+                                    the
                                     city. These place New Yorkers at risk:
                                     when we analyzed excess mortality during extreme heat events, <a
                                         href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Closerlook/heat/index.html">we
@@ -1039,12 +1063,14 @@
 
                                 <p>When we distill the data to understand how these different factors affect
                                     temperature, the extent to which greenspace or
-                                    tree canopy alone can cool a neighborhood may seem small – a few degrees. But
+                                    tree canopy alone can cool a neighborhood may seem small – a few degrees.
+                                    But
                                     this
                                     small change can have a significant
-                                    impact: the risk for heat-related illness rises exponentially around 90 degrees.
+                                    impact: the risk for heat-related illness rises exponentially around 90°.
                                     Even modest cooling can save lives,
-                                    especially as we anticipate increasing frequency and intensity of extreme heat
+                                    especially as we anticipate increasing frequency and intensity of extreme
+                                    heat
                                     events as the climate changes.</p>
                                 <p>You can explore the areas where we measured temperatures, and their average
                                     annual
@@ -1052,13 +1078,42 @@
                             </div>
 
                             <div class="medium">
-                                <iframe width="100%" height="600" frameborder="0" scrolling="no"
-                                    src="map69pm201819.html"></iframe>
+                                <form name="chooser">
+                                    <div class="map-chooser border-top float-right" id="mapRadio">
+                                        <input type="radio" id="2018btn" name="mapRadioGroup" value="2018">
+                                        <label for="2018btn">2018</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                        <input type="radio" id="2019btn" name="mapRadioGroup" value="2019" checked>
+                                        <label for="2019btn">2019</label>&nbsp;&nbsp;&nbsp;
+                                    </div>
+                                </form>
+                                <iframe id="mapframe" width="100%" height="600" frameborder="0" scrolling="no"
+                                    src="2019.html"></iframe>
 
                                 </iframe>
 
                             </div>
 
+
+                            <script>
+                                window.onload = listenRadios;
+
+                                function listenRadios() {
+                                    radios = document.querySelectorAll('input[type=radio][name="mapRadioGroup"]');
+                                    radios.forEach(function (radio) {
+                                        return radio.addEventListener('change', function () {
+                                            if (radio.value === '2018') {
+                                                document.getElementById('mapframe').src = "2018.html";
+                                            } else {
+                                                document.getElementById('mapframe').src = "2019.html";
+                                            }
+
+
+                                            ;
+                                        });
+                                    });
+                                } //this function creates the map
+                            </script>
 
 
 
