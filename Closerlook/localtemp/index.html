@@ -594,31 +594,37 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th scope="row">Tree canopy</th>
+                                                    <th scope="row"><span class="justabox"
+                                                            style="background-color: green"></span>Tree canopy</th>
                                                     <td><span style="display:inline-block; width: 100%;"
                                                             class="badge badge-pill badge-warning">Low</a>
                                                     </td>
 
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Grass/shrubs</th>
+                                                    <th scope="row"><span class="justabox"
+                                                            style="background-color: greenyellow"></span>Grass/shrubs
+                                                    </th>
                                                     <td><span style="display:inline-block; width: 100%;"
                                                             class="badge badge-pill badge-warning">Low</a>
                                                     </td>
 
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Building height:</th>
+                                                    <th scope="row"><span class="justabox"
+                                                            style="background-color: lightgray"></span>Building height:
+                                                    </th>
                                                     <td><span style="display:inline-block; width: 100%;"
                                                             class="badge badge-pill badge-light">Low</span>
                                                     </td>
 
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Average temp:</th>
+                                                    <th scope="row"><i class="fas fa-thermometer-full pr-1"></i>Average
+                                                        temp:</th>
                                                     <td>
                                                         <span style="display:inline-block; width: 100%;"
-                                                            class="badge badge-pill badge-danger">82.04</span>
+                                                            class="badge badge-pill badge-danger">82.04°</span>
 
                                                     </td>
 
@@ -642,30 +648,36 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th scope="row">Tree canopy</th>
+                                                    <th scope="row"><span class="justabox"
+                                                            style="background-color: green"></span>Tree canopy</th>
                                                     <td><span style="display:inline-block; width: 100%;"
                                                             class="badge badge-pill badge-success">High</span>
                                                     </td>
 
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Grass/shrubs</th>
+                                                    <th scope="row"><span class="justabox"
+                                                            style="background-color: greenyellow"></span>Grass/shrubs
+                                                    </th>
                                                     <td><span style="display:inline-block; width: 100%;"
                                                             class="badge badge-pill badge-success">High</span>
                                                     </td>
 
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Building height:</th>
+                                                    <th scope="row"><span class="justabox"
+                                                            style="background-color: lightgray"></span>Building height:
+                                                    </th>
                                                     <td><span style="display:inline-block; width: 100%;"
                                                             class="badge badge-pill badge-light">Medium</span>
                                                     </td>
 
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Average temp:</th>
+                                                    <th scope="row"><i class="fas fa-thermometer-full pr-1"></i>Average
+                                                        temp:</th>
                                                     <td><span style="display:inline-block; width: 100%;"
-                                                            class="badge badge-pill badge-warning">79.77</span>
+                                                            class="badge badge-pill badge-warning">79.77°</span>
                                                     </td>
 
                                                 </tr>
@@ -1886,7 +1898,7 @@
         function printValues() {
             document.getElementById('tc').innerHTML = slider.value + "%";
             document.getElementById('gs').innerHTML = 100 - slider.value + "%";
-            document.getElementById('printtemp').innerHTML = tempvar + "° F";
+            document.getElementById('printtemp').innerHTML = tempvar + "°";
             document.getElementById('treeoverlay').style.opacity = slider.value / 100;
             document.getElementById('grassoverlay').style.opacity = 1 - (slider.value / 100);
 
