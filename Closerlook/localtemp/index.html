@@ -195,9 +195,10 @@
         padding-right: 3px;
     }
 
+    /*
     .hlt {
         border-bottom: 2px solid darkgreen;
-    }
+    } */
 
     .pinkdot {
         width: 8px;
@@ -227,7 +228,7 @@
         display: inline-block;
         width: 100%;
         height: 45px;
-        background: -webkit-linear-gradient(bottom, rgba(41, 90, 1, 0.87) 0%, rgba(131, 224, 9, 0.164) 100%);
+        background: -webkit-linear-gradient(bottom, rgba(41, 22, 22, 0.87) 0%, rgba(182, 107, 107, 0.40) 100%);
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
@@ -413,7 +414,7 @@
 
                             <div class="narrow my-2">
                                 <p>At 6.00 PM on June 30, 2018, the air temperature at the La Guardia Airport Weather
-                                    Station was <span class="hlt">89°</span> Fahrenheit (F).</p>
+                                    Station was 89° Fahrenheit (F).</p>
 
                                 <p>At the same time, the air temperature on a block in East Harlem (below left) was
                                     nearly 5° hotter than at the LGA
@@ -466,7 +467,7 @@
                                     boilers and car engines generate additional heat, and there's limited vegetation to
                                     cool things down. As the pictures above illustrate, <strong>temperatures even vary
                                         from block to
-                                        block </strong>within a city. By comparison, La Guardia Airport is an open space without many structures surrounding it. It doesn't trap heat, and is almost always cooler than other parts of NYC.</p>
+                                        block </strong>. By comparison, La Guardia Airport is an open space without many structures surrounding it. It doesn't trap heat the way other places do, and is almost always cooler than other parts of NYC.</p>
 
                                 <h3>What cools your block?</h3>
                                 <p>Anyone who has looked for a shady spot under a tree on a hot sunny day knows
@@ -475,8 +476,8 @@
                                     characteristics contribute to an
                                     area’s air temperature during hot weather?</p>
 
-                                <p>To find out how much different characteristics affect "hyperlocal temperature" - block-by-block differences - we
-                                    worked with the Department of Parks and Recreation and the Mayor's Office of
+                                <p>To find out how trees and other characteristics affect "hyperlocal temperature" - block-by-block differences - we
+                                    worked with the Department of Parks and Recreation and the Mayor's Office of Climate and
                                     Resiliency
                                     to install air temperature monitors around the city. This was part of <a
                                         href="https://www1.nyc.gov/assets/orr/pdf/Cool_Neighborhoods_NYC_Report.pdf">a
@@ -568,8 +569,7 @@
 
 
                             <div class="narrow my-2">
-                                <p>Below are two examples of locations where we measured temperature throughout the
-                                    summer: Brownsville, Brooklyn, on the left, and Edenwald, the Bronx, on the right.</p>
+                                <p>Below are two examples of locations where we summer temperature: Brownsville, Brooklyn, on the left, and Edenwald, the Bronx, on the right.</p>
                                 <p>These two blocks have dramatically different
                                     characteristics. The Brownsville location has very little vegetation
                                     (trees, grass, and shrubs), while the Edenwald location has high grass and tree
@@ -725,7 +725,7 @@
                                                         <p>
                                                              <strong>Total tree canopy
                                                                 coverage</strong> is the percent of
-                                                            on the sidewalk in
+                                                            the sidewalk in
                                                             the right of way of the monitored street that is shaded by trees. Trees provide
                                                             shade and prevent the ground from heating up. They also
                                                             can
@@ -805,10 +805,7 @@
                                                                 height</strong> (the middle of the
                                                             range of sorted heights) of buildings on the block.
                                                             Taller buildings can absorb and reflect more heat
-                                                            (increasing the street's temperature), but also shade
-                                                            the
-                                                            street to
-                                                            cool it.
+                                                            (increasing the street's temperature), but at about 3 or more floors, begin to cool the street by shading it. 
 
                                                         </p>
                                                     </div>
@@ -874,7 +871,7 @@
                                                             street
                                                             (North/South or East/West), how close the area is to the
                                                             ocean, the elevation
-                                                            of the area, daily wind speed and weather patterns can
+                                                            of the area, daily wind speed and weather patterns, can
                                                             also
                                                             influence how hot a block is.
 
@@ -918,8 +915,60 @@
 
                             </div>
 
+                                <!--FIRST SLIDER-->
                                 <div class="wide my-4">
-                                    <iframe src="isvegwidget.html" frameborder="no" width="100%;" height="600px;"></iframe>
+                                    <div class="row py-2">
+                                        <div class="col-md-8">
+                                            <div class="row no-gutters fs-sm">
+                                                <div class="col-3">
+                                                    Impervious surfaces<br>
+                                                    <div id="gs" class="outputbox">XX%</div>
+                            
+                            
+                                                </div>
+                                                <div class="col-6 px-2">
+                                                    Change the ratio<br>
+                                                    <input id="slider" type="range" min="0" max="100" step="5" value="50">
+                                                </div>
+                                                <div class="col-3">
+                                                    Vegetative material<br>
+                                                    <div id="tc" class="outputbox">XX%</div>
+                            
+                                                </div>
+                                            </div>
+                                            <div class="row no-gutters border-top mt-2">
+                                                <div class="col-12 mx-auto">
+                                                    <div style="background-image: url(images/block1.png)">
+                                                        <div id="treeoverlay" class="overlay1" style="opacity: .8">
+                                                        </div>
+                                                    </div>
+                                                    <div class="overlay2" id="grassoverlay" style="opacity: .2"></div>
+                            
+                            
+                            
+                            
+                            
+                                                </div>
+                                            </div>
+                            
+                            
+                                        </div>
+                            
+                            
+                                        <div class="col-md-2 mx-auto fs-sm">
+                                            <strong>Temperature</strong>
+                                            <div id="printtemp" class="outputbox mx-auto mb-2">
+                                                XX deg F
+                                            </div>
+                                            <div id="therm" class="mx-auto mt-4"
+                                                style="height: 400px; width: 75px; background-color: red; border-radius: 50px;border: 1px solid red; ">
+                                                <div id="merc"
+                                                    style="background-color: white; height: 50%; width: 100%; border-radius: 50px 50px 0px 0px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                    </div>
                                 </div>
 
 
@@ -933,84 +982,7 @@
                                         covered
                                         in impervious surfaces would be <span class="hlt">79°</span>. More vegetation means lower temperatures.</p>
 
-                                <p>Now, imagine a block that has a park running down the middle of it
-                                    instead of a street, where the <span class="hlt">right of way</span> is completely covered
-                                    in trees,
-                                    grass, or shrubs. How would this affect temperature, and which would have a greater effect - grass and shrubs, or trees?</p>
-
-                            </div>
-
-
-                            <div class="wide">
-                                <div class="row py-2">
-                                    <div class="col-md-8">
-                                        <div class="row no-gutters fs-sm">
-                                            <div class="col-3">
-                                                Grass/shrubs<br>
-                                                <div id="gs" class="outputbox">XX%</div>
-
-                                            </div>
-                                            <div class="col-6 px-2">
-                                                Change the ratio<br>
-                                                <input id="slider" type="range" min="0" max="100" step="5" value="50">
-                                            </div>
-                                            <div class="col-3">
-                                                Tree canopy<br>
-                                                <div id="tc" class="outputbox">XX%</div>
-
-
-                                            </div>
-                                        </div>
-                                        <div class="row no-gutters border-top mt-2">
-                                            <div class="col-12 mx-auto">
-                                                <div style="background-image: url(images/block1.png)">
-                                                    <div id="treeoverlay" class="overlay1" style="opacity: .8">
-                                                    </div>
-                                                </div>
-                                                <div class="overlay2" id="grassoverlay" style="opacity: .2"></div>
-
-
-
-
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-
-
-                                    <div class="col-md-2 mx-auto fs-sm">
-                                        <strong>Temperature</strong>
-                                        <div id="printtemp" class="outputbox mx-auto mb-2">
-                                            XX deg F
-                                        </div>
-                                        <div id="therm" class="mx-auto mt-4"
-                                            style="height: 400px; width: 75px; background-color: red; border-radius: 50px;border: 1px solid red; ">
-                                            <div id="merc"
-                                                style="background-color: white; height: 50%; width: 100%; border-radius: 50px 50px 0px 0px;">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="narrow my-4">
-
-                                <p>The model shows that grass and
-                                    shrubs
-                                    can result in about 4° of cooling. But, as we saw from the first model, when there are impervious surfaces like roadways, grass, shrubs, and tree canopies can only result in about 2° of cooling.
-                                </p>
-
-
-
-                                <h3>This may sound small, but...</h3>
-                                <p>Cooling a block by an average of 2° may not sound like much, but small
+                                <p>Cooling a block by 2° may not sound like much, but small
                                     differences in temperature - especially at peak summer temperatures - really matter.
                                     For example, <a
                                         href="https://nyaspubs.onlinelibrary.wiley.com/doi/10.1111/nyas.12591">the
@@ -1018,9 +990,7 @@
                                     Cooling blocks by just a few degrees can help offset the effects of climate change
                                     at the local level.</p>
 
-
-
-                                <p>This can affect health. <a
+                                <p>This can protect people. <a
                                         href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Closerlook/heat/">After all,
                                         hot weather is dangerous</a>. In New York City and
                                     across the country,
@@ -1030,10 +1000,7 @@
                                     from extreme heat than from all other
                                     natural disasters combined. And, NYC is more vulnerable to heat than
                                     suburban and rural
-                                    areas.
-                                </p>
-
-                                <p>Rising average temperatures and heat waves are even hotter in
+                                    areas: rising average temperatures and heat waves are even hotter in
                                     the
                                     city. These place New Yorkers at risk:
                                     when we analyzed excess mortality during extreme heat events, <a
@@ -1047,7 +1014,7 @@
                                     temperature, the extent to which grass, shrubs, or
                                     trees can cool a neighborhood may seem small – a few degrees.
 
-                                    Even modest cooling can save lives,
+                                    However, even modest cooling can save lives,
                                     especially as we anticipate increasing frequency and intensity of extreme
                                     heat
                                     events as the climate changes.</p>
@@ -1089,7 +1056,7 @@
                                 <div style="background-color:rgb(231, 231, 231); padding: 10px; border-radius: 5px;">
                                     <span style="font-weight: bold; color: #5e5e5e;">More about NYC's greening efforts</span>
 
-                                    <p>There are numerous efforts to increase tree canopy and green space overall in NYC. The City plants and cares for <a href="https://www.nycgovparks.org/trees/street-tree-planting">street trees</a> along the right-of-way; forbs, shrubs, and trees in parkland; <a href="https://www1.nyc.gov/site/dep/water/rain-gardens.page">rain gardens</a> and <a href="https://www1.nyc.gov/site/dep/water/green-infrastructure.page">other green infrastructure</a> to capture stormwater, and more. Many tree plantings have been concentrated in areas with <a href="https://www.milliontreesnyc.org/html/million_trees/neighborhoods.shtml">higher than average rates of asthma</a> and <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/HeatHub/hvi.html">heat-vulnerable neighborhoods</a>.</p>
+                                    <p>There are numerous efforts to increase tree canopy and green space overall in NYC. The City plants and cares for <a href="https://www.nycgovparks.org/trees/street-tree-planting">street trees</a> along the right-of-way; forbs, shrubs, and trees in parkland; <a href="https://www1.nyc.gov/site/dep/water/rain-gardens.page">rain gardens</a> and <a href="https://www1.nyc.gov/site/dep/water/green-infrastructure.page">other green infrastructure</a> to capture stormwater; and more. Many tree plantings have been concentrated in areas with <a href="https://www.milliontreesnyc.org/html/million_trees/neighborhoods.shtml">higher than average rates of asthma</a> and <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/HeatHub/hvi.html">heat-vulnerable neighborhoods</a>.</p>
                                     <p>Trust for Public Land’s <a href="https://www.tpl.org/our-work/new-york-city-playgrounds">New York City Playgrounds program</a> has transformed over 200 playgrounds from using asphalt to using cooler, greener materials. There are also <a href="https://naturalareasnyc.org/map">forests in all five boroughs</a>, and the Department of Parks and Recreation and the Natural Areas Conservancy have developed the <a href="https://naturalareasnyc.org/forests">Forest Management Framework for New York City</a>, a 25-year plan that lays out the process, costs, best practices, and goals for caring for forests in the city.  </p>
                                     
                                     <p>You can get involved, too:</p>
@@ -1423,503 +1390,80 @@
     <script src="https://nycehs.github.io/Portal-Core-Repo/js/main.js"></script>
 
     <script>
-        var tempvar = 75;
-        var canopy;
-        var canopyclean;
-        var green;
-        var allData;
-        var outputData;
+           var tempVar = 75;
+    var vegVar;
+    var vegClean;
+    var impervVar;
+    var allData;
+    var outputData;
 
-        const merc = document.getElementById('merc');
-        const slider = document.getElementById('slider');
+    const merc = document.getElementById('merc');
+    const slider = document.getElementById('slider');
 
-        allData = [
-            { tree: 0, grass: 0, temp: 79.08026687 },
-            { tree: 0.05, grass: 0, temp: 79.00583281 },
-            { tree: 0.1, grass: 0, temp: 78.93153329 },
-            { tree: 0.15, grass: 0, temp: 78.85683097 },
-            { tree: 0.2, grass: 0, temp: 78.78000363 },
-            { tree: 0.25, grass: 0, temp: 78.70012513 },
-            { tree: 0.3, grass: 0, temp: 78.61768222 },
-            { tree: 0.35, grass: 0, temp: 78.53288304 },
-            { tree: 0.4, grass: 0, temp: 78.44523559 },
-            { tree: 0.45, grass: 0, temp: 78.35411146 },
-            { tree: 0.5, grass: 0, temp: 78.25929207 },
-            { tree: 0.55, grass: 0, temp: 78.16137067 },
-            { tree: 0.6, grass: 0, temp: 78.06144418 },
-            { tree: 0.65, grass: 0, temp: 77.96058319 },
-            { tree: 0.7, grass: 0, temp: 77.85959999 },
-            { tree: 0.75, grass: 0, temp: 77.7586168 },
-            { tree: 0.8, grass: 0, temp: 77.6576336 },
-            { tree: 0.85, grass: 0, temp: 77.55665041 },
-            { tree: 0.9, grass: 0, temp: 77.45566721 },
-            { tree: 0.95, grass: 0, temp: 77.35468402 },
-            { tree: 1, grass: 0, temp: 77.25370082 },
-            { tree: 0, grass: 0.05, temp: 78.33927254 },
-            { tree: 0.05, grass: 0.05, temp: 78.26483847 },
-            { tree: 0.1, grass: 0.05, temp: 78.19053896 },
-            { tree: 0.15, grass: 0.05, temp: 78.11583663 },
-            { tree: 0.2, grass: 0.05, temp: 78.03900929 },
-            { tree: 0.25, grass: 0.05, temp: 77.9591308 },
-            { tree: 0.3, grass: 0.05, temp: 77.87668788 },
-            { tree: 0.35, grass: 0.05, temp: 77.79188871 },
-            { tree: 0.4, grass: 0.05, temp: 77.70424126 },
-            { tree: 0.45, grass: 0.05, temp: 77.61311713 },
-            { tree: 0.5, grass: 0.05, temp: 77.51829774 },
-            { tree: 0.55, grass: 0.05, temp: 77.42037634 },
-            { tree: 0.6, grass: 0.05, temp: 77.32044984 },
-            { tree: 0.65, grass: 0.05, temp: 77.21958886 },
-            { tree: 0.7, grass: 0.05, temp: 77.11860566 },
-            { tree: 0.75, grass: 0.05, temp: 77.01762247 },
-            { tree: 0.8, grass: 0.05, temp: 76.91663927 },
-            { tree: 0.85, grass: 0.05, temp: 76.81565607 },
-            { tree: 0.9, grass: 0.05, temp: 76.71467288 },
-            { tree: 0.95, grass: 0.05, temp: 76.61368968 },
-            { tree: 1, grass: 0.05, temp: 76.51270649 },
-            { tree: 0, grass: 0.1, temp: 78.29006573 },
-            { tree: 0.05, grass: 0.1, temp: 78.21563167 },
-            { tree: 0.1, grass: 0.1, temp: 78.14133215 },
-            { tree: 0.15, grass: 0.1, temp: 78.06662983 },
-            { tree: 0.2, grass: 0.1, temp: 77.98980249 },
-            { tree: 0.25, grass: 0.1, temp: 77.90992399 },
-            { tree: 0.3, grass: 0.1, temp: 77.82748108 },
-            { tree: 0.35, grass: 0.1, temp: 77.7426819 },
-            { tree: 0.4, grass: 0.1, temp: 77.65503445 },
-            { tree: 0.45, grass: 0.1, temp: 77.56391032 },
-            { tree: 0.5, grass: 0.1, temp: 77.46909093 },
-            { tree: 0.55, grass: 0.1, temp: 77.37116953 },
-            { tree: 0.6, grass: 0.1, temp: 77.27124304 },
-            { tree: 0.65, grass: 0.1, temp: 77.17038205 },
-            { tree: 0.7, grass: 0.1, temp: 77.06939885 },
-            { tree: 0.75, grass: 0.1, temp: 76.96841566 },
-            { tree: 0.8, grass: 0.1, temp: 76.86743246 },
-            { tree: 0.85, grass: 0.1, temp: 76.76644927 },
-            { tree: 0.9, grass: 0.1, temp: 76.66546607 },
-            { tree: 0.95, grass: 0.1, temp: 76.56448288 },
-            { tree: 1, grass: 0.1, temp: 76.46349968 },
-            { tree: 0, grass: 0.15, temp: 78.27756408 },
-            { tree: 0.05, grass: 0.15, temp: 78.20313002 },
-            { tree: 0.1, grass: 0.15, temp: 78.1288305 },
-            { tree: 0.15, grass: 0.15, temp: 78.05412818 },
-            { tree: 0.2, grass: 0.15, temp: 77.97730083 },
-            { tree: 0.25, grass: 0.15, temp: 77.89742234 },
-            { tree: 0.3, grass: 0.15, temp: 77.81497943 },
-            { tree: 0.35, grass: 0.15, temp: 77.73018025 },
-            { tree: 0.4, grass: 0.15, temp: 77.6425328 },
-            { tree: 0.45, grass: 0.15, temp: 77.55140867 },
-            { tree: 0.5, grass: 0.15, temp: 77.45658928 },
-            { tree: 0.55, grass: 0.15, temp: 77.35866788 },
-            { tree: 0.6, grass: 0.15, temp: 77.25874139 },
-            { tree: 0.65, grass: 0.15, temp: 77.1578804 },
-            { tree: 0.7, grass: 0.15, temp: 77.0568972 },
-            { tree: 0.75, grass: 0.15, temp: 76.95591401 },
-            { tree: 0.8, grass: 0.15, temp: 76.85493081 },
-            { tree: 0.85, grass: 0.15, temp: 76.75394762 },
-            { tree: 0.9, grass: 0.15, temp: 76.65296442 },
-            { tree: 0.95, grass: 0.15, temp: 76.55198123 },
-            { tree: 1, grass: 0.15, temp: 76.45099803 },
-            { tree: 0, grass: 0.2, temp: 78.04514529 },
-            { tree: 0.05, grass: 0.2, temp: 77.97071123 },
-            { tree: 0.1, grass: 0.2, temp: 77.89641172 },
-            { tree: 0.15, grass: 0.2, temp: 77.82170939 },
-            { tree: 0.2, grass: 0.2, temp: 77.74488205 },
-            { tree: 0.25, grass: 0.2, temp: 77.66500356 },
-            { tree: 0.3, grass: 0.2, temp: 77.58256064 },
-            { tree: 0.35, grass: 0.2, temp: 77.49776147 },
-            { tree: 0.4, grass: 0.2, temp: 77.41011401 },
-            { tree: 0.45, grass: 0.2, temp: 77.31898988 },
-            { tree: 0.5, grass: 0.2, temp: 77.2241705 },
-            { tree: 0.55, grass: 0.2, temp: 77.12624909 },
-            { tree: 0.6, grass: 0.2, temp: 77.0263226 },
-            { tree: 0.65, grass: 0.2, temp: 76.92546161 },
-            { tree: 0.7, grass: 0.2, temp: 76.82447842 },
-            { tree: 0.75, grass: 0.2, temp: 76.72349522 },
-            { tree: 0.8, grass: 0.2, temp: 76.62251203 },
-            { tree: 0.85, grass: 0.2, temp: 76.52152883 },
-            { tree: 0.9, grass: 0.2, temp: 76.42054563 },
-            { tree: 0.95, grass: 0.2, temp: 76.31956244 },
-            { tree: 1, grass: 0.2, temp: 76.21857924 },
-            { tree: 0, grass: 0.25, temp: 77.76731631 },
-            { tree: 0.05, grass: 0.25, temp: 77.69288225 },
-            { tree: 0.1, grass: 0.25, temp: 77.61858274 },
-            { tree: 0.15, grass: 0.25, temp: 77.54388041 },
-            { tree: 0.2, grass: 0.25, temp: 77.46705307 },
-            { tree: 0.25, grass: 0.25, temp: 77.38717458 },
-            { tree: 0.3, grass: 0.25, temp: 77.30473166 },
-            { tree: 0.35, grass: 0.25, temp: 77.21993249 },
-            { tree: 0.4, grass: 0.25, temp: 77.13228503 },
-            { tree: 0.45, grass: 0.25, temp: 77.04116091 },
-            { tree: 0.5, grass: 0.25, temp: 76.94634152 },
-            { tree: 0.55, grass: 0.25, temp: 76.84842011 },
-            { tree: 0.6, grass: 0.25, temp: 76.74849362 },
-            { tree: 0.65, grass: 0.25, temp: 76.64763263 },
-            { tree: 0.7, grass: 0.25, temp: 76.54664944 },
-            { tree: 0.75, grass: 0.25, temp: 76.44566624 },
-            { tree: 0.8, grass: 0.25, temp: 76.34468305 },
-            { tree: 0.85, grass: 0.25, temp: 76.24369985 },
-            { tree: 0.9, grass: 0.25, temp: 76.14271666 },
-            { tree: 0.95, grass: 0.25, temp: 76.04173346 },
-            { tree: 1, grass: 0.25, temp: 75.94075027 },
-            { tree: 0, grass: 0.3, temp: 77.49130528 },
-            { tree: 0.05, grass: 0.3, temp: 77.41687121 },
-            { tree: 0.1, grass: 0.3, temp: 77.3425717 },
-            { tree: 0.15, grass: 0.3, temp: 77.26786937 },
-            { tree: 0.2, grass: 0.3, temp: 77.19104203 },
-            { tree: 0.25, grass: 0.3, temp: 77.11116354 },
-            { tree: 0.3, grass: 0.3, temp: 77.02872062 },
-            { tree: 0.35, grass: 0.3, temp: 76.94392145 },
-            { tree: 0.4, grass: 0.3, temp: 76.85627399 },
-            { tree: 0.45, grass: 0.3, temp: 76.76514987 },
-            { tree: 0.5, grass: 0.3, temp: 76.67033048 },
-            { tree: 0.55, grass: 0.3, temp: 76.57240908 },
-            { tree: 0.6, grass: 0.3, temp: 76.47248258 },
-            { tree: 0.65, grass: 0.3, temp: 76.3716216 },
-            { tree: 0.7, grass: 0.3, temp: 76.2706384 },
-            { tree: 0.75, grass: 0.3, temp: 76.1696552 },
-            { tree: 0.8, grass: 0.3, temp: 76.06867201 },
-            { tree: 0.85, grass: 0.3, temp: 75.96768881 },
-            { tree: 0.9, grass: 0.3, temp: 75.86670562 },
-            { tree: 0.95, grass: 0.3, temp: 75.76572242 },
-            { tree: 1, grass: 0.3, temp: 75.66473923 },
-            { tree: 0, grass: 0.35, temp: 77.21529424 },
-            { tree: 0.05, grass: 0.35, temp: 77.14086017 },
-            { tree: 0.1, grass: 0.35, temp: 77.06656066 },
-            { tree: 0.15, grass: 0.35, temp: 76.99185834 },
-            { tree: 0.2, grass: 0.35, temp: 76.91503099 },
-            { tree: 0.25, grass: 0.35, temp: 76.8351525 },
-            { tree: 0.3, grass: 0.35, temp: 76.75270959 },
-            { tree: 0.35, grass: 0.35, temp: 76.66791041 },
-            { tree: 0.4, grass: 0.35, temp: 76.58026296 },
-            { tree: 0.45, grass: 0.35, temp: 76.48913883 },
-            { tree: 0.5, grass: 0.35, temp: 76.39431944 },
-            { tree: 0.55, grass: 0.35, temp: 76.29639804 },
-            { tree: 0.6, grass: 0.35, temp: 76.19647155 },
-            { tree: 0.65, grass: 0.35, temp: 76.09561056 },
-            { tree: 0.7, grass: 0.35, temp: 75.99462736 },
-            { tree: 0.75, grass: 0.35, temp: 75.89364417 },
-            { tree: 0.8, grass: 0.35, temp: 75.79266097 },
-            { tree: 0.85, grass: 0.35, temp: 75.69167778 },
-            { tree: 0.9, grass: 0.35, temp: 75.59069458 },
-            { tree: 0.95, grass: 0.35, temp: 75.48971139 },
-            { tree: 1, grass: 0.35, temp: 75.38872819 },
-            { tree: 0, grass: 0.4, temp: 76.9392832 },
-            { tree: 0.05, grass: 0.4, temp: 76.86484914 },
-            { tree: 0.1, grass: 0.4, temp: 76.79054962 },
-            { tree: 0.15, grass: 0.4, temp: 76.7158473 },
-            { tree: 0.2, grass: 0.4, temp: 76.63901996 },
-            { tree: 0.25, grass: 0.4, temp: 76.55914146 },
-            { tree: 0.3, grass: 0.4, temp: 76.47669855 },
-            { tree: 0.35, grass: 0.4, temp: 76.39189938 },
-            { tree: 0.4, grass: 0.4, temp: 76.30425192 },
-            { tree: 0.45, grass: 0.4, temp: 76.21312779 },
-            { tree: 0.5, grass: 0.4, temp: 76.11830841 },
-            { tree: 0.55, grass: 0.4, temp: 76.020387 },
-            { tree: 0.6, grass: 0.4, temp: 75.92046051 },
-            { tree: 0.65, grass: 0.4, temp: 75.81959952 },
-            { tree: 0.7, grass: 0.4, temp: 75.71861633 },
-            { tree: 0.75, grass: 0.4, temp: 75.61763313 },
-            { tree: 0.8, grass: 0.4, temp: 75.51664993 },
-            { tree: 0.85, grass: 0.4, temp: 75.41566674 },
-            { tree: 0.9, grass: 0.4, temp: 75.31468354 },
-            { tree: 0.95, grass: 0.4, temp: 75.21370035 },
-            { tree: 1, grass: 0.4, temp: 75.11271715 },
-            { tree: 0, grass: 0.45, temp: 76.66327216 },
-            { tree: 0.05, grass: 0.45, temp: 76.5888381 },
-            { tree: 0.1, grass: 0.45, temp: 76.51453859 },
-            { tree: 0.15, grass: 0.45, temp: 76.43983626 },
-            { tree: 0.2, grass: 0.45, temp: 76.36300892 },
-            { tree: 0.25, grass: 0.45, temp: 76.28313043 },
-            { tree: 0.3, grass: 0.45, temp: 76.20068751 },
-            { tree: 0.35, grass: 0.45, temp: 76.11588834 },
-            { tree: 0.4, grass: 0.45, temp: 76.02824088 },
-            { tree: 0.45, grass: 0.45, temp: 75.93711676 },
-            { tree: 0.5, grass: 0.45, temp: 75.84229737 },
-            { tree: 0.55, grass: 0.45, temp: 75.74437596 },
-            { tree: 0.6, grass: 0.45, temp: 75.64444947 },
-            { tree: 0.65, grass: 0.45, temp: 75.54358848 },
-            { tree: 0.7, grass: 0.45, temp: 75.44260529 },
-            { tree: 0.75, grass: 0.45, temp: 75.34162209 },
-            { tree: 0.8, grass: 0.45, temp: 75.2406389 },
-            { tree: 0.85, grass: 0.45, temp: 75.1396557 },
-            { tree: 0.9, grass: 0.45, temp: 75.03867251 },
-            { tree: 0.95, grass: 0.45, temp: 74.93768931 },
-            { tree: 1, grass: 0.45, temp: 74.83670612 },
-            { tree: 0, grass: 0.5, temp: 76.38726113 },
-            { tree: 0.05, grass: 0.5, temp: 76.31282706 },
-            { tree: 0.1, grass: 0.5, temp: 76.23852755 },
-            { tree: 0.15, grass: 0.5, temp: 76.16382522 },
-            { tree: 0.2, grass: 0.5, temp: 76.08699788 },
-            { tree: 0.25, grass: 0.5, temp: 76.00711939 },
-            { tree: 0.3, grass: 0.5, temp: 75.92467647 },
-            { tree: 0.35, grass: 0.5, temp: 75.8398773 },
-            { tree: 0.4, grass: 0.5, temp: 75.75222984 },
-            { tree: 0.45, grass: 0.5, temp: 75.66110572 },
-            { tree: 0.5, grass: 0.5, temp: 75.56628633 },
-            { tree: 0.55, grass: 0.5, temp: 75.46836493 },
-            { tree: 0.6, grass: 0.5, temp: 75.36843843 },
-            { tree: 0.65, grass: 0.5, temp: 75.26757745 },
-            { tree: 0.7, grass: 0.5, temp: 75.16659425 },
-            { tree: 0.75, grass: 0.5, temp: 75.06561105 },
-            { tree: 0.8, grass: 0.5, temp: 74.96462786 },
-            { tree: 0.85, grass: 0.5, temp: 74.86364466 },
-            { tree: 0.9, grass: 0.5, temp: 74.76266147 },
-            { tree: 0.95, grass: 0.5, temp: 74.66167827 },
-            { tree: 1, grass: 0.5, temp: 74.56069508 },
-            { tree: 0, grass: 0.55, temp: 76.11125009 },
-            { tree: 0.05, grass: 0.55, temp: 76.03681602 },
-            { tree: 0.1, grass: 0.55, temp: 75.96251651 },
-            { tree: 0.15, grass: 0.55, temp: 75.88781419 },
-            { tree: 0.2, grass: 0.55, temp: 75.81098684 },
-            { tree: 0.25, grass: 0.55, temp: 75.73110835 },
-            { tree: 0.3, grass: 0.55, temp: 75.64866544 },
-            { tree: 0.35, grass: 0.55, temp: 75.56386626 },
-            { tree: 0.4, grass: 0.55, temp: 75.47621881 },
-            { tree: 0.45, grass: 0.55, temp: 75.38509468 },
-            { tree: 0.5, grass: 0.55, temp: 75.29027529 },
-            { tree: 0.55, grass: 0.55, temp: 75.19235389 },
-            { tree: 0.6, grass: 0.55, temp: 75.0924274 },
-            { tree: 0.65, grass: 0.55, temp: 74.99156641 },
-            { tree: 0.7, grass: 0.55, temp: 74.89058321 },
-            { tree: 0.75, grass: 0.55, temp: 74.78960002 },
-            { tree: 0.8, grass: 0.55, temp: 74.68861682 },
-            { tree: 0.85, grass: 0.55, temp: 74.58763363 },
-            { tree: 0.9, grass: 0.55, temp: 74.48665043 },
-            { tree: 0.95, grass: 0.55, temp: 74.38566724 },
-            { tree: 1, grass: 0.55, temp: 74.28468404 },
-            { tree: 0, grass: 0.6, temp: 75.83523905 },
-            { tree: 0.05, grass: 0.6, temp: 75.76080499 },
-            { tree: 0.1, grass: 0.6, temp: 75.68650547 },
-            { tree: 0.15, grass: 0.6, temp: 75.61180315 },
-            { tree: 0.2, grass: 0.6, temp: 75.53497581 },
-            { tree: 0.25, grass: 0.6, temp: 75.45509731 },
-            { tree: 0.3, grass: 0.6, temp: 75.3726544 },
-            { tree: 0.35, grass: 0.6, temp: 75.28785522 },
-            { tree: 0.4, grass: 0.6, temp: 75.20020777 },
-            { tree: 0.45, grass: 0.6, temp: 75.10908364 },
-            { tree: 0.5, grass: 0.6, temp: 75.01426426 },
-            { tree: 0.55, grass: 0.6, temp: 74.91634285 },
-            { tree: 0.6, grass: 0.6, temp: 74.81641636 },
-            { tree: 0.65, grass: 0.6, temp: 74.71555537 },
-            { tree: 0.7, grass: 0.6, temp: 74.61457217 },
-            { tree: 0.75, grass: 0.6, temp: 74.51358898 },
-            { tree: 0.8, grass: 0.6, temp: 74.41260578 },
-            { tree: 0.85, grass: 0.6, temp: 74.31162259 },
-            { tree: 0.9, grass: 0.6, temp: 74.21063939 },
-            { tree: 0.95, grass: 0.6, temp: 74.1096562 },
-            { tree: 1, grass: 0.6, temp: 74.008673 },
-            { tree: 0, grass: 0.65, temp: 75.55922801 },
-            { tree: 0.05, grass: 0.65, temp: 75.48479395 },
-            { tree: 0.1, grass: 0.65, temp: 75.41049444 },
-            { tree: 0.15, grass: 0.65, temp: 75.33579211 },
-            { tree: 0.2, grass: 0.65, temp: 75.25896477 },
-            { tree: 0.25, grass: 0.65, temp: 75.17908628 },
-            { tree: 0.3, grass: 0.65, temp: 75.09664336 },
-            { tree: 0.35, grass: 0.65, temp: 75.01184419 },
-            { tree: 0.4, grass: 0.65, temp: 74.92419673 },
-            { tree: 0.45, grass: 0.65, temp: 74.8330726 },
-            { tree: 0.5, grass: 0.65, temp: 74.73825322 },
-            { tree: 0.55, grass: 0.65, temp: 74.64033181 },
-            { tree: 0.6, grass: 0.65, temp: 74.54040532 },
-            { tree: 0.65, grass: 0.65, temp: 74.43954433 },
-            { tree: 0.7, grass: 0.65, temp: 74.33856114 },
-            { tree: 0.75, grass: 0.65, temp: 74.23757794 },
-            { tree: 0.8, grass: 0.65, temp: 74.13659475 },
-            { tree: 0.85, grass: 0.65, temp: 74.03561155 },
-            { tree: 0.9, grass: 0.65, temp: 73.93462836 },
-            { tree: 0.95, grass: 0.65, temp: 73.83364516 },
-            { tree: 1, grass: 0.65, temp: 73.73266197 },
-            { tree: 0, grass: 0.7, temp: 75.28321698 },
-            { tree: 0.05, grass: 0.7, temp: 75.20878291 },
-            { tree: 0.1, grass: 0.7, temp: 75.1344834 },
-            { tree: 0.15, grass: 0.7, temp: 75.05978107 },
-            { tree: 0.2, grass: 0.7, temp: 74.98295373 },
-            { tree: 0.25, grass: 0.7, temp: 74.90307524 },
-            { tree: 0.3, grass: 0.7, temp: 74.82063232 },
-            { tree: 0.35, grass: 0.7, temp: 74.73583315 },
-            { tree: 0.4, grass: 0.7, temp: 74.64818569 },
-            { tree: 0.45, grass: 0.7, temp: 74.55706157 },
-            { tree: 0.5, grass: 0.7, temp: 74.46224218 },
-            { tree: 0.55, grass: 0.7, temp: 74.36432078 },
-            { tree: 0.6, grass: 0.7, temp: 74.26439428 },
-            { tree: 0.65, grass: 0.7, temp: 74.16353329 },
-            { tree: 0.7, grass: 0.7, temp: 74.0625501 },
-            { tree: 0.75, grass: 0.7, temp: 73.9615669 },
-            { tree: 0.8, grass: 0.7, temp: 73.86058371 },
-            { tree: 0.85, grass: 0.7, temp: 73.75960051 },
-            { tree: 0.9, grass: 0.7, temp: 73.65861732 },
-            { tree: 0.95, grass: 0.7, temp: 73.55763412 },
-            { tree: 1, grass: 0.7, temp: 73.45665093 },
-            { tree: 0, grass: 0.75, temp: 75.00720594 },
-            { tree: 0.05, grass: 0.75, temp: 74.93277187 },
-            { tree: 0.1, grass: 0.75, temp: 74.85847236 },
-            { tree: 0.15, grass: 0.75, temp: 74.78377003 },
-            { tree: 0.2, grass: 0.75, temp: 74.70694269 },
-            { tree: 0.25, grass: 0.75, temp: 74.6270642 },
-            { tree: 0.3, grass: 0.75, temp: 74.54462129 },
-            { tree: 0.35, grass: 0.75, temp: 74.45982211 },
-            { tree: 0.4, grass: 0.75, temp: 74.37217466 },
-            { tree: 0.45, grass: 0.75, temp: 74.28105053 },
-            { tree: 0.5, grass: 0.75, temp: 74.18623114 },
-            { tree: 0.55, grass: 0.75, temp: 74.08830974 },
-            { tree: 0.6, grass: 0.75, temp: 73.98838324 },
-            { tree: 0.65, grass: 0.75, temp: 73.88752226 },
-            { tree: 0.7, grass: 0.75, temp: 73.78653906 },
-            { tree: 0.75, grass: 0.75, temp: 73.68555587 },
-            { tree: 0.8, grass: 0.75, temp: 73.58457267 },
-            { tree: 0.85, grass: 0.75, temp: 73.48358948 },
-            { tree: 0.9, grass: 0.75, temp: 73.38260628 },
-            { tree: 0.95, grass: 0.75, temp: 73.28162309 },
-            { tree: 1, grass: 0.75, temp: 73.18063989 },
-            { tree: 0, grass: 0.8, temp: 74.7311949 },
-            { tree: 0.05, grass: 0.8, temp: 74.65676084 },
-            { tree: 0.1, grass: 0.8, temp: 74.58246132 },
-            { tree: 0.15, grass: 0.8, temp: 74.507759 },
-            { tree: 0.2, grass: 0.8, temp: 74.43093165 },
-            { tree: 0.25, grass: 0.8, temp: 74.35105316 },
-            { tree: 0.3, grass: 0.8, temp: 74.26861025 },
-            { tree: 0.35, grass: 0.8, temp: 74.18381107 },
-            { tree: 0.4, grass: 0.8, temp: 74.09616362 },
-            { tree: 0.45, grass: 0.8, temp: 74.00503949 },
-            { tree: 0.5, grass: 0.8, temp: 73.9102201 },
-            { tree: 0.55, grass: 0.8, temp: 73.8122987 },
-            { tree: 0.6, grass: 0.8, temp: 73.71237221 },
-            { tree: 0.65, grass: 0.8, temp: 73.61151122 },
-            { tree: 0.7, grass: 0.8, temp: 73.51052802 },
-            { tree: 0.75, grass: 0.8, temp: 73.40954483 },
-            { tree: 0.8, grass: 0.8, temp: 73.30856163 },
-            { tree: 0.85, grass: 0.8, temp: 73.20757844 },
-            { tree: 0.9, grass: 0.8, temp: 73.10659524 },
-            { tree: 0.95, grass: 0.8, temp: 73.00561205 },
-            { tree: 1, grass: 0.8, temp: 72.90462885 },
-            { tree: 0, grass: 0.85, temp: 74.45518386 },
-            { tree: 0.05, grass: 0.85, temp: 74.3807498 },
-            { tree: 0.1, grass: 0.85, temp: 74.30645029 },
-            { tree: 0.15, grass: 0.85, temp: 74.23174796 },
-            { tree: 0.2, grass: 0.85, temp: 74.15492062 },
-            { tree: 0.25, grass: 0.85, temp: 74.07504213 },
-            { tree: 0.3, grass: 0.85, temp: 73.99259921 },
-            { tree: 0.35, grass: 0.85, temp: 73.90780004 },
-            { tree: 0.4, grass: 0.85, temp: 73.82015258 },
-            { tree: 0.45, grass: 0.85, temp: 73.72902845 },
-            { tree: 0.5, grass: 0.85, temp: 73.63420907 },
-            { tree: 0.55, grass: 0.85, temp: 73.53628766 },
-            { tree: 0.6, grass: 0.85, temp: 73.43636117 },
-            { tree: 0.65, grass: 0.85, temp: 73.33550018 },
-            { tree: 0.7, grass: 0.85, temp: 73.23451699 },
-            { tree: 0.75, grass: 0.85, temp: 73.13353379 },
-            { tree: 0.8, grass: 0.85, temp: 73.0325506 },
-            { tree: 0.85, grass: 0.85, temp: 72.9315674 },
-            { tree: 0.9, grass: 0.85, temp: 72.83058421 },
-            { tree: 0.95, grass: 0.85, temp: 72.72960101 },
-            { tree: 1, grass: 0.85, temp: 72.62861781 },
-            { tree: 0, grass: 0.9, temp: 74.17917282 },
-            { tree: 0.05, grass: 0.9, temp: 74.10473876 },
-            { tree: 0.1, grass: 0.9, temp: 74.03043925 },
-            { tree: 0.15, grass: 0.9, temp: 73.95573692 },
-            { tree: 0.2, grass: 0.9, temp: 73.87890958 },
-            { tree: 0.25, grass: 0.9, temp: 73.79903109 },
-            { tree: 0.3, grass: 0.9, temp: 73.71658817 },
-            { tree: 0.35, grass: 0.9, temp: 73.631789 },
-            { tree: 0.4, grass: 0.9, temp: 73.54414154 },
-            { tree: 0.45, grass: 0.9, temp: 73.45301742 },
-            { tree: 0.5, grass: 0.9, temp: 73.35819803 },
-            { tree: 0.55, grass: 0.9, temp: 73.26027663 },
-            { tree: 0.6, grass: 0.9, temp: 73.16035013 },
-            { tree: 0.65, grass: 0.9, temp: 73.05948914 },
-            { tree: 0.7, grass: 0.9, temp: 72.95850595 },
-            { tree: 0.75, grass: 0.9, temp: 72.85752275 },
-            { tree: 0.8, grass: 0.9, temp: 72.75653956 },
-            { tree: 0.85, grass: 0.9, temp: 72.65555636 },
-            { tree: 0.9, grass: 0.9, temp: 72.55457317 },
-            { tree: 0.95, grass: 0.9, temp: 72.45358997 },
-            { tree: 1, grass: 0.9, temp: 72.35260678 },
-            { tree: 0, grass: 0.95, temp: 73.90316179 },
-            { tree: 0.05, grass: 0.95, temp: 73.82872772 },
-            { tree: 0.1, grass: 0.95, temp: 73.75442821 },
-            { tree: 0.15, grass: 0.95, temp: 73.67972588 },
-            { tree: 0.2, grass: 0.95, temp: 73.60289854 },
-            { tree: 0.25, grass: 0.95, temp: 73.52302005 },
-            { tree: 0.3, grass: 0.95, temp: 73.44057714 },
-            { tree: 0.35, grass: 0.95, temp: 73.35577796 },
-            { tree: 0.4, grass: 0.95, temp: 73.26813051 },
-            { tree: 0.45, grass: 0.95, temp: 73.17700638 },
-            { tree: 0.5, grass: 0.95, temp: 73.08218699 },
-            { tree: 0.55, grass: 0.95, temp: 72.98426559 },
-            { tree: 0.6, grass: 0.95, temp: 72.88433909 },
-            { tree: 0.65, grass: 0.95, temp: 72.78347811 },
-            { tree: 0.7, grass: 0.95, temp: 72.68249491 },
-            { tree: 0.75, grass: 0.95, temp: 72.58151172 },
-            { tree: 0.8, grass: 0.95, temp: 72.48052852 },
-            { tree: 0.85, grass: 0.95, temp: 72.37954533 },
-            { tree: 0.9, grass: 0.95, temp: 72.27856213 },
-            { tree: 0.95, grass: 0.95, temp: 72.17757893 },
-            { tree: 1, grass: 0.95, temp: 72.07659574 },
-            { tree: 0, grass: 1, temp: 73.62715075 },
-            { tree: 0.05, grass: 1, temp: 73.55271669 },
-            { tree: 0.1, grass: 1, temp: 73.47841717 },
-            { tree: 0.15, grass: 1, temp: 73.40371485 },
-            { tree: 0.2, grass: 1, temp: 73.3268875 },
-            { tree: 0.25, grass: 1, temp: 73.24700901 },
-            { tree: 0.3, grass: 1, temp: 73.1645661 },
-            { tree: 0.35, grass: 1, temp: 73.07976692 },
-            { tree: 0.4, grass: 1, temp: 72.99211947 },
-            { tree: 0.45, grass: 1, temp: 72.90099534 },
-            { tree: 0.5, grass: 1, temp: 72.80617595 },
-            { tree: 0.55, grass: 1, temp: 72.70825455 },
-            { tree: 0.6, grass: 1, temp: 72.60832806 },
-            { tree: 0.65, grass: 1, temp: 72.50746707 },
-            { tree: 0.7, grass: 1, temp: 72.40648387 },
-            { tree: 0.75, grass: 1, temp: 72.30550068 },
-            { tree: 0.8, grass: 1, temp: 72.20451748 },
-            { tree: 0.85, grass: 1, temp: 72.10353429 },
-            { tree: 0.9, grass: 1, temp: 72.00255109 },
-            { tree: 0.95, grass: 1, temp: 71.9015679 },
-            { tree: 1, grass: 1, temp: 71.8005847 }]
+    allData = [
+        { veg: 1, imperv: 0, temp: 76.97345745 },
+        { veg: 0.95, imperv: 0.05, temp: 77.07939221 },
+        { veg: 0.9, imperv: 0.1, temp: 77.18532697 },
+        { veg: 0.85, imperv: 0.15, temp: 77.29126173 },
+        { veg: 0.8, imperv: 0.2, temp: 77.3971965 },
+        { veg: 0.75, imperv: 0.25, temp: 77.50313126 },
+        { veg: 0.7, imperv: 0.3, temp: 77.60906602 },
+        { veg: 0.65, imperv: 0.35, temp: 77.71500078 },
+        { veg: 0.6, imperv: 0.4, temp: 77.82093554 },
+        { veg: 0.55, imperv: 0.45, temp: 77.92687029 },
+        { veg: 0.5, imperv: 0.5, temp: 78.03280504 },
+        { veg: 0.45, imperv: 0.55, temp: 78.13873979 },
+        { veg: 0.4, imperv: 0.6, temp: 78.24467454 },
+        { veg: 0.35, imperv: 0.65, temp: 78.35060928 },
+        { veg: 0.3, imperv: 0.7, temp: 78.45654403 },
+        { veg: 0.25, imperv: 0.75, temp: 78.56247877 },
+        { veg: 0.2, imperv: 0.8, temp: 78.66841348 },
+        { veg: 0.15, imperv: 0.85, temp: 78.77434816 },
+        { veg: 0.1, imperv: 0.9, temp: 78.88028282 },
+        { veg: 0.05, imperv: 0.95, temp: 78.98621749 },
+        { veg: 0, imperv: 1, temp: 79.09215215 }
+    ]
 
 
-        function handleUpdate() {
-            canopy = .01 * slider.value;
-            canopyclean = Number(canopy.toFixed(2));
-            green = (100 - slider.value) / 100;
-
-            console.log(slider.value, canopy, green);
-
-            // get temp based on canopy and grass inputs
-            outputData = allData.filter(function (sf) {
-                return sf.tree === canopyclean && sf.grass === green;
-            });
-
-            // assign temp based on canopy and green values
-            tempvar = Number(outputData[0].temp.toFixed(2));
-            console.log(tempvar);
+    function handleUpdate() {
+        vegVar = .01 * slider.value;
+        vegClean = Number(vegVar.toFixed(2));
+        impervVar = (100 - slider.value) / 100;
 
 
-            printValues(); // Print values to HTML
-        }
+        // get temp based on canopy and grass inputs
+        outputData = allData.filter(function (sf) {
+            return sf.veg === vegClean && sf.imperv === impervVar;
+        });
 
-        function printValues() {
-            document.getElementById('tc').innerHTML = slider.value + "%";
-            document.getElementById('gs').innerHTML = 100 - slider.value + "%";
-            document.getElementById('printtemp').innerHTML = tempvar + "°";
-            document.getElementById('treeoverlay').style.opacity = slider.value / 100;
-            document.getElementById('grassoverlay').style.opacity = 1 - (slider.value / 100);
+        // console.log(outputData);
 
-            merc.style.height = 25 + 50 * ((79 - tempvar) / 7) + "%"
-        }
+        // assign temp based on canopy and green values
+        tempVar = Number(outputData[0].temp.toFixed(2));
 
-        handleUpdate();
+        console.log("holding: ", slider.value, vegClean, impervVar, tempVar);
 
 
-        slider.addEventListener('change', handleUpdate);
-        slider.addEventListener('mousemove', handleUpdate);
+        printValues(); // Print values to HTML
+    }
+
+    function printValues() {
+        document.getElementById('tc').innerHTML = slider.value + "%";
+        document.getElementById('gs').innerHTML = 100 - slider.value + "%";
+        document.getElementById('printtemp').innerHTML = tempVar + "°";
+        document.getElementById('treeoverlay').style.opacity = slider.value / 100;
+        document.getElementById('grassoverlay').style.opacity = 1 - (slider.value / 100);
+
+        merc.style.height = 15 + 65 * ((79 - tempVar) / 7) + "%"
+    }
+
+    handleUpdate();
 
 
-
-
-
+    slider.addEventListener('change', handleUpdate);
+    slider.addEventListener('mousemove', handleUpdate);
 
     </script>
-
 
 
 </body>
